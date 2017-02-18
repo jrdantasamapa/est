@@ -10,7 +10,7 @@
         </button>
         <!-- Branding Image -->
         <a class="navbar-brand" href="{{ url('/') }}">
-            <img src="/logost.png">
+            <img src="{{asset('/logost.png')}}">
         </a>
     </div>
 
