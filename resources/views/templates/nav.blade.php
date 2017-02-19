@@ -10,10 +10,10 @@
         </button>
         <!-- Branding Image -->
         <a class="navbar-brand" href="{{ url('/') }}">
-            <img src="{{asset('/logost.png')}}">
+            <img src="{{asset('./logost.png')}}">
         </a>
     </div>
-
+ssss
     <div class="collapse navbar-collapse" id="app-navbar-collapse">
         <!-- Left Side Of Navbar -->
 
