@@ -246,6 +246,269 @@ class XmlController extends Controller
         return view('xml.index', compact('url'));
 	}
 
+	public function consultapis(){
+		$url = 'consultapis';
+        return view('xml.index', compact('url'));
+	}
+
+	public function calcularpis(Request $request){
+		$input = Input::file('xml');
+		$nome = "calculopis.xml";
+		$this->upload($input, $nome);
+
+		//MANIPULANDO O XML
+		$xml = simplexml_load_file(public_path($nome));
+		//Variaveis do XML
+		$item = count($xml->NFe->infNFe->det);
+		//Conta o numero de Ites do XML
+		$tproduto = $xml -> NFe -> infNFe -> total -> ICMSTot -> vProd;
+		//Valor total dos Prodtos do XML
+		$tnfe = $xml -> NFe -> infNFe -> total -> ICMSTot -> vNF;
+		// Valor Total da NFe
+		$tICMS = $xml -> NFe -> infNFe -> total -> ICMSTot -> vICMS;
+		// Valor total do ICMS da NFe
+		$emitente = $xml -> NFe -> infNFe -> emit -> xNome;
+		//Razão social do Emitente
+		$fantasia = $xml -> NFe -> infNFe -> emit -> xFant;
+		// Nome de Fantasia do Emitente
+		$endereco = $xml -> NFe -> infNFe -> emit -> enderEmit -> xMun;
+		// Minicipio do Enitente
+		$destino = $xml -> NFe -> infNFe -> dest -> xNome;
+		// Rasão social do Destino
+		$bairrodestino = $xml -> NFe -> infNFe -> dest -> enderDest -> xBairro;
+		$logdestino = $xml -> NFe -> infNFe -> dest -> enderDest -> xLgr;
+		$enddest = $xml -> NFe -> infNFe -> dest -> enderDest -> xMun;
+		// Municipio do Destino
+		$chave = $xml -> protNFe -> infProt -> chNFe;
+		// Chave de acesso do XML
+		$nnfe = $xml -> NFe -> infNFe -> ide -> nNF;
+		// Numero da NFe do XML
+		$det = $item;
+		$itens = 0;
+		$tst = 0;
+		$i = 0;
+		$tribut = 0;
+		$monof = 0;
+		$tdebICMS = 0;
+		$tcreICMS = 0;
+		$tpis = 0;
+		$tcofins = 0;
+		// Versão do XML
+		$versao = $xml -> NFe -> infNFe['versao'];
+//verifica da de Emissão
+		if ($versao >= 3) {
+					$origem = $xml -> NFe -> infNFe -> det[$i] -> imposto -> ICMS -> ICMS00 -> orig;
+					$demit = $xml -> NFe -> infNFe ->ide -> dhEmi;
+				} else {
+					$origem = $xml -> NFe -> infNFe -> det[$i] -> imposto -> ICMS -> ICMS40 -> orig;
+					$demit = $xml -> NFe -> infNFe ->ide -> dEmi;
+				}
+
+//TÍTULO DO RELATÓRIO
+$titulo = "RELATORIO DE VALORES PIS/COFINS";
+//LOGO QUE SERÁ COLOCADO NO RELATÓRIO
+$imagem = "logost.jpg";
+//NUMERO DE RESULTADOS POR PÁGINA
+$por_pagina = 10;
+//TIPO DO PDF GERADO
+//F-> SALVA NO ENDEREÇO ESPECIFICADO NA VAR END_FINAL
+$tipo_pdf = "D";
+//CALCULA QUANTAS PÁGINAS VÃO SER NECESSÁRIAS
+$registros = number_format(($item), 2, ',', '.');
+
+$paginas = ceil($item / $por_pagina);
+//PREPARA PARA GERAR O PDF
+
+//INICIALIZA AS VARIÁVEIS
+$linha_atual = 0;
+$inicio = 0;
+//PÁGINAS
+/*for ($x = 1; $x <= $paginas; $x++) {
+	//VERIFICA
+	$inicio = $linha_atual;
+	$fim = $linha_atual + $por_pagina;
+	if ($fim > $paginas)
+		$fim = $paginas;*/
+	//iNICIO DO pdf
+	Fpdf::Open();
+	Fpdf::AddPage();
+	Fpdf::SetFont("times", "B", 10);
+	//logomarca do Relatorio
+	Fpdf::SetFillColor(232, 232, 232);
+	Fpdf::SetTextColor(0, 0, 0);
+	Fpdf::Image('logost.png', 10, 10, -300);
+	Fpdf::Ln(5);
+	// Move para a direita
+	Fpdf::Cell(50);
+	// Titulo dentro de uma caixa
+	Fpdf::Cell(85, 10, $titulo, 0, 0, 'C');
+	// Quebra de linha
+	Fpdf::Ln(10);
+	//Cabeçalho do relatorio
+	Fpdf::SetFont('times', '', 8);
+	Fpdf::Line(10, 25, 200, 25);
+	Fpdf::Cell(100, 6, 'Cheve de Acesso: ' . $chave, 0, 0, 'L');
+	Fpdf::Cell(30, 6, 'N. NFe: ' . $nnfe, 0, 0, 'L');
+	Fpdf::Cell(60, 6, 'Data de Emissão: '.$demit, 0, 0, 'L');
+	Fpdf::Ln(4);
+	Fpdf::Cell(190, 6, 'Fornecedor: ' . $emitente . '   -   Fantasia.:' . $fantasia . '   -   End.:' . $endereco, 0, 0, 'L');
+	Fpdf::Ln(4);
+	Fpdf::Cell(190, 6, 'Destinatario: ' . $destino . '  -   End.:'.$logdestino.' - ' . $bairrodestino . '-' . $enddest, 0, 0, 'L');
+	Fpdf::Line(10, 38, 200, 38);
+	Fpdf::Ln(4);
+
+
+
+Fpdf::SetFont('times', 'B', 8);
+		Fpdf::Cell(90, 6, 'PRODUTOS', 0, 0, 'L');
+		Fpdf::Cell(20, 6, 'NCM', 0, 0, 'L');
+		Fpdf::Cell(15, 6, 'QTD', 0, 0, 'L');
+		Fpdf::Cell(15, 6, 'V. UNT', 0, 0, 'L');
+		Fpdf::Cell(20, 6, 'V. TOTAL', 0, 0, 'L');
+		Fpdf::Cell(15, 6, 'PIS', 0, 0, 'L');
+		Fpdf::Cell(15, 6, 'COFINS', 0, 0, 'L');
+		Fpdf::Ln(3);
+
+	//EXIBE OS REGISTROS
+	for ($i = 0; $i < $det; $i++) {
+		
+		$nome = $xml -> NFe -> infNFe -> det[$i] -> prod -> xProd;
+		$qtd = $xml -> NFe -> infNFe -> det[$i] -> prod -> qCom;
+		$unitario = $xml -> NFe -> infNFe -> det[$i] -> prod -> vUnCom;
+		$codigo = $xml -> NFe -> infNFe -> det[$i] -> prod -> cProd;
+		$vproduto = $xml -> NFe -> infNFe -> det[$i] -> prod -> vProd;
+		$ncm = $xml -> NFe -> infNFe -> det[$i] -> prod -> NCM;
+		$qtrib = $xml -> NFe -> infNFe -> det[$i] -> prod -> qTrib;
+		$nnfe = $xml -> NFe -> infNFe -> ide -> nNF;
+		$vdesconto = '0,00';
+		$vliquido = $vproduto;
+		$newvliquido = number_format(floatval($vliquido), 3, ',', '.');
+		$mva = Ncm::where('NCM', $ncm)->get();
+		$dados = $mva;
+		foreach ($mva as $mvas) {
+			$oppis = $mvas->piscofins;
+		
+		if($oppis == 'Sim'){
+			$pis = $vproduto * 0.0065;
+			$cofins = $vproduto * 0.03;
+			$tribut += $vproduto;
+		}else {
+			$pis = '0';
+			$cofins = '0';
+			$monof += $vproduto;
+		}
+		if ($dados > '0') {
+			$vmva = $mvas->MVA;
+			$subtrib = $mvas->reducao;
+			$aliint = $mvas->al_interna;
+			if ($subtrib == '0.00') {
+				$basered = "$vliquido";
+				$cmva = (($vmva / 100) * $basered);
+				$basajst = ($basered + $cmva);
+				$debICMA = (($aliint / 100)* $basajst);
+				
+			} else {
+				$valorreducao = (($subtrib/100) * $vliquido );
+				$basered = $vliquido - $valorreducao;
+				$cmva = (($vmva / 100) * $basered);
+				$basajst = ($basered + $cmva);
+				$debICMA = (($aliint / 100)* $basajst);
+			};
+			if ($origem == 0 or $origem == 5) {
+				$ICMS = ($vproduto * 0.12);
+				$aliext = '12,00';
+				$creICMS = ($basered * 0.12);
+			} else {
+				$ICMS = ($vproduto * 0.04);
+				$aliext = '4,00';
+				$creICMS = ($basered * 0.04);
+			};
+		} else {
+			$vmva = 0;
+			$ICMS = '0,00';
+			$aliext = '0,00';
+			$creICMS = '0,00';
+			$basered = '0,00';
+			$debICMA = '0,00';
+			$subtrib = 0;
+			$aliint = 0;
+			$basajst = '0,00';
+		}
+		
+		}
+		$st = ($debICMA - $creICMS);
+		$tst += $st;
+		$tdebICMS += $debICMA;
+		$tcreICMS += $creICMS;
+		$itens = $itens + 1;
+		$tpis += $pis;
+		$tcofins += $cofins;
+		
+		$newvproduto = number_format(floatval($vproduto), 3, ',', '.');
+		$newdebICMA = number_format($debICMA, 3, ',', '.');
+		$newtnfe = number_format(floatval($tnfe), 2, ',', '.');
+		$newbasered = number_format($basered, 3, ',', '.');
+		$newcreICMS = number_format($creICMS, 3, ',', '.');
+		$newbasajst = number_format($basajst, 3, ',', '.');
+		$newst = number_format($st, 3, ',', '.');
+		$newsubtrib = number_format($subtrib, 2, ',', '.');
+		$newaliint = number_format($aliint, 2, ',', '.');
+		$newvmva = number_format($vmva, 2, ',', '.');
+		$newunitario = number_format(floatval($unitario), 3, ',', '.');
+		$newqtd = number_format(floatval($qtd), 3, ',', '.');
+
+			//Layuot dos Regsitor
+		
+		Fpdf::SetFont('times', '', 8);
+		Fpdf::Cell(90, 6, $codigo .' - '. $nome, 0, 0, 'L');
+		Fpdf::Cell(20, 6, $ncm, 0, 0, 'L');
+		Fpdf::Cell(15, 6, $newqtd, 0, 0, 'L');
+		Fpdf::Cell(15, 6, $newunitario, 0, 0, 'L');
+		Fpdf::Cell(20, 6, $newvproduto, 0, 0, 'L');
+		Fpdf::Cell(15, 6, $pis, 0, 0, 'L');
+		Fpdf::Cell(15, 6, $cofins, 0, 0, 'L');
+		Fpdf::Ln(5);
+		Fpdf::SetFont('times', '', 8);
+		$linha_atual++;
+		
+		
+	};
+	//Imprime o N de paginas
+	//$pdf -> SetFont('times', '', 6);
+	//$pdf -> Cell(0, 10, "Pagina $x de $paginas", 0, 0, 'R');
+//};
+Fpdf::Cell(190, 0.2, '', 1, 1, 'C');
+		Fpdf::Ln(1);
+// Totalizadores
+Fpdf::SetFont('times', 'B', 12);
+Fpdf::Cell(190, 6, 'RESUMO TOTAIS', 0, 0, 'C');
+Fpdf::Ln(5);
+Fpdf::Cell(190, 0.2, '', 1, 1, 'C');
+Fpdf::SetFont('times', '', 8);
+Fpdf::Cell(20, 6, 'NFe', 0, 0, 'C');
+Fpdf::Cell(30, 6, 'Valor Total da NFe', 0, 0, 'C');
+Fpdf::Cell(30, 6, 'Valor Total dos Produtos', 0, 0, 'C');
+Fpdf::Cell(30, 6, 'Monofásico', 0, 0, 'C');
+Fpdf::Cell(30, 6, 'Tributados', 0, 0, 'C');
+Fpdf::Cell(25, 6, 'VALOR PIS', 0, 0, 'C');
+Fpdf::Cell(25, 6, 'VALOR COFINS', 0, 0, 'C');
+Fpdf::Ln(5);
+Fpdf::Cell(190, 0.2, '', 1, 1, 'C');
+//$pdf -> Ln(1);
+Fpdf::SetFont('times', 'B', 12);
+Fpdf::Cell(20, 6, $nnfe, 0, 0, 'C');
+Fpdf::Cell(30, 6, (number_format(floatval($tnfe), 2, ',', '.')), 0, 0, 'C');
+Fpdf::Cell(30, 6, (number_format(floatval($tproduto), 2, ',', '.')), 0, 0, 'C');
+Fpdf::Cell(30, 6, (number_format($monof, 2, ',', '.')), 0, 0, 'C');
+Fpdf::Cell(30, 6, (number_format($tribut, 2, ',', '.')), 0, 0, 'C');
+Fpdf::Cell(30, 6, (number_format(($tpis), 2, ',', '.')), 0, 0, 'C');
+Fpdf::Cell(30, 6, (number_format(($tcofins), 2, ',', '.')), 0, 0, 'C');
+Fpdf::Output('CalculoPIS.NFe'.$nnfe.'.pdf', 'D');
+		
+		return Redirect('consultapis');
+
+	}
+
 	public function calcularxml(Request $request){
 		$input = Input::file('xml');
 		$nome = "calculoxml.xml";

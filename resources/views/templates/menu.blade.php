@@ -32,12 +32,16 @@
 		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;Impostos
 		<span class="caret"></span></button>
   		<ul class="dropdown-menu">
-			@can('submenu_st')
+		<!--	@can('submenu_st')
 			<li><a href="calcularst"><i class="fa fa-pie-chart" aria-hidden="true"></i>&nbsp;Calcular ST</a></li>
 			<li role="separator" class="divider"></li>
-			@endcan
+			@endcan -->
 			@can('submenu_consulta_ST')
 			<li><a href="consultaxml"><i class="fa fa-pie-chart" aria-hidden="true"></i>&nbsp;Consultar XML-ST</a></li>
+			<li role="separator" class="divider"></li>
+			@endcan
+			@can('submenu_consulta_PIS')
+			<li><a href="consultapis"><i class="fa fa-pie-chart" aria-hidden="true"></i>&nbsp;Consultar XML-PIS/COFINS</a></li>
 			<li role="separator" class="divider"></li>
 			@endcan
 		</ul>

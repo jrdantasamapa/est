@@ -16,7 +16,7 @@
   <link rel="stylesheet" type="text/css" media="all" href="{{asset('/css/jquery-ui.structure.min.css')}}">
   <link rel="stylesheet" type="text/css" media="all" href="{{asset('/css/fullcalendar.css')}}">
   <link rel="stylesheet" type="text/css" media="all" href="{{asset('/css/fullcalendar.print.css')}}">
-  <script src="{{asset('./js/jquery.min.js')}}"></script>
+  <script src="{{asset('/js/jquery.min.js')}}"></script>
 
    
 
@@ -42,7 +42,7 @@
   <div class="container">
     @yield('content')
   </div>
-
+    
   @section('scripts')
   <script type="text/javascript" src="{{asset('/js/sweetalert.min.js')}}"></script>
   <script type="text/javascript" src="{{asset('/js/bootstrap.min.js')}}"></script>

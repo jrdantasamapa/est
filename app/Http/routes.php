@@ -62,6 +62,8 @@ Route::group(array('before' => 'auth'), function(){
 		Route::post('/inserirxml', 'XmlController@inserte');
 		Route::get('consultaxml', 'XmlController@consultaxml');
 		Route::post('calcularxml', 'XmlController@calcularxml');
+		Route::get('consultapis', 'XmlController@consultapis');
+		Route::post('calcularpis', 'XmlController@calcularpis');
 		
 });
 

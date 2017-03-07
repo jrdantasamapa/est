@@ -14,6 +14,8 @@
     @include('xml.inserir')
 @elseif($url == 'consultaxml')
     @include('xml.consultaxml')
+@elseif($url == 'consultapis')
+    @include('xml.consultapis')
 @endif
 @endsection
 
