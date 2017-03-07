@@ -5,10 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>e-ST</title>
-  <link rel="shortcut icon" type="image/x-icon" href="{{asset('/logo.ico')}}">
+  <link rel="shortcut icon" type="image/x-icon" href="logo.ico">
   <!-- Fonts -->
-  <link rel="stylesheet" type="text/css" media="all" href="{{asset('/css/font-awesome.min.css')}}">
+  <link rel="stylesheet" type="text/css" media="all" href="/css/font-awesome.min.css">
   <!-- Styles -->
+<<<<<<< HEAD
   <link rel="stylesheet" type="text/css" media="all" href="{{asset('/css/bootstrap.min.css')}}">
   <link rel="stylesheet" type="text/css" media="all" href="{{asset('/css/sweetalert.css')}}">
   <link rel="stylesheet" type="text/css" media="all" href="{{asset('/css/jquery-ui.min.css')}}">
@@ -17,6 +18,17 @@
   <link rel="stylesheet" type="text/css" media="all" href="{{asset('/css/fullcalendar.css')}}">
   <link rel="stylesheet" type="text/css" media="all" href="{{asset('/css/fullcalendar.print.css')}}">
   <script src="{{asset('/js/jquery.min.js')}}"></script>
+=======
+  <link rel="stylesheet" type="text/css" media="all" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" media="all" href="/css/sweetalert.css">
+  <link rel="stylesheet" type="text/css" media="all" href="/css/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" media="all" href="/css/jquery-ui.theme.min.css">
+  <link rel="stylesheet" type="text/css" media="all" href="/css/jquery-ui.structure.min.css">
+  <link rel="stylesheet" type="text/css" media="all" href="/css/fullcalendar.css">
+  <link rel="stylesheet" type="text/css" media="all" href="/css/fullcalendar.print.css">
+
+<script src="/js/jquery.min.js"></script>
+>>>>>>> 09c5ae647d5e668ab487f6a6494d66df082bc2d6
 
    
 
@@ -44,15 +56,15 @@
   </div>
     
   @section('scripts')
-  <script type="text/javascript" src="{{asset('/js/sweetalert.min.js')}}"></script>
-  <script type="text/javascript" src="{{asset('/js/bootstrap.min.js')}}"></script>
-  <script type="text/javascript" src="{{asset('/js/bootstrap-datetimepicker.min.js')}}"></script>
-  <script type="text/javascript" src="{{asset('/js/moment.min.js')}}"></script>
-  <script type="text/javascript" src="{{asset('/js/fullcalendar.min.js')}}"></script>
-  <script type="text/javascript" src="{{asset('/js/jquery-1.10.2.js')}}"></script>
-  <script type="text/javascript" src="{{asset('/js/jquery-ui.js')}}"></script>
-  <script type="text/javascript" src="{{asset('/js/datepicker-pt-BR.js')}}"></script>
-  <script type="text/javascript" src="{{asset('/js/jquery.maskedinput.min.js')}}"></script>
+  <script type="text/javascript" src="/js/sweetalert.min.js"></script>
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/js/bootstrap-datetimepicker.min.js"></script>
+  <script type="text/javascript" src="/js/moment.min.js"></script>
+  <script type="text/javascript" src="/js/fullcalendar.min.js"></script>
+  <script type="text/javascript" src="/js/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="/js/jquery-ui.js"></script>
+  <script type="text/javascript" src="/js/datepicker-pt-BR.js"></script>
+  <script type="text/javascript" src="/js/jquery.maskedinput.min.js"></script>
  
   @show
 <script type="text/javascript">

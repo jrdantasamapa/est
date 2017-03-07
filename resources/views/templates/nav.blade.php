@@ -10,7 +10,7 @@
         </button>
         <!-- Branding Image -->
         <a class="navbar-brand" href="{{ url('/') }}">
-            <img src="{{asset('/logost.png')}}">
+            <img src="/logost.png">
         </a>
     </div>
     <div class="collapse navbar-collapse" id="app-navbar-collapse">
