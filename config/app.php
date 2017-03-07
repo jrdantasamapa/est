@@ -159,7 +159,6 @@ return [
         Codecourse\Notify\NotifyServiceProvider::class,
         Anouar\Fpdf\FpdfServiceProvider::class,
         Barryvdh\Snappy\ServiceProvider::class,
-        Docode\LaravelNfe\Provider\NfeServiceProvider::class,
 
     ],
 
@@ -213,7 +212,6 @@ return [
         'Input'     => Illuminate\Support\Facades\Input::class,
          'PDF' => Barryvdh\Snappy\Facades\SnappyPdf::class,
         'Image' => Barryvdh\Snappy\Facades\SnappyImage::class,
-        'Nfe'       => Docode\LaravelNfe\Facade\Nfe::class,
 
     ],
 

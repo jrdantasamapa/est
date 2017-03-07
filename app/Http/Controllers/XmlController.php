@@ -504,7 +504,7 @@ Fpdf::Cell(30, 6, (number_format($tribut, 2, ',', '.')), 0, 0, 'C');
 Fpdf::Cell(30, 6, (number_format(($tpis), 2, ',', '.')), 0, 0, 'C');
 Fpdf::Cell(30, 6, (number_format(($tcofins), 2, ',', '.')), 0, 0, 'C');
 Fpdf::Output('CalculoPIS.NFe'.$nnfe.'.pdf', 'D');
-		
+		exit;
 		return Redirect('consultapis');
 
 	}
@@ -755,7 +755,7 @@ $inicio = 0;
 		Fpdf::Cell(30, 6, (number_format($tdebICMS, 2, ',', '.')), 0, 0, 'C');
 		Fpdf::Cell(30, 6, (number_format(($tdebICMS - $tcreICMS), 2, ',', '.')), 0, 0, 'C');
 		Fpdf::Output('CalculoST.NFe'.$nnfe.'.pdf', 'D');
-		
+		exit;
 		return Redirect('consultaxml');
 
 }

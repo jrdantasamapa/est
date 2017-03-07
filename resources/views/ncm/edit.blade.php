@@ -23,6 +23,10 @@
                     <div class="col-md-12">
                         {!! Form::number('reducao', $ncm->reducao, array('class'=>'form-control','step'=>'0.10')) !!}
                     </div>
+                     <label class="col-md-6 control-label">PIS/COFINS</label>
+                    <div class="col-md-12">
+                        {!! Form::select('piscofins', array($ncm->piscofins=>'', 'Sim'=>'Sim','Não'=>'Não'),'', array('class'=>'form-control')) !!}
+                    </div>
                 </div>
                  <br>  
                  {{ Form::hidden('id', $ncm->id ) }}            

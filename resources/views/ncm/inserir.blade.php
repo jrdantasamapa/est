@@ -18,9 +18,13 @@
                     <div class="col-md-12">
                         {!! Form::number('al_interna', '', array('class'=>'form-control', 'step'=>'0.10')) !!}
                     </div>
-                    <label class="col-md-6 control-label">Reduão</label>
+                    <label class="col-md-6 control-label">Redução</label>
                     <div class="col-md-12">
                         {!! Form::number('reducao', '', array('class'=>'form-control', 'step'=>'0.10')) !!}
+                    </div>
+                    <label class="col-md-6 control-label">PIS/COFINS</label>
+                    <div class="col-md-12">
+                        {!! Form::select('piscofins', array('Sim'=>'Sim','Não'=>'Não'),'', array('class'=>'form-control')) !!}
                     </div>
                 </div>
                   {{ Form::hidden('status', '1' ) }}
