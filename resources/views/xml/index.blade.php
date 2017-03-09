@@ -16,6 +16,8 @@
     @include('xml.consultaxml')
 @elseif($url == 'consultapis')
     @include('xml.consultapis')
+@elseif($url == 'chave')
+    @include('xml.downloadXML')
 @endif
 @endsection
 

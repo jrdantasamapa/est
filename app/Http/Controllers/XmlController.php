@@ -13,6 +13,7 @@ use Input;
 use Fpdf;
 use App\Ncm;
 
+
 class XmlController extends Controller
 {
      public function __construct()
@@ -759,6 +760,8 @@ $inicio = 0;
 		return Redirect('consultaxml');
 
 }
+
+
 
 	
 }

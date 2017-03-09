@@ -14,4 +14,5 @@ return array(
     'Doctrine\\Common\\Inflector\\' => array($vendorDir . '/doctrine/inflector/lib'),
     'Codecourse\\Notify\\' => array($vendorDir . '/codecourse/notify/src'),
     'Anouar\\Fpdf' => array($vendorDir . '/anouar/fpdf/src'),
+    '' => array($vendorDir . '/nfephp-org/nfephp/libs', $vendorDir . '/nfephp-org/nfephp/tests'),
 );

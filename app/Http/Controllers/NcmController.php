@@ -96,4 +96,9 @@ class NcmController extends Controller
         return back()->withInput();
         }
     }
+    public function ncmrelacao(){
+        $ncms = Ncm::paginate(10);
+        $url = 'lista';
+        return view('ncm.index', compact('ncms', 'url'));
+    }
 }
