@@ -4,4 +4,5 @@
 @endsection
 @section('content')
 	@include('templates.menu')
+	@include('templates.noticias')
 @endsection
