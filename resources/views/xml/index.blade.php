@@ -18,6 +18,8 @@
     @include('xml.consultapis')
 @elseif($url == 'chave')
     @include('xml.downloadXML')
+@elseif($url == 'resultado')
+    @include('xml.resultado')
 @endif
 @endsection
 

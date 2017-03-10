@@ -20,6 +20,10 @@
 			<li><a href="ncm"><i class="fa fa-industry" aria-hidden="true"></i>&nbsp; NCM</a></li>
 			<li role="separator" class="divider"></li>
 			@endcan
+			@can('submenu_certificado')
+			<li><a href="certificado"><i class="fa fa-exchange" aria-hidden="true"></i>&nbsp; Instalar Certificado A1</a></li>
+			<li role="separator" class="divider"></li>
+			@endcan
 		<!--	@can('submenu_import_xml')
 			<li><a href="xml"><i class="fa fa-exchange" aria-hidden="true"></i>&nbsp; Importar XML</a></li>
 			<li role="separator" class="divider"></li>

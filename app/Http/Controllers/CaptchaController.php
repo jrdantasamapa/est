@@ -3,12 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
-// Autoload
-//require './vendor/autoload.php';
-
-// Iniciando a classe
+use Exception;
+use DOMDocument;
 use DownloadNFeSefaz\DownloadNFeSefaz;
 
 
@@ -22,6 +19,64 @@ public function chave(){
 
 }
 
+public function downloadXml(Request $request){
+		$dados = $request->All();
+		$txtCaptcha = $dados['captcha'];
+		$chNFe = $dados['chave'];
+        ini_set('display_errors', 1);
+        ini_set('display_startup_errors', 1);
+        if (session_status() == PHP_SESSION_NONE)
+            session_start();
+        $url = "https://www.nfe.fazenda.gov.br/portal/consulta.aspx?tipoConsulta=completa&tipoConteudo=XbSeqxE8pl8%3d";
+        $cookie = sys_get_temp_dir() . DIRECTORY_SEPARATOR . 'cookies1.txt';
+        $useragent = 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/13.0.782.99 Safari/535.1';
+        $ch = curl_init($url);
+        curl_setopt($ch, CURLOPT_COOKIEJAR, $cookie);
+        curl_setopt($ch, CURLOPT_COOKIEFILE, $cookie);
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+        curl_setopt($ch, CURLOPT_USERAGENT, $useragent);
+        $postfields = array();
+        $postfields['__EVENTTARGET'] = "";
+        $postfields['__EVENTARGUMENT'] = "";
+        $postfields['__VIEWSTATE'] = $_SESSION['viewstate'];
+        $postfields['__VIEWSTATEGENERATOR'] = $_SESSION['stategen'];
+        $postfields['__EVENTVALIDATION'] = $_SESSION['eventValidation'];
+        $postfields['ctl00$txtPalavraChave'] = "";
+        $postfields['ctl00$ContentPlaceHolder1$txtChaveAcessoCompleta'] = $chNFe;
+        $postfields['ctl00$ContentPlaceHolder1$txtCaptcha'] = $txtCaptcha;
+        $postfields['ctl00$ContentPlaceHolder1$btnConsultar'] = 'Continuar';
+        $postfields['ctl00$ContentPlaceHolder1$token'] = $_SESSION['token'];
+        $postfields['ctl00$ContentPlaceHolder1$captchaSom'] = $_SESSION['captchaSom'];
+        $postfields['hiddenInputToUpdateATBuffer_CommonToolkitScripts'] = '1';
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $postfields);
+        // Result
+        $html = curl_exec($ch);
+        
+        preg_match('~Dados da NF-e~', $html, $tagTeste);
+  		
+        if (isset($tagTeste[0])) {
+            $tagDownload = $tagTeste[0];
+        } else {
+            throw new Exception('Sessão expirada ou captcha inválido, gere um novo captcha e tente novamente.');
+        }
+       	
+       	 $json = json_decode($html);
+    	dd($html);
+
+       	$document = new DOMDocument();
+       	libxml_use_internal_errors(true);
+        $document->loadHTML($html);
+     	curl_close($ch);
+     	
+        $url = 'resultado';
+    	return view('xml.index', compact('url', 'resultado'));
+       
+}
+
     
    public function captcha(){
     	$downloadXml = new DownloadNFeSefaz();
@@ -32,7 +87,7 @@ public function chave(){
     }
 
 
-    public function downloadXML($captcha, $chave_acesso, $CNPJ, $path_cert, $senha_cert){
+    public function downloadXML_($captcha, $chave_acesso, $CNPJ, $path_cert, $senha_cert){
 		// Iniciando a classe
 		$downloadXml = new DownloadNFeSefaz();
 		$xml = $downloadXml->downloadXmlSefaz($captcha, $chave_acesso, $CNPJ, $path_cert, $senha_cert);
