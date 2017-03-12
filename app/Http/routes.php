@@ -11,9 +11,9 @@
 |
 */
 
+Route::get('emprestimo', 'EmprestimoController@index');
 
 Route::auth();
-
 Route::group(array('before' => 'auth'), function(){
 		Route::get('/', 'HomeController@index');
 		Route::get('/register', 'UserController@create');

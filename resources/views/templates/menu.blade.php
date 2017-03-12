@@ -80,22 +80,22 @@
 		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-qrcode" aria-hidden="true"></i>&nbsp;Consultar XML
 		<span class="caret"></span></button>
   		<ul class="dropdown-menu">
-			@can('submenu_consultaxml_barras')
+		<!--	@can('submenu_consultaxml_barras')
 			<li><a href="barras"><i class="fa fa-barcode" aria-hidden="true"></i>&nbsp; Codigo de Barras</a></li>
 			<li role="separator" class="divider"></li>
 			@endcan
 			@can('submenu_consultaxml_numero')
 			<li><a href="numero"><i class="fa fa-th-list" aria-hidden="true"></i>&nbsp; Numero NFe</a></li>
 			<li role="separator" class="divider"></li>
-			@endcan
+			@endcan -->
 			@can('submenu_consultaxml_chave')
-			<li><a href="chave"><i class="fa fa-at" aria-hidden="true"></i>&nbsp; Chave de Acesso</a></li>
+			<li><a href="chave"><i class="fa fa-barcode" aria-hidden="true"></i>&nbsp; Chave de Acesso</a></li>
 			<li role="separator" class="divider"></li>
 			@endcan
-			@can('submenu_consultaxml_cnpj')
+		<!--	@can('submenu_consultaxml_cnpj')
 			<li><a href="cnpj"><i class="fa fa-retweet" aria-hidden="true"></i>&nbsp; Por CNPJ</a></li>
 			<li role="separator" class="divider"></li>
-			@endcan
+			@endcan -->
 		</ul>
 	@endcan
 </div>
