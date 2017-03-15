@@ -7,6 +7,7 @@ use App\Http\Requests;
 use Exception;
 use DOMDocument;
 use DomXPath;
+use Response;
 use DownloadNFeSefaz\DownloadNFeSefaz;
 
 
@@ -76,30 +77,26 @@ public function downloadXml(Request $request){
             }
 
            	$document = new DOMDocument('1.0', 'utf-8');
-            $document->formatOutput = true;
-            $document->preserveWhiteSpace = true;
-           	libxml_use_internal_errors(true);
+            libxml_use_internal_errors(true);
             $document->loadHTML($html);
+            $document->formatOutput = true;
+            $document->preserveWhiteSpace = false;
             curl_close($ch);
-                
-            $data = array();
-            foreach( $document->getElementsByTagName('table') as $node ) {
-                if( $node->hasChildNodes() ) {
-                    foreach( $node->childNodes as $children ) {
-                        $nodeValue = trim( $children->nodeValue );
-                        if( ! empty( $nodeValue ) ) {
-                            $structure = preg_split(
-                                '/(.*?):\s+(.*?)/', $nodeValue, -1,
-                                PREG_SPLIT_DELIM_CAPTURE | PREG_SPLIT_NO_EMPTY
-                            );
-                            $data[spl_object_hash($node)][$structure[0]] = $structure[1];
-                            $array = $node;
-                        }
-                    }
+
+           
+            $html = $document->getElementsByTagName('table');        
+            $form = array();
+            foreach($html as $v){           
+                $tag = $v->nodeName;
+                $val = $v->nodeValue;           
+                foreach($v->attributes as $k => $a){
+                    $form[$tag]['label'] = utf8_decode($val);
+                    $form[$tag][$k] = $a->nodeValue;
                 }
-            }
-                
-                $resultado = $array;
+             
+            }   
+             
+               $resultado = $form;
        
             $url = 'resultado';
     	       return view('xml.index', compact('url', 'resultado'));

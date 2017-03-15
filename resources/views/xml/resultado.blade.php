@@ -1,7 +1,7 @@
 <?php
 
 
-print_r($resultado);
+dd($resultado);
 
 
 ?>

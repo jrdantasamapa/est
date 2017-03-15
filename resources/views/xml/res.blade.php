@@ -1,4 +1,5 @@
-            <fieldset>
+
+           <fieldset>
               <legend>Dados Gerais</legend>
                 <table class="box">
                   <tr>
@@ -502,9 +503,15 @@ DOMDocument {#320 ▼
                             &#xD;\n
                             &#xD;\n
                             <img id="linhaDivisoria" src="imagens/linha_divisoria.png" alt="Linha divis&#xF3;ria" /><div>&#xD;\n
-    \t<table cellspacing="0" rules="all" id="ctl00_gdvLinksDestaque" style="border-width:0px;border-collapse:collapse;"><tr><td>&#xD;\n
-                                            <input type="image" name="ctl00$gdvLinksDestaque$ctl02$ImageButton1" id="ctl00_gdvLinksDestaque_ctl02_ImageButton1" onmouseover="javascript: trocarImagem(this)" onmouseout="javascript: trocarImagem(this)" title="Manifesto Eletr&#xF4;nico de Documentos Fiscais" src="imagens/banner_mdfe_Off.png" alt="Manifesto Eletr&#xF4;nico de Documentos Fiscais" onclick="aspnetForm.target ='_blank';" /></td>&#xD;\n
-    \t\t</tr><tr><td>&#xD;\n
+    \t<table cellspacing="0" rules="all" id="ctl00_gdvLinksDestaque" style="border-width:0px;border-collapse:collapse;">
+    <tr>
+    <td>&#xD;\n
+    <input type="image" name="ctl00$gdvLinksDestaque$ctl02$ImageButton1" id="ctl00_gdvLinksDestaque_ctl02_ImageButton1" onmouseover="javascript: trocarImagem(this)" onmouseout="javascript: trocarImagem(this)" title="Manifesto Eletr&#xF4;nico de Documentos Fiscais" src="imagens/banner_mdfe_Off.png" alt="Manifesto Eletr&#xF4;nico de Documentos Fiscais" onclick="aspnetForm.target ='_blank';" />
+    </td>&#xD;\n
+    \t\t
+    </tr>
+    <tr>
+    <td>&#xD;\n
                                             <input type="image" name="ctl00$gdvLinksDestaque$ctl03$ImageButton1" id="ctl00_gdvLinksDestaque_ctl03_ImageButton1" onmouseover="javascript: trocarImagem(this)" onmouseout="javascript: trocarImagem(this)" title="Conhecimento de Transporte Eletr&#xF4;nico" src="imagens/banners_Visite_CTe_Off.png" alt="Conhecimento de Transporte Eletr&#xF4;nico" onclick="aspnetForm.target ='_blank';" /></td>&#xD;\n
     \t\t</tr><tr><td>&#xD;\n
                                             <input type="image" name="ctl00$gdvLinksDestaque$ctl04$ImageButton1" id="ctl00_gdvLinksDestaque_ctl04_ImageButton1" onmouseover="javascript: trocarImagem(this)" onmouseout="javascript: trocarImagem(this)" title="Sistema P&#xFA;blico de Escritura&#xE7;&#xE3;o Fiscal" src="imagens/banners_Visite_Sped_Off.png" alt="Sistema P&#xFA;blico de Escritura&#xE7;&#xE3;o Fiscal" onclick="aspnetForm.target ='_blank';" /></td>&#xD;\n
