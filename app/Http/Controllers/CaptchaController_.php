@@ -81,27 +81,19 @@ public function downloadXml(Request $request){
            	libxml_use_internal_errors(true);
             $document->loadHTML($html);
             curl_close($ch);
+            
+            $conteudo = preg_replace('/[\f\n\t\rb]+/', '', $html);
+           
+            preg_match('~<table>.*?(<tr>.*?(<td>(.*?)</td>).*?</tr>).*?</table>~', $conteudo, $matches);
+            dd($matches);
+            $coluna1 = $matches[0];
+            preg_match('/<td align=\'right\'>([\w\d\s]+)<\/td>/', $conteudo, $matches);
+            $coluna2 = $matches[0];
+            echo '<strong>coluna1:</strong> ' . $coluna1 . '<br />' . PHP_EOL;
+            echo '<strong>coluna2:</strong> ' . $coluna2 . '<br />' . PHP_EOL;
                 
-            $data = array();
-            foreach( $document->getElementsByTagName('table') as $node ) {
-                if( $node->hasChildNodes() ) {
-                    foreach( $node->childNodes as $children ) {
-                        $nodeValue = trim( $children->nodeValue );
-                        if( ! empty( $nodeValue ) ) {
-                            $structure = preg_split(
-                                '/(.*?):\s+(.*?)/', $nodeValue, -1,
-                                PREG_SPLIT_DELIM_CAPTURE | PREG_SPLIT_NO_EMPTY
-                            );
-                            $data[spl_object_hash($node)][$structure[0]] = $structure[1];
-                            $array = $node;
-                        }
-                    }
-                }
-            }
-                
-                $resultado = $array;
-       
-            $url = 'resultado';
+               $resultado = "";
+               $url = 'resultado';
     	       return view('xml.index', compact('url', 'resultado'));
        
 }

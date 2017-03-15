@@ -1,7 +1,7 @@
 <?php
 
 
-print_r($resultado);
+//print_r($resultado);
 
 
 ?>
