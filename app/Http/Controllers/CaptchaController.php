@@ -1,7 +1,5 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use Exception;
@@ -9,23 +7,23 @@ use DOMDocument;
 use DomXPath;
 use Response;
 use DownloadNFeSefaz\DownloadNFeSefaz;
-
-
 class CaptchaController extends Controller
 {
+
+     public function __construct()
+    {
+        $this->middleware('auth');
+    }
   
 public function chave(){
 	$captcha = $this->captcha();
 	$url = 'chave';
     return view('xml.index', compact('url', 'captcha'));
-
 }
-
 public function downloadXml(Request $request){
 		$dados = $request->All(); //dados vindos do formulario
         $txtCaptcha = $dados['captcha']; // input digita captcha
 		$chNFe = $dados['chave'];// Chave da NFe
-
         ini_set('display_errors', 1);
         ini_set('display_startup_errors', 1);
         
@@ -43,7 +41,6 @@ public function downloadXml(Request $request){
             curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
             curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
             curl_setopt($ch, CURLOPT_USERAGENT, $useragent);
-
             $postfields = array();
             $postfields['__EVENTTARGET'] = "";
             $postfields['__EVENTARGUMENT'] = "";
@@ -57,7 +54,6 @@ public function downloadXml(Request $request){
             $postfields['ctl00$ContentPlaceHolder1$token'] = $_SESSION['token'];
             $postfields['ctl00$ContentPlaceHolder1$captchaSom'] = $_SESSION['captchaSom'];
             $postfields['hiddenInputToUpdateATBuffer_CommonToolkitScripts'] = '1';
-
             curl_setopt($ch, CURLOPT_POST, 1);
             curl_setopt($ch, CURLOPT_POSTFIELDS, $postfields);
             
@@ -75,29 +71,13 @@ public function downloadXml(Request $request){
                 ]);
                return Redirect('/chave');
             }
-
            	$document = new DOMDocument('1.0', 'utf-8');
             libxml_use_internal_errors(true);
+            $html = preg_replace('/[\f\n\t\rb]+/', '', $html);
             $document->loadHTML($html);
             $document->formatOutput = true;
             $document->preserveWhiteSpace = false;
             curl_close($ch);
-<<<<<<< HEAD:app/Http/Controllers/CaptchaController_.php
-            
-            $conteudo = preg_replace('/[\f\n\t\rb]+/', '', $html);
-           
-            preg_match('~<table>.*?(<tr>.*?(<td>(.*?)</td>).*?</tr>).*?</table>~', $conteudo, $matches);
-            dd($matches);
-            $coluna1 = $matches[0];
-            preg_match('/<td align=\'right\'>([\w\d\s]+)<\/td>/', $conteudo, $matches);
-            $coluna2 = $matches[0];
-            echo '<strong>coluna1:</strong> ' . $coluna1 . '<br />' . PHP_EOL;
-            echo '<strong>coluna2:</strong> ' . $coluna2 . '<br />' . PHP_EOL;
-                
-               $resultado = "";
-               $url = 'resultado';
-=======
-
            
             $html = $document->getElementsByTagName('table');        
             $form = array();
@@ -114,11 +94,9 @@ public function downloadXml(Request $request){
                $resultado = $form;
        
             $url = 'resultado';
->>>>>>> 2980b52750e57f43528d0525f8f6686e129803c5:app/Http/Controllers/CaptchaController.php
     	       return view('xml.index', compact('url', 'resultado'));
        
 }
-
     
    public function captcha(){
     	$downloadXml = new DownloadNFeSefaz();
@@ -127,8 +105,6 @@ public function downloadXml(Request $request){
 		// Exibindo em html
 		return($captcha);		
     }
-
-
     public function downloadXML_($captcha, $chave_acesso, $CNPJ, $path_cert, $senha_cert){
 		// Iniciando a classe
 		$downloadXml = new DownloadNFeSefaz();
@@ -136,8 +112,3 @@ public function downloadXml(Request $request){
 		return($xml);
     }
 }
-
-
-
-
-

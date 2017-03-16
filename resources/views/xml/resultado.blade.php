@@ -1,7 +1,6 @@
 <?php
 
 
-//print_r($resultado);
-
+var_dump($resultado);
 
 ?>
