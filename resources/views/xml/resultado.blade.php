@@ -1,7 +1,6 @@
 <?php
-
-
-dd($resultado);
-
+ 
+echo($resultado);
+echo ($numero);
 
 ?>

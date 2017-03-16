@@ -64,7 +64,7 @@ public function downloadXml(Request $request){
             // Result
             $html = curl_exec($ch);
             preg_match('~Dados da NF-e~', $html, $tagTeste); //Verifica se Há resultado
-  		
+
             if (isset($tagTeste[0])) {
                 $tagDownload = $tagTeste[0];
             } else {
@@ -77,29 +77,30 @@ public function downloadXml(Request $request){
             }
 
            	$document = new DOMDocument('1.0', 'utf-8');
+            $document->preserveWhiteSpace = FALSE;
             libxml_use_internal_errors(true);
             $document->loadHTML($html);
-            $document->formatOutput = true;
-            $document->preserveWhiteSpace = false;
+           
             curl_close($ch);
 
-           
-            $html = $document->getElementsByTagName('table');        
-            $form = array();
-            foreach($html as $v){           
-                $tag = $v->nodeName;
-                $val = $v->nodeValue;           
-                foreach($v->attributes as $k => $a){
-                    $form[$tag]['label'] = utf8_decode($val);
-                    $form[$tag][$k] = $a->nodeValue;
+
+            $tabelas = $document->getElementsByTagName('fieldset');
+                $numero = $tabelas->length;
+                $i = 0;
+          
+            while($tabela = $tabelas->item($i++)){
+                $resultado = $document->saveHTML($tabela);
+                echo $resultado;
+                
+                foreach($tabela->attributes as $atributo){
+                    echo $atributo->name.' '.$atributo->value.'<br>'.'Resultado';
                 }
-             
-            }   
-             
-               $resultado = $form;
-       
-            $url = 'resultado';
-    	       return view('xml.index', compact('url', 'resultado'));
+            }
+
+                    
+            
+               $url = 'resultado';
+    	       return view('xml.index', compact('url', 'resultado', 'numero'));
        
 }
 

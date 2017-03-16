@@ -1,4 +1,4 @@
-
+            // Dados Gerais da NFe
            <fieldset>
               <legend>Dados Gerais</legend>
                 <table class="box">
@@ -52,7 +52,20 @@
                 </fieldset>
 
 
-                <fieldset><legend>Emitente</legend><table class="box"><tr><td class="col-5"><label>CNPJ</label><span>06.147.451/0009-90</span></td><td class="col-2"><label>Nome / Raz&#xE3;o Social</label><span>Calamo Distribuidora de Produtos de Beleza S.A</span></td><td class="col-5"><label>Inscri&#xE7;&#xE3;o Estadual</label><span>68016147</span></td><td class="col-10"><label>UF</label><span>BA</span></td></tr></table></fieldset><fieldset><legend>Destinat&#xE1;rio</legend><table class="box"><tr><td class="col-5"><label>CNPJ</label><span>01.872.967/0001-26</span></td><td class="col-2"><label>Nome / Raz&#xE3;o Social</label><span>SERLOC - SERVICOS, LOCACOES E COMERCIO LTDA</span></td><td class="col-5"><label>Inscri&#xE7;&#xE3;o Estadual</label><span>030203368</span></td><td class="col-10"><label>UF</label><span>AP</span></td></tr><tr><td class="col-5"><label>Destino da opera&#xE7;&#xE3;o</label><span></span></td><td class="col-2"><label>Consumidor final</label><span></span></td><td colspan="2" class="col-3"><label>Presen&#xE7;a do Comprador</label><span></span></td></tr></table></fieldset><fieldset><legend>Emiss&#xE3;o</legend><table class="box"><tr><td><label>Processo</label><span>
+                <fieldset>
+                <legend>Emitente</legend>
+                <table class="box">
+                <tr>
+                <td class="col-5">
+                <label>CNPJ</label>
+                <span>06.147.451/0009-90</span>
+                </td>
+                <td class="col-2">
+                <label>Nome / Raz&#xE3;o Social</label>
+                <span>Calamo Distribuidora de Produtos de Beleza S.A</span>
+                </td><td class="col-5"><label>Inscri&#xE7;&#xE3;o Estadual</label><span>68016147</span></td><td class="col-10"><label>UF</label><span>BA</span></td></tr></table></fieldset><fieldset><legend>Destinat&#xE1;rio</legend><table class="box"><tr><td class="col-5"><label>CNPJ</label><span>01.872.967/0001-26</span></td><td class="col-2"><label>Nome / Raz&#xE3;o Social</label><span>SERLOC - SERVICOS, LOCACOES E COMERCIO LTDA</span></td><td class="col-5"><label>Inscri&#xE7;&#xE3;o Estadual</label><span>030203368</span></td><td class="col-10"><label>UF</label><span>AP</span></td></tr><tr><td class="col-5"><label>Destino da opera&#xE7;&#xE3;o</label><span></span></td><td class="col-2"><label>Consumidor final</label><span></span></td><td colspan="2" class="col-3"><label>Presen&#xE7;a do Comprador</label><span></span></td></tr></table>
+                </fieldset>
+                <fieldset><legend>Emiss&#xE3;o</legend><table class="box"><tr><td><label>Processo</label><span>
                           0 - com aplicativo do Contribuinte
                         </span></td><td><label>Vers&#xE3;o do Processo</label><span>1,0</span></td><td><label>
                     Tipo de Emiss&#xE3;o</label><span>1 - Normal</span></td><td><label>Finalidade</label><span>
@@ -749,3 +762,48 @@ DOMDocument {#320 ▼
     """
 }
 
+
+
+
+/home/jrdantas/Code/est/app/Http/Controllers/CaptchaController.php:93:
+object(DOMElement)[324]
+  public 'tagName' => string 'table' (length=5)
+  public 'schemaTypeInfo' => null
+  public 'nodeName' => string 'table' (length=5)
+  public 'nodeValue' => string '1ESTOJO REFIL N/SPA AROMAT F/LOTUS 250ml3,0000PC29,86' (length=53)
+  public 'nodeType' => int 1
+  public 'parentNode' => string '(object value omitted)' (length=22)
+  public 'childNodes' => string '(object value omitted)' (length=22)
+  public 'firstChild' => string '(object value omitted)' (length=22)
+  public 'lastChild' => string '(object value omitted)' (length=22)
+  public 'previousSibling' => string '(object value omitted)' (length=22)
+  public 'nextSibling' => string '(object value omitted)' (length=22)
+  public 'attributes' => string '(object value omitted)' (length=22)
+  public 'ownerDocument' => string '(object value omitted)' (length=22)
+  public 'namespaceURI' => null
+  public 'prefix' => string '' (length=0)
+  public 'localName' => string 'table' (length=5)
+  public 'baseURI' => null
+  public 'textContent' => string '1ESTOJO REFIL N/SPA AROMAT F/LOTUS 250ml3,0000PC29,86' (length=53)
+
+
+/home/jrdantas/Code/est/app/Http/Controllers/CaptchaController.php:93:
+object(DOMElement)[324]
+  public 'tagName' => string 'table' (length=5)
+  public 'schemaTypeInfo' => null
+  public 'nodeName' => string 'table' (length=5)
+  public 'nodeValue' => string '1ESTOJO REFIL N/SPA AROMAT F/LOTUS 250ml3,0000PC29,86' (length=53)
+  public 'nodeType' => int 1
+  public 'parentNode' => string '(object value omitted)' (length=22)
+  public 'childNodes' => string '(object value omitted)' (length=22)
+  public 'firstChild' => string '(object value omitted)' (length=22)
+  public 'lastChild' => string '(object value omitted)' (length=22)
+  public 'previousSibling' => string '(object value omitted)' (length=22)
+  public 'nextSibling' => string '(object value omitted)' (length=22)
+  public 'attributes' => string '(object value omitted)' (length=22)
+  public 'ownerDocument' => string '(object value omitted)' (length=22)
+  public 'namespaceURI' => null
+  public 'prefix' => string '' (length=0)
+  public 'localName' => string 'table' (length=5)
+  public 'baseURI' => null
+  public 'textContent' => string '1ESTOJO REFIL N/SPA AROMAT F/LOTUS 250ml3,0000PC29,86' (length=53)
