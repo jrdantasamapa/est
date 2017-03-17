@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Yangqi\\Htmldom' => array($vendorDir . '/yangqi/htmldom/src'),
     'Prophecy\\' => array($vendorDir . '/phpspec/prophecy/src'),
     'Mockery' => array($vendorDir . '/mockery/mockery/library'),
     'Knp\\Snappy' => array($vendorDir . '/knplabs/knp-snappy/src'),
@@ -14,5 +15,4 @@ return array(
     'Doctrine\\Common\\Inflector\\' => array($vendorDir . '/doctrine/inflector/lib'),
     'Codecourse\\Notify\\' => array($vendorDir . '/codecourse/notify/src'),
     'Anouar\\Fpdf' => array($vendorDir . '/anouar/fpdf/src'),
-    '' => array($vendorDir . '/nfephp-org/nfephp/libs', $vendorDir . '/nfephp-org/nfephp/tests'),
 );

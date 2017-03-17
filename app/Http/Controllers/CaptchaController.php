@@ -6,6 +6,7 @@ use Exception;
 use DOMDocument;
 use DomXPath;
 use Response;
+use Htmldom;
 use DownloadNFeSefaz\DownloadNFeSefaz;
 class CaptchaController extends Controller
 {
@@ -79,33 +80,27 @@ public function downloadXml(Request $request){
             $document->loadHTML($html);
             curl_close($ch);
 
+            
 
 
-            $tabelas = $document->getElementsByTagName('td');
+
+            $tabelas = $document->getElementsByTagName('tr');
                 
-              // $content_node=$document->getElementsByTagName('table');
-              //  print_r($content_node);
-              //  $div_a_class_nodes=getElementsByClass($content_node, 'table', 'td');
-              //  dd($div_a_class_nodes);
                 $numero = $tabelas->length;
                 $i = 0;
-                
-              while($tabela = $tabelas->item($i++)){
-                $resultado = $document->saveHTML($tabela);
-                $document->loadHTML($resultado);
-
-                $spans = $document->getElementsByTagName('span');
-
-                while($span = $spans->item($i++)){
-                    $resultado2 = $document->saveHTML($span);
-                    echo $resultado2;
+                while($tabela = $tabelas->item($i++)){
+                    $resultado = $document->saveHTML($tabela);
+                    $html = new \Htmldom($resultado);
+                                        // Find all images 
+                    foreach($html->find('td') as $element){
+                        echo $element->class . '<br>';
+                    } 
+                           
                 }
-            }
-                          
+
                $url = 'resultado';
-    	       return view('xml.index', compact('url', 'resultado', 'numero'));
-       
-}
+    	       return view('xml.index', compact('url', 'resultado', 'numero','str'));
+    }
     
    public function captcha(){
     	$downloadXml = new DownloadNFeSefaz();
