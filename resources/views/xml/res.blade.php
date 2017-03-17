@@ -1,4 +1,58 @@
 
+<table class="toggle box">
+  <tr class="highlighted">
+    <td class="fixo-prod-serv-numero">
+      <span>2</span>
+    </td>
+    <td class="fixo-prod-serv-descricao">
+      <span>QUASAR FOREVER ENERGY DES COL 125ml</span>
+    </td>
+    <td class="fixo-prod-serv-qtd">
+      <span>1,0000</span>
+    </td>
+    <td class="fixo-prod-serv-uc">
+      <span>PC</span>
+    </td>
+    <td class="fixo-prod-serv-vb">
+      <span>22,09</span>
+    </td>
+  </tr>
+</table>
+
+
+<td class="fixo-prod-serv-numero">
+  <label>Num.</label>
+</td>
+<td class="fixo-prod-serv-descricao">
+  <label>Descrição</label>
+</td>
+<td class="fixo-prod-serv-qtd">
+  <label>Qtd.</label>
+</td>
+<td class="fixo-prod-serv-uc">
+  <label>Unidade Comercial</label>
+</td>
+<td class="fixo-prod-serv-vb">
+  <label>Valor(R$)</label>
+</td>
+<td class="fixo-prod-serv-numero">
+  <span>1</span>
+</td>
+<td class="fixo-prod-serv-descricao">
+  <span>ESTOJO REFIL N/SPA AROMAT F/LOTUS 250ml</span>
+</td>
+<td class="fixo-prod-serv-qtd">
+  <span>3,0000</span>
+</td>
+<td class="fixo-prod-serv-uc">
+  <span>PC</span>
+</td>
+<td class="fixo-prod-serv-vb">
+  <span>29,86</span>
+</td>
+
+
+            // Dados Gerais da NFe
            <fieldset>
               <legend>Dados Gerais</legend>
                 <table class="box">
@@ -52,7 +106,20 @@
                 </fieldset>
 
 
-                <fieldset><legend>Emitente</legend><table class="box"><tr><td class="col-5"><label>CNPJ</label><span>06.147.451/0009-90</span></td><td class="col-2"><label>Nome / Raz&#xE3;o Social</label><span>Calamo Distribuidora de Produtos de Beleza S.A</span></td><td class="col-5"><label>Inscri&#xE7;&#xE3;o Estadual</label><span>68016147</span></td><td class="col-10"><label>UF</label><span>BA</span></td></tr></table></fieldset><fieldset><legend>Destinat&#xE1;rio</legend><table class="box"><tr><td class="col-5"><label>CNPJ</label><span>01.872.967/0001-26</span></td><td class="col-2"><label>Nome / Raz&#xE3;o Social</label><span>SERLOC - SERVICOS, LOCACOES E COMERCIO LTDA</span></td><td class="col-5"><label>Inscri&#xE7;&#xE3;o Estadual</label><span>030203368</span></td><td class="col-10"><label>UF</label><span>AP</span></td></tr><tr><td class="col-5"><label>Destino da opera&#xE7;&#xE3;o</label><span></span></td><td class="col-2"><label>Consumidor final</label><span></span></td><td colspan="2" class="col-3"><label>Presen&#xE7;a do Comprador</label><span></span></td></tr></table></fieldset><fieldset><legend>Emiss&#xE3;o</legend><table class="box"><tr><td><label>Processo</label><span>
+                <fieldset>
+                <legend>Emitente</legend>
+                <table class="box">
+                <tr>
+                <td class="col-5">
+                <label>CNPJ</label>
+                <span>06.147.451/0009-90</span>
+                </td>
+                <td class="col-2">
+                <label>Nome / Raz&#xE3;o Social</label>
+                <span>Calamo Distribuidora de Produtos de Beleza S.A</span>
+                </td><td class="col-5"><label>Inscri&#xE7;&#xE3;o Estadual</label><span>68016147</span></td><td class="col-10"><label>UF</label><span>BA</span></td></tr></table></fieldset><fieldset><legend>Destinat&#xE1;rio</legend><table class="box"><tr><td class="col-5"><label>CNPJ</label><span>01.872.967/0001-26</span></td><td class="col-2"><label>Nome / Raz&#xE3;o Social</label><span>SERLOC - SERVICOS, LOCACOES E COMERCIO LTDA</span></td><td class="col-5"><label>Inscri&#xE7;&#xE3;o Estadual</label><span>030203368</span></td><td class="col-10"><label>UF</label><span>AP</span></td></tr><tr><td class="col-5"><label>Destino da opera&#xE7;&#xE3;o</label><span></span></td><td class="col-2"><label>Consumidor final</label><span></span></td><td colspan="2" class="col-3"><label>Presen&#xE7;a do Comprador</label><span></span></td></tr></table>
+                </fieldset>
+                <fieldset><legend>Emiss&#xE3;o</legend><table class="box"><tr><td><label>Processo</label><span>
                           0 - com aplicativo do Contribuinte
                         </span></td><td><label>Vers&#xE3;o do Processo</label><span>1,0</span></td><td><label>
                     Tipo de Emiss&#xE3;o</label><span>1 - Normal</span></td><td><label>Finalidade</label><span>
@@ -749,3 +816,6298 @@ DOMDocument {#320 ▼
     """
 }
 
+
+
+
+/home/jrdantas/Code/est/app/Http/Controllers/CaptchaController.php:93:
+object(DOMElement)[324]
+  public 'tagName' => string 'table' (length=5)
+  public 'schemaTypeInfo' => null
+  public 'nodeName' => string 'table' (length=5)
+  public 'nodeValue' => string '1ESTOJO REFIL N/SPA AROMAT F/LOTUS 250ml3,0000PC29,86' (length=53)
+  public 'nodeType' => int 1
+  public 'parentNode' => string '(object value omitted)' (length=22)
+  public 'childNodes' => string '(object value omitted)' (length=22)
+  public 'firstChild' => string '(object value omitted)' (length=22)
+  public 'lastChild' => string '(object value omitted)' (length=22)
+  public 'previousSibling' => string '(object value omitted)' (length=22)
+  public 'nextSibling' => string '(object value omitted)' (length=22)
+  public 'attributes' => string '(object value omitted)' (length=22)
+  public 'ownerDocument' => string '(object value omitted)' (length=22)
+  public 'namespaceURI' => null
+  public 'prefix' => string '' (length=0)
+  public 'localName' => string 'table' (length=5)
+  public 'baseURI' => null
+  public 'textContent' => string '1ESTOJO REFIL N/SPA AROMAT F/LOTUS 250ml3,0000PC29,86' (length=53)
+
+
+/home/jrdantas/Code/est/app/Http/Controllers/CaptchaController.php:93:
+object(DOMElement)[324]
+  public 'tagName' => string 'table' (length=5)
+  public 'schemaTypeInfo' => null
+  public 'nodeName' => string 'table' (length=5)
+  public 'nodeValue' => string '1ESTOJO REFIL N/SPA AROMAT F/LOTUS 250ml3,0000PC29,86' (length=53)
+  public 'nodeType' => int 1
+  public 'parentNode' => string '(object value omitted)' (length=22)
+  public 'childNodes' => string '(object value omitted)' (length=22)
+  public 'firstChild' => string '(object value omitted)' (length=22)
+  public 'lastChild' => string '(object value omitted)' (length=22)
+  public 'previousSibling' => string '(object value omitted)' (length=22)
+  public 'nextSibling' => string '(object value omitted)' (length=22)
+  public 'attributes' => string '(object value omitted)' (length=22)
+  public 'ownerDocument' => string '(object value omitted)' (length=22)
+  public 'namespaceURI' => null
+  public 'prefix' => string '' (length=0)
+  public 'localName' => string 'table' (length=5)
+  public 'baseURI' => null
+  public 'textContent' => string '1ESTOJO REFIL N/SPA AROMAT F/LOTUS 250ml3,0000PC29,86' (length=53)
+
+
+  [
+    {
+        "Orgão Recepção do Evento91 -": "                AMBIENTE NACIONAL"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Ambiente1 - Produção"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Versão1.00"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Chave de Acesso29141206147451000990550010000954061265620015"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Id do EventoID9909002914120614745100099055001000095406126562001513"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Autor Evento (CNPJ / CPF)04.407.029/0001-43"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Data Evento08/01/2015 "
+    },
+    {
+        "Orgão Recepção do Evento91 -": "        às"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "      07:05:02-04:00"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tipo de Evento990900 - Vistoria SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Sequencial do Evento13"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição do EventoVistoria SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Versão1.00"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Número do PIN-e211913014"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Data Vistoria08/01/2015 "
+    },
+    {
+        "Orgão Recepção do Evento91 -": "        às"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "      07:05:02-04:00"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Localidade VistoriaMACAPA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Posto VistoriaCANAL VERMELHO SANTANA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "HistóricoSEM REGISTRO DE OCORRENCIA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Mensagem de Autorização135 -"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                Evento registrado e vinculado a NF-e"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Protocolo891150335894584"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Data/Hora Autorização24/05/2015 "
+    },
+    {
+        "Orgão Recepção do Evento91 -": "        às"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "      01:17:54-03:00"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Orgão Recepção do Evento91 -"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                AMBIENTE NACIONAL"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Ambiente1 - Produção"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Versão1.00"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Chave de Acesso29141206147451000990550010000954061265620015"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Id do EventoID9909102914120614745100099055001000095406126562001503"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Autor Evento (CNPJ / CPF)04.407.029/0001-43"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Data Evento29/04/2015 "
+    },
+    {
+        "Orgão Recepção do Evento91 -": "        às"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "      00:00:00-04:00"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tipo de Evento990910 - Internalização SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "              "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Sequencial do Evento3"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição do EventoConfirmacao de Internalizacao da Mercadoria na SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Versão1.00"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Número do PIN-e211913014"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Data Vistoria29/04/2015 "
+    },
+    {
+        "Orgão Recepção do Evento91 -": "        às"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "      00:00:00-04:00"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Localidade VistoriaMANAUS"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "PostoSUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "HistóricoSEM REGISTRO DE OCORRENCIA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Mensagem de Autorização135 -"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                Evento registrado e vinculado a NF-e"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Protocolo891150344402602"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Data/Hora Autorização26/05/2015 "
+    },
+    {
+        "Orgão Recepção do Evento91 -": "        às"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "      23:20:08-03:00"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Produto20361"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código NCM33074900"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código CEST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código EX da TIPI"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CFOP6110"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Outras Despesas Acessórias1"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor do Desconto3"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor Total do Frete"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor do Seguro"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                          Indicador de Composição do Valor Total da NF-e"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                        "
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                              1 - O valor do item (vProd) compõe o valor total da NF-e (vProd)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                            "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código EAN Comercial7891033203611"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Unidade ComercialPC"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Quantidade Comercial3"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código EAN Tributável"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Unidade TributávelPC"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Quantidade Tributável3"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor unitário de comercialização9"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor unitário de tributação9"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Número do pedido de compra0000191722"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Item do pedido de compra"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor Aproximado dos Tributos"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Número da FCIAF565706-EBE2-4FDB-8E83-37B79FA73CD1"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "ICMS Normal e ST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria5 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração3"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Imposto Sobre Produtos Industrializados"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria5 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração3"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria5 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração3"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "PIS"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "COFINS"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Informações adicionais do produto"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria5 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração3"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria5 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração3"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Produto21490"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código NCM33072010"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código CEST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código EX da TIPI"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CFOP6110"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Outras Despesas Acessórias0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor do Desconto2"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor Total do Frete"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor do Seguro"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                          Indicador de Composição do Valor Total da NF-e"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                        "
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                              1 - O valor do item (vProd) compõe o valor total da NF-e (vProd)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                            "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código EAN Comercial7891033214907"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Unidade ComercialPC"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Quantidade Comercial1"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código EAN Tributável"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Unidade TributávelPC"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Quantidade Tributável1"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor unitário de comercialização22"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor unitário de tributação22"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Número do pedido de compra0000191722"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Item do pedido de compra"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor Aproximado dos Tributos"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Número da FCI"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "ICMS Normal e ST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria0 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração2"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Imposto Sobre Produtos Industrializados"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria0 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração2"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria0 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração2"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "PIS"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "COFINS"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Informações adicionais do produto"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria0 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração2"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria0 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração2"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Produto22092"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código NCM33043000"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código CEST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código EX da TIPI"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CFOP6110"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Outras Despesas Acessórias0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor do Desconto0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor Total do Frete"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor do Seguro"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                          Indicador de Composição do Valor Total da NF-e"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                        "
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                              1 - O valor do item (vProd) compõe o valor total da NF-e (vProd)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                            "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código EAN Comercial7891033220922"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Unidade ComercialPC"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Quantidade Comercial4"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código EAN Tributável"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Unidade TributávelPC"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Quantidade Tributável4"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor unitário de comercialização2"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor unitário de tributação2"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Número do pedido de compra0000191722"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Item do pedido de compra"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor Aproximado dos Tributos"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Número da FCI69E20B3A-CBED-416F-962D-C2DCCED7332C"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "ICMS Normal e ST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria3 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Imposto Sobre Produtos Industrializados"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria3 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria3 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "PIS"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "COFINS"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Informações adicionais do produto"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria3 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria3 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Produto25037"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código NCM33072010"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código CEST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código EX da TIPI"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CFOP6110"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Outras Despesas Acessórias1"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor do Desconto3"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor Total do Frete"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor do Seguro"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                          Indicador de Composição do Valor Total da NF-e"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                        "
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                              1 - O valor do item (vProd) compõe o valor total da NF-e (vProd)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                            "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código EAN Comercial7891033250370"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Unidade ComercialPC"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Quantidade Comercial3"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código EAN Tributável"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Unidade TributávelPC"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Quantidade Tributável3"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor unitário de comercialização9"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor unitário de tributação9"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Número do pedido de compra0000191722"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Item do pedido de compra"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor Aproximado dos Tributos"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Número da FCI"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "ICMS Normal e ST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria0 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração3"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Imposto Sobre Produtos Industrializados"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria0 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração3"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria0 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração3"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "PIS"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "COFINS"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Informações adicionais do produto"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria0 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração3"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria0 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração3"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Produto25037"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código NCM33072010"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código CEST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código EX da TIPI"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CFOP6110"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Outras Despesas Acessórias0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor do Desconto1"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor Total do Frete"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor do Seguro"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                          Indicador de Composição do Valor Total da NF-e"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                        "
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                              1 - O valor do item (vProd) compõe o valor total da NF-e (vProd)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                            "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código EAN Comercial7891033250370"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Unidade ComercialPC"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Quantidade Comercial1"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código EAN Tributável"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Unidade TributávelPC"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Quantidade Tributável1"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor unitário de comercialização9"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor unitário de tributação9"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Número do pedido de compra0000191722"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Item do pedido de compra"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor Aproximado dos Tributos"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Número da FCI"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "ICMS Normal e ST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria0 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração1"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Imposto Sobre Produtos Industrializados"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria0 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração1"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria0 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração1"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "PIS"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "COFINS"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Informações adicionais do produto"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria0 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração1"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria0 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração1"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Produto25037"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código NCM33072010"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código CEST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código EX da TIPI"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CFOP6110"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Outras Despesas Acessórias1"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor do Desconto4"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor Total do Frete"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor do Seguro"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                          Indicador de Composição do Valor Total da NF-e"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                        "
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                              1 - O valor do item (vProd) compõe o valor total da NF-e (vProd)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                            "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código EAN Comercial7891033250370"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Unidade ComercialPC"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Quantidade Comercial4"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código EAN Tributável"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Unidade TributávelPC"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Quantidade Tributável4"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor unitário de comercialização9"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor unitário de tributação9"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Número do pedido de compra0000191722"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Item do pedido de compra"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor Aproximado dos Tributos"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Número da FCI"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "ICMS Normal e ST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria0 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração4"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Imposto Sobre Produtos Industrializados"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria0 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração4"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria0 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração4"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "PIS"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "COFINS"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Informações adicionais do produto"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria0 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração4"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Origem da Mercadoria0 - Nacional"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Tributação do ICMS40 - Isenta"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor ICMS desoneração4"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Motivo da desoneração do ICMS7 - SUFRAMA"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Classe de Enquadramento"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código de Enquadramento999"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Código do Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CNPJ do Produtor"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd. Selo"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                            99 - Outras saídas"
+    },
+    {
+        "Orgão Recepção do Evento91 -": "                                          "
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Qtd Total Unidade Padrão"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor por Unidade"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Valor IPI0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Base de Cálculo0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Alíquota0"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "CST06 - Operação Tributável (alíquota zero)"
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": ""
+    },
+    {
+        "Orgão Recepção do Evento91 -": "Descrição."
+    }
+]

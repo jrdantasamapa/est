@@ -6,6 +6,7 @@ use Exception;
 use DOMDocument;
 use DomXPath;
 use Response;
+use Htmldom;
 use DownloadNFeSefaz\DownloadNFeSefaz;
 class CaptchaController extends Controller
 {
@@ -60,7 +61,7 @@ public function downloadXml(Request $request){
             // Result
             $html = curl_exec($ch);
             preg_match('~Dados da NF-e~', $html, $tagTeste); //Verifica se Há resultado
-  		
+
             if (isset($tagTeste[0])) {
                 $tagDownload = $tagTeste[0];
             } else {
@@ -72,31 +73,34 @@ public function downloadXml(Request $request){
                return Redirect('/chave');
             }
            	$document = new DOMDocument('1.0', 'utf-8');
-            libxml_use_internal_errors(true);
-            $html = preg_replace('/[\f\n\t\rb]+/', '', $html);
-            $document->loadHTML($html);
             $document->formatOutput = true;
-            $document->preserveWhiteSpace = false;
+            $document->preserveWhiteSpace = FALSE;
+            libxml_use_internal_errors(true);
+           // $html = preg_replace('/[\f\n\t\rb]+/', '', $html);
+            $document->loadHTML($html);
             curl_close($ch);
-           
-            $html = $document->getElementsByTagName('table');        
-            $form = array();
-            foreach($html as $v){           
-                $tag = $v->nodeName;
-                $val = $v->nodeValue;           
-                foreach($v->attributes as $k => $a){
-                    $form[$tag]['label'] = utf8_decode($val);
-                    $form[$tag][$k] = $a->nodeValue;
+
+            
+
+
+
+            $tabelas = $document->getElementsByTagName('tr');
+                
+                $numero = $tabelas->length;
+                $i = 0;
+                while($tabela = $tabelas->item($i++)){
+                    $resultado = $document->saveHTML($tabela);
+                    $html = new \Htmldom($resultado);
+                                        // Find all images 
+                    foreach($html->find('td') as $element){
+                        echo $element->class . '<br>';
+                    } 
+                           
                 }
-             
-            }   
-             
-               $resultado = $form;
-       
-            $url = 'resultado';
-    	       return view('xml.index', compact('url', 'resultado'));
-       
-}
+
+               $url = 'resultado';
+    	       return view('xml.index', compact('url', 'resultado', 'numero','str'));
+    }
     
    public function captcha(){
     	$downloadXml = new DownloadNFeSefaz();
