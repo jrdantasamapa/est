@@ -233,27 +233,28 @@ class DownloadNFeSefaz {
 
         $document = new DOMDocument();
         $document->loadHTML($html);
-
+     
         $viewstate = $document->getElementById('__VIEWSTATE')->getAttribute('value');
         $stategen = $document->getElementById('__VIEWSTATEGENERATOR')->getAttribute('value');
         $eventValidation = $document->getElementById('__EVENTVALIDATION')->getAttribute('value');
-        $token = $document->getElementById('ctl00_ContentPlaceHolder1_token')->getAttribute('value');
-        $captchaSom = $document->getElementById('ctl00_ContentPlaceHolder1_captchaSom')->getAttribute('value');
+            $token = $document->getElementById('ctl00_ContentPlaceHolder1_token')->getAttribute('value');
+            $captchaSom = $document->getElementById('ctl00_ContentPlaceHolder1_captchaSom')->getAttribute('value');
 
-        preg_match('~<img id=\"ctl00_ContentPlaceHolder1_imgCaptcha\" src=\"(.*)\" ~', $html, $_captcha);
+            preg_match('~<img id=\"ctl00_ContentPlaceHolder1_imgCaptcha\" src=\"(.*)\" ~', $html, $_captcha);
 
-        $_SESSION['viewstate'] = $viewstate;
-        $_SESSION['stategen'] = $stategen;
-        $_SESSION['eventValidation'] = $eventValidation;
-        $_SESSION['token'] = $token;
-        $_SESSION['captchaSom'] = $captchaSom;
+            $_SESSION['viewstate'] = $viewstate;
+            $_SESSION['stategen'] = $stategen;
+            $_SESSION['eventValidation'] = $eventValidation;
+            $_SESSION['token'] = $token;
+            $_SESSION['captchaSom'] = $captchaSom;
 
-        $captcha = $_captcha[1];
+            $captcha = $_captcha[1];
 
-        curl_close($ch);
-        //fclose($verbose);
+            curl_close($ch);
+            //fclose($verbose);
 
-        return $captcha;
+            return $captcha;
+        
     }
 
 }

@@ -8,6 +8,8 @@ use App\Emprestimo;
 
 class EmprestimoController extends Controller
 {
+    
+
     public function index(){
     	$emprestimos = Emprestimo::paginate(10);
     	$url = 'lista';

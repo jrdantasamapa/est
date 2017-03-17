@@ -1,6 +1,8 @@
 <?php
- 
-echo($resultado);
-echo ($numero);
+
+echo $resultado.'resultado'."<br>";
+echo $numero. 'Numero'."<br>";
+
+
 
 ?>
