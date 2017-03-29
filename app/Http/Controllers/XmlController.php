@@ -242,6 +242,14 @@ class XmlController extends Controller
 		}
 	}
 
+	public function XmltoArray()
+	{
+		$xml = simplexml_load_file(public_path('xml.xml'));
+		$infNFe = $xml->NFe->infNFe;
+		dd($xml);
+		
+	}
+
 	public function consultaxml(){
 		$url = 'consultaxml';
         return view('xml.index', compact('url'));

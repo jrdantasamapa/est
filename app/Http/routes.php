@@ -66,6 +66,7 @@ Route::group(array('before' => 'auth'), function(){
 		Route::post('calcularpis', 'XmlController@calcularpis');
 		Route::get('chave', 'CaptchaController@chave');
 		Route::post('xmlchave', 'CaptchaController@downloadXml');
+		Route::get('xmlarray', 'XmlController@XmltoArray');
 		
 });
 

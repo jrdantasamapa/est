@@ -1,0 +1,27 @@
+infNFe{
+		"versao"
+		"Id"
+		}
+ide{
+	"cUF"
+    "cNF"
+    "natOp"
+    "indPag"
+    "mod"
+    "serie"
+    "nNF"
+    "dhEmi"
+    "dhSaiEnt"
+    "tpNF"
+    "idDest"
+    "cMunFG"
+    "tpImp"
+    "tpEmis"
+    "cDV"
+    "tpAmb"
+    "finNFe"
+    "indFinal"
+    "indPres"
+    "procEmi"
+    "verProc"
+}

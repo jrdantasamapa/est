@@ -80,26 +80,98 @@ public function downloadXml(Request $request){
             $document->loadHTML($html);
             curl_close($ch);
 
-            
-
-
-
-            $tabelas = $document->getElementsByTagName('tr');
+          //  Pegando todos os label (titulos)
+            $label = $document->getElementsByTagName('label');
+            $span = $document->getElementsByTagName('span');
+             for ($i = 0; $i < $label->length; $i++) {
+                   $row_label[] = $label->item($i)->nodeValue;
+               }
+            for ($i = 0; $i < $span->length; $i++) {
+                  //$row[$row_label[$i]] = $span->item($i)->nodeValue;
+                 $row_span[] = $span->item($i)->nodeValue;
+               }
+                   
+               var_dump($row_span);
+   
+          // Pegando todos os span (conteudo)
                 
-                $numero = $tabelas->length;
-                $i = 0;
-                while($tabela = $tabelas->item($i++)){
-                    $resultado = $document->saveHTML($tabela);
-                    $html = new \Htmldom($resultado);
-                                        // Find all images 
-                    foreach($html->find('td') as $element){
-                        echo $element->class . '<br>';
-                    } 
+           // $tabelas = $document->getElementsByTagName('table');
+                
+               // $numero = $tabelas->length;
+            //    $i = 0;
+            //    while($tabela = $tabelas->item($i++)){
+            //        $resultado = $document->saveHTML($tabela);
+                //    echo $resultado;
+             //       $html = new \Htmldom($resultado);
+
+                //    foreach($html->find('fieldset') as $label){
+                           // echo $label . '<br>';
+
+                 //       }
+
+                
+             
+               //     foreach($html->find('td') as $element){
+                      //  echo strip_tags($element);
+                     //   echo '<br>';
+                      //  $classe = $element->class;
+                      // if ($element == 'Num.') {
+                       //    echo $element . '<br>';
+                      // }
+                     // if ($classe == 'fixo-prod-serv-descricao') {
+                             // echo $element . '<br>';
+                       // }
+                //     } 
                            
-                }
+           //     }
 
                $url = 'resultado';
-    	       return view('xml.index', compact('url', 'resultado', 'numero','str'));
+    	       return view('xml.index', compact('url', 'resultado'));
+    }
+
+    public function table($document)
+    {   
+                $tables = $document->getElementsByTagName('table');
+                $i = 0;
+                while( $tabela = $tables->item($i++)){
+                  //  $resultado = $document->saveHTML($tabela);
+                    $rows = $tabela->getElementsByTagName('tr');
+                    $cols = $rows->item(0)->getElementsByTagName('td');
+                    $label = $cols->item(0)->getElementsByTagName('label');
+                    var_dump($label);
+                }
+             //   $rows = $tables->item(0)->getElementsByTagName('tr');
+              //  $cols = $rows->item(0)->getElementsByTagName('td');
+              //  $label = $cols->item(0)->getElementsByTagName('label');
+                $span = $cols->item(0)->getElementsByTagName('span');
+                $row_headers = NULL;
+                foreach ($cols as $node) {
+                   // print $node->nodeValue."\n";
+                    $row_headers[] = $node->nodeValue;
+                }
+                 
+                $table = array();
+                //get all rows from the table
+                $rows = $tables->item(0)->getElementsByTagName('tr');
+                foreach ($rows as $row)
+                {
+                    // get each column by tag name
+                    $cols = $row->getElementsByTagName('td');
+                    $row = array();
+                    $i=0;
+                    foreach ($cols as $node) {
+                        # code...
+                        //print $node->nodeValue."\n";
+                        if($row_headers==NULL)
+                            $row[] = $node->nodeValue;
+                        else
+                            $row[$row_headers[$i]] = $node->nodeValue;
+                        $i++;
+                    }
+                    $table[] = $row;
+                }
+                 
+                print_r($table);
     }
     
    public function captcha(){
