@@ -110,6 +110,7 @@ public function downloadXml(Request $request){
                  //       }
 
                 
+<<<<<<< HEAD
              
                //     foreach($html->find('td') as $element){
                       //  echo strip_tags($element);
@@ -122,6 +123,17 @@ public function downloadXml(Request $request){
                              // echo $element . '<br>';
                        // }
                 //     } 
+=======
+                $numero = $tabelas->length;
+                $i = 0;
+                while($tabela = $tabelas->item($i++)){
+                    $resultado = $document->saveHTML($tabela);
+                    $html = new \Htmldom($resultado);
+                                        // Find all images 
+                    foreach($html->find('td') as $element){
+                        echo $element . '<br>';
+                    } 
+>>>>>>> 47a78f01f78aae63e13d13c6256903206b58c506
                            
            //     }
 
