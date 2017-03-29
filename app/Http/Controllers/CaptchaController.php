@@ -93,7 +93,7 @@ public function downloadXml(Request $request){
                     $html = new \Htmldom($resultado);
                                         // Find all images 
                     foreach($html->find('td') as $element){
-                        echo $element->class . '<br>';
+                        echo $element . '<br>';
                     } 
                            
                 }
