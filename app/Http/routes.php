@@ -66,11 +66,11 @@ Route::group(array('before' => 'auth'), function(){
 		Route::post('calcularpis', 'XmlController@calcularpis');
 		Route::get('chave', 'CaptchaController@chave');
 		Route::post('xmlchave', 'CaptchaController@downloadXml');
-<<<<<<< HEAD
+
 		Route::get('xmlarray', 'XmlController@XmltoArray');
-=======
+
 		Route::get('noticia', 'NoticiaController@noticias');
->>>>>>> 47a78f01f78aae63e13d13c6256903206b58c506
+
 		
 });
 

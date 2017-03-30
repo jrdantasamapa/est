@@ -81,36 +81,101 @@ public function downloadXml(Request $request){
             curl_close($ch);
 
           //  Pegando todos os label (titulos)
-            $label = $document->getElementsByTagName('label');
-            $span = $document->getElementsByTagName('span');
-             for ($i = 0; $i < $label->length; $i++) {
-                   $row_label[] = $label->item($i)->nodeValue;
-               }
-            for ($i = 0; $i < $span->length; $i++) {
+         //   $label = $document->getElementsByTagName('label');
+         //   $span = $document->getElementsByTagName('span');
+          //   for ($i = 0; $i < $label->length; $i++) {
+          //         $row_label[] = $label->item($i)->nodeValue;
+          //     }
+          //  for ($i = 0; $i < $span->length; $i++) {
                   //$row[$row_label[$i]] = $span->item($i)->nodeValue;
-                 $row_span[] = $span->item($i)->nodeValue;
-               }
+          //       $row_span[] = $span->item($i)->nodeValue;
+          //     }
                    
-               var_dump($row_span);
+            //   var_dump($row_span);
    
           // Pegando todos os span (conteudo)
                 
-           // $tabelas = $document->getElementsByTagName('table');
+                /*Tag do emitente
+                      "CNPJ", ok
+                      "xNome", ok
+                      "xFant", ok
+                      "xLgr",ok
+                      "nro", ok
+                      "xBairro", ok
+                      "cMun", ok
+                      "xMun", ok
+                      "UF", ok
+                      "CEP",ok
+                      "cPais", ok
+                      "xPais", ok
+                      "fone" ok
+                      "IE", ok
+                      "IM", ok
+                      "CNAE", ok
+                      "CRT" ok
+                      */
+
+
+
+            $tabelas = $document->getElementsByTagName('div');
                 
-               // $numero = $tabelas->length;
-            //    $i = 0;
-            //    while($tabela = $tabelas->item($i++)){
-            //        $resultado = $document->saveHTML($tabela);
-                //    echo $resultado;
-             //       $html = new \Htmldom($resultado);
+                $numero = $tabelas->length;
+                $i = 0;
+                while($tabela = $tabelas->item($i++)){
+                   $resultado = $document->saveHTML($tabela);
+                   $html = new \Htmldom($resultado);
+                   $emitente = $html->getElementsByTagName('label');
+                    echo $emitente;
 
-                //    foreach($html->find('fieldset') as $label){
-                           // echo $label . '<br>';
+                   $html = new \Htmldom($resultado);
+                   foreach($html->find('div') as $element){
+                     $classe = $element->id;
+                     if ($classe == 'Emitente') {
+                       // $emitente = $element->getElementsByTagName('label');
+                       // var_dump($emitente);
+                    }
+                    }
 
-                 //       }
+
+                    if ($classe == 'DestRem') {
+                        $destino = $element;
+                    }
+                    if ($classe == 'Totais') {
+                        $totais = $element;
+                    }
+                    if ($classe == 'Transporte') {
+                        $transporte = $element;
+                    }
+                    if ($classe == 'Cobranca') {
+                     $cobranca = $element;
+                    }
+                    if ($classe == 'Inf') {
+                     $inf = $element;
+                    }
+                    
+                    
+                   }
+                   
+                    
+
+                    
+                  // $element = $html->find('div');
+                  //  dd($element);
+                   // $classe = $element->id;
+                  //  if ($classe == 'Emitente') {
+                             // echo $element . '<br>';
+                   //    }
+                    
+                   // print_r($resultado);
+                   // $html = new \Htmldom($resultado);
+
+                  //  foreach($html->find('fieldset') as $label){
+                         //   echo $label . '<br>';
+
+                     //  }
 
                 
-<<<<<<< HEAD
+
              
                //     foreach($html->find('td') as $element){
                       //  echo strip_tags($element);
@@ -123,8 +188,8 @@ public function downloadXml(Request $request){
                              // echo $element . '<br>';
                        // }
                 //     } 
-=======
-                $numero = $tabelas->length;
+
+             /*   $numero = $tabelas->length;
                 $i = 0;
                 while($tabela = $tabelas->item($i++)){
                     $resultado = $document->saveHTML($tabela);
@@ -132,14 +197,14 @@ public function downloadXml(Request $request){
                                         // Find all images 
                     foreach($html->find('td') as $element){
                         echo $element . '<br>';
-                    } 
->>>>>>> 47a78f01f78aae63e13d13c6256903206b58c506
-                           
-           //     }
+                    } */
+
+  
 
                $url = 'resultado';
-    	       return view('xml.index', compact('url', 'resultado'));
-    }
+    	       return view('xml.index', compact('url', 'resultado','emitente','destino', 'totais'. 'cobranca', 'inf', 'transporte' ));
+}
+  
 
     public function table($document)
     {   
