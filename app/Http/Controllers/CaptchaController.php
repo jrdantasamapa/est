@@ -23,7 +23,7 @@ public function chave(){
 }
 public function downloadXml(Request $request){
 		$dados = $request->All(); //dados vindos do formulario
-        $txtCaptcha = $dados['captcha']; // input digita captcha
+    $txtCaptcha = $dados['captcha']; // input digita captcha
 		$chNFe = $dados['chave'];// Chave da NFe
         ini_set('display_errors', 1);
         ini_set('display_startup_errors', 1);
@@ -76,9 +76,24 @@ public function downloadXml(Request $request){
             $document->formatOutput = true;
             $document->preserveWhiteSpace = FALSE;
             libxml_use_internal_errors(true);
-           // $html = preg_replace('/[\f\n\t\rb]+/', '', $html);
             $document->loadHTML($html);
             curl_close($ch);
+          //  $divs = $document->getElementsByTagName('div');
+            $emitentes = $document->getElementById('Emitente');
+            
+            foreach($emitentes->find('Emitente') as $element){
+                  echo $element;
+            }
+           /* $i = 0;
+             while($div = $divs->item($i++)){
+
+                for ($i = 0; $i < $divs->length; $i++) {
+                       $row_label[] = $divs->item($i)->nodeValue;
+                   }
+                   
+                 }
+                 var_dump($row_label);*/
+                    
 
           //  Pegando todos os label (titulos)
          //   $label = $document->getElementsByTagName('label');
@@ -117,27 +132,37 @@ public function downloadXml(Request $request){
 
 
 
-            $tabelas = $document->getElementsByTagName('div');
-                
+            /*    $tabelas = $document->getElementsByTagName('div');
                 $numero = $tabelas->length;
+              //  echo $numero;
                 $i = 0;
+                
                 while($tabela = $tabelas->item($i++)){
                    $resultado = $document->saveHTML($tabela);
                    $html = new \Htmldom($resultado);
-                   $emitente = $html->getElementsByTagName('label');
-                    echo $emitente;
-
-                   $html = new \Htmldom($resultado);
                    foreach($html->find('div') as $element){
-                     $classe = $element->id;
-                     if ($classe == 'Emitente') {
+                        $id = $element->id;
+                        if ($id == 'Emitente') {
+                  //        echo $element .' Volta ';
+                        }
+                   }
+                   }*/
+                  
+
+                   // echo $resultado. "<br>" . 'Termina';
+                 //  $html = new \Htmldom($resultado);
+                 //  $emitente = $html->getElementsByTagName('label');
+                  // $html = new \Htmldom($resultado);
+                 //  foreach($html->find('div') as $element){
+                  //   $classe = $element->id;
+                 //    if ($classe == 'Emitente') {
                        // $emitente = $element->getElementsByTagName('label');
                        // var_dump($emitente);
-                    }
-                    }
+                  //  }
+//                    }
 
 
-                    if ($classe == 'DestRem') {
+               /*     if ($classe == 'DestRem') {
                         $destino = $element;
                     }
                     if ($classe == 'Totais') {
@@ -151,10 +176,9 @@ public function downloadXml(Request $request){
                     }
                     if ($classe == 'Inf') {
                      $inf = $element;
-                    }
+                    }*/
                     
-                    
-                   }
+        
                    
                     
 
@@ -202,7 +226,7 @@ public function downloadXml(Request $request){
   
 
                $url = 'resultado';
-    	       return view('xml.index', compact('url', 'resultado','emitente','destino', 'totais'. 'cobranca', 'inf', 'transporte' ));
+    	       return view('xml.index', compact('url', 'resultado'));
 }
   
 
