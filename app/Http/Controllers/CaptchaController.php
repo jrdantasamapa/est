@@ -78,12 +78,35 @@ public function downloadXml(Request $request){
             libxml_use_internal_errors(true);
             $document->loadHTML($html);
             curl_close($ch);
-          //  $divs = $document->getElementsByTagName('div');
+            /*  $a = $document->getElementsByTagName("div");
+                foreach($a as $element)
+                {
+                   if($element->getAttribute('id') == 'Emitente')
+                    { 
+                      $resultado = $element->node;
+                      echo $resultado . "<br>";
+                    };
+                } */
+
+  
+                  $searchNode = $document->getElementsByTagName( "div" ); 
+                  foreach( $searchNode as $searchNode ) 
+                  { 
+                      $valueID = $searchNode->getAttribute('id'); 
+                      $xmlDate = $searchNode->getElementsByTagName("label"); 
+                      $valueDate = $xmlDate->item(0)->nodeValue; 
+                      $xmlAuthorID = $searchNode->getElementsByTagName("span"); 
+                      $valueAuthorID = $xmlAuthorID->item(0)->nodeValue; 
+                      echo $valueDate - $valueAuthorID; 
+                  } 
+
+
+          /*  $divs = $document->getElementsByTagName('div');
             $emitentes = $document->getElementById('Emitente');
             
             foreach($emitentes->find('Emitente') as $element){
                   echo $element;
-            }
+            } */
            /* $i = 0;
              while($div = $divs->item($i++)){
 
@@ -131,10 +154,11 @@ public function downloadXml(Request $request){
                       */
 
 
-
-            /*    $tabelas = $document->getElementsByTagName('div');
-                $numero = $tabelas->length;
-              //  echo $numero;
+/*
+                $tabelas = $document->getElementsByTagName('div');
+                $div =  $document->getElementById('Emitente');
+                $numero = $div->length;
+                echo $numero;
                 $i = 0;
                 
                 while($tabela = $tabelas->item($i++)){
@@ -143,10 +167,10 @@ public function downloadXml(Request $request){
                    foreach($html->find('div') as $element){
                         $id = $element->id;
                         if ($id == 'Emitente') {
-                  //        echo $element .' Volta ';
+                          echo $element .' Volta ';
                         }
                    }
-                   }*/
+                   } */
                   
 
                    // echo $resultado. "<br>" . 'Termina';

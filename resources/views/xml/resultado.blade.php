@@ -1,5 +1,5 @@
 <dir>
-{{ $resultado }}
+
 </dir>
 
 
