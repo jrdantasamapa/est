@@ -431,7 +431,7 @@ VALUES ('0400200', '24031', 'Tabaco para fumar, mesmo contendo sucedâneos de ta
 INSERT INTO TAB_CEST (CEST, NCM, DESCRICAO)
 VALUES ('0500100', '2523', 'Cimento');
 INSERT INTO TAB_CEST (CEST, NCM, DESCRICAO)
-VALUES ('0600100', '220710', 'Álcool etílico não desnaturado, com um teor alcoólico em volume igual ou superior a 80% vol (álcool etílico anidro combustível e álcool etílico hidratado combustível)');
+VALUES ('0600100', '220710', 'Álcool etílico não desnaturado, com um teor alcoólico em volume igual ou superior a 80 vol (álcool etílico anidro combustível e álcool etílico hidratado combustível)');
 INSERT INTO TAB_CEST (CEST, NCM, DESCRICAO)
 VALUES ('0600200', '27101259', 'Gasolinas, exceto de aviação');
 INSERT INTO TAB_CEST (CEST, NCM, DESCRICAO)
@@ -445,7 +445,7 @@ VALUES ('0600600', '2710192', 'Óleos combustíveis');
 INSERT INTO TAB_CEST (CEST, NCM, DESCRICAO)
 VALUES ('0600700', '2710193', 'Óleos lubrificantes');
 INSERT INTO TAB_CEST (CEST, NCM, DESCRICAO)
-VALUES ('0600800', '2710199', 'Outros óleos de petróleo ou de minerais betuminosos (exceto óleos brutos) e preparações não especificadas nem compreendidas noutras posições, que contenham, como constituintes básicos, 70% ou mais, em peso, de óleos de petróleo ou de minerais betuminosos, exceto os que contenham biodiesel e exceto os resíduos de óleos');
+VALUES ('0600800', '2710199', 'Outros óleos de petróleo ou de minerais betuminosos (exceto óleos brutos) e preparações não especificadas nem compreendidas noutras posições, que contenham, como constituintes básicos, 70 ou mais, em peso, de óleos de petróleo ou de minerais betuminosos, exceto os que contenham biodiesel e exceto os resíduos de óleos');
 INSERT INTO TAB_CEST (CEST, NCM, DESCRICAO)
 VALUES ('0600900', '27109', 'Resíduos de óleos');
 INSERT INTO TAB_CEST (CEST, NCM, DESCRICAO)
@@ -459,11 +459,11 @@ VALUES ('0601300', '27112100', 'Gás Natural');
 INSERT INTO TAB_CEST (CEST, NCM, DESCRICAO)
 VALUES ('0601400', '2713', 'Coque de petróleo e outros resíduos de óleo de petróleo ou de minerais betuminosos');
 INSERT INTO TAB_CEST (CEST, NCM, DESCRICAO)
-VALUES ('0601500', '38260000', 'Biodiesel e suas misturas, que não contenham ou que contenham menos de 70%, em peso, de óleos de petróleo ou de óleos minerais betuminosos');
+VALUES ('0601500', '38260000', 'Biodiesel e suas misturas, que não contenham ou que contenham menos de 70, em peso, de óleos de petróleo ou de óleos minerais betuminosos');
 INSERT INTO TAB_CEST (CEST, NCM, DESCRICAO)
-VALUES ('0601600', '3403', 'Preparações lubrificantes, exceto as contendo, como constituintes de base, 70% ou mais, em peso, de óleos de petróleo ou de minerais betuminosos');
+VALUES ('0601600', '3403', 'Preparações lubrificantes, exceto as contendo, como constituintes de base, 70 ou mais, em peso, de óleos de petróleo ou de minerais betuminosos');
 INSERT INTO TAB_CEST (CEST, NCM, DESCRICAO)
-VALUES ('0601700', '27102000', 'Óleos de petróleo ou de minerais betuminosos (exceto óleos brutos) e preparações não especificadas nem compreendidas noutras posições, que contenham, como constituintes básicos, 70% ou mais, em peso, de óleos de petróleo ou de minerais betuminosos, que contenham biodiesel, exceto os resíduos de óleos');
+VALUES ('0601700', '27102000', 'Óleos de petróleo ou de minerais betuminosos (exceto óleos brutos) e preparações não especificadas nem compreendidas noutras posições, que contenham, como constituintes básicos, 70 ou mais, em peso, de óleos de petróleo ou de minerais betuminosos, que contenham biodiesel, exceto os resíduos de óleos');
 INSERT INTO TAB_CEST (CEST, NCM, DESCRICAO)
 VALUES ('0700100', '27160000', 'Energia elétrica');
 INSERT INTO TAB_CEST (CEST, NCM, DESCRICAO)
@@ -645,7 +645,7 @@ VALUES ('1004400', '7312', 'Fios de ferro ou aço não ligados, não revestidos,
 INSERT INTO TAB_CEST (CEST, NCM, DESCRICAO)
 VALUES ('1004400', '72171090', 'Fios de ferro ou aço não ligados, não revestidos, mesmo polidos; cordas, cabos, tranças (entrançados), lingas e artefatos semelhantes, de ferro ou aço, não isolados para usos elétricos');
 INSERT INTO TAB_CEST (CEST, NCM, DESCRICAO)
-VALUES ('1004500', '72172010', 'Outros fios de ferro ou aço, não ligados, galvanizados com um teor de carbono superior ou igual a 0,6%, em peso');
+VALUES ('1004500', '72172010', 'Outros fios de ferro ou aço, não ligados, galvanizados com um teor de carbono superior ou igual a 0,6, em peso');
 INSERT INTO TAB_CEST (CEST, NCM, DESCRICAO)
 VALUES ('1004501', '72172090', 'Outros fios de ferro ou aço, não ligados, galvanizados');
 INSERT INTO TAB_CEST (CEST, NCM, DESCRICAO)
@@ -2281,67 +2281,67 @@ VALUES ('2806400', '49', 'Artigos infantis');
 COMMIT WORK;
 
 --->pERFUMARIA
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('3301','Óleos essenciais (embalagens de conteúdo igual ou inferior a 500 ml)Alteração Decreto 5487 ̸ 2013','51%','25%','87,24%','77,17%','93,28%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('9615','Pentes, travessas para cabelo e artigos semelhantes; grampos (alfinetes) para cabelo; pinças (pinceguiches), onduladores, bobes (rolos) e artefatos semelhantes para penteados e suas partes, exceto os da posição 8516 da NBM/SH e suas partes','51%','17%','69,19%','60,10%','74,65%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('12119090','Henna (envelope em pó até 200 g)Alteração Decreto 5487 ̸ 2013','51%','17%','69,19%','60,10%','74,65%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('27121000','Vaselina','51%','17%','69,19%','60,10%','74,65%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('28142000','Amoníaco em solução aquosa (amônia)','51%','17%','69,19%','60,10%','74,65%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('28470000','Peróxido de Hidrogênio (água oxigenada - frasco de até 500 ml)Alteração Decreto 5487 ̸ 2013','51%','17%','69,19%','60,10%','74,65%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('29141100','Acetona (frasco em até 30 ml)','51%','17%','69,19%','60,10%','74,65%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('30067000','Lubrificação íntima','51%','17%','69,19%','60,10%','74,65%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33030010','Perfumes (extratos)','51%','25%','87,24%','77,17%','93,28%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33030020','Águas-de-colônia','74%','25%','115,76%','104,16%','122,72%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33041000','Produtos de maquilagem para os lábios','51%','25%','87,24%','77,17%','93,28%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33042010','Sombra, delineador, lápis para sobrancelhas e rímel','51%','25%','87,24%','77,17%','93,28%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33042090','Outros produtos de maquilagem para os olhos','51%','25%','87,24%','77,17%','93,28%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33043000','Preparações para manicuros e pedicuros incluindo removedores de esmalte À base de acetonaAlteração Decreto 5487 ̸ 2013','64%','25%','103,36%','92,43%','109,92%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33049100','Pós, incluídos os compactos, para maquilagem','51%','25%','87,24%','77,17%','93,28%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33049910','Cremes de beleza, cremes nutritivos e loções tônicas','70%','25%','110,80%','99,47%','117,60%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33049990','Outros produtos de beleza ou de maquilagem preparados e preparações para conservação ou cuidados da pele.','28%','25%','58,72%','50,19%','63,84%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33051000','Xampus para o cabelo','31%','*12%','31,00%','31,00%','35,23%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33052000','Preparações para ondulação, alisamento ou permanentes dos cabelos','51%','25%','87,24%','77,17%','93,28%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33053000','Laquês para o cabelo','51%','25%','87,24%','77,17%','93,28%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33059000','Outras preparações capilares','40%','*12%','40,00%','40,00%','44,52%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33059000','Tintura para o cabelo','35%','*12%','35,00%','35,00%','47,27%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33061000','Dentifrícios','33,35%','*12%','33,35%','33,35%','37,65%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33062000','Fios utilizados para limpar os espaços interdentais (fio dental)','41,34%','17%','58,37%','49,85%','63,48%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33069000','Outras preparações para higiene bucal ou dentária','41,34%','17%','58,37%','49,85%','63,48%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33071000','Preparações para barbear, antes, durante ou após','76%','25%','118,24%','106,51%','125,88%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33072010','Desodorantes corporais e antiperspirantes, líquidos','47%','*12%','47,00%','47,00%','51,74%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33072090','Outros desodorantes corporais e antiperspirantes','47%','*12%','47,00%','47,00%','51,74%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33073000','Sais perfumados e outras preparações para banhos','51%','25%','87,24%','77,17%','93,28%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33079000','Outros produtos de perfumaria ou de toucador preparados, Soluções para lentes de contatos ou olhos artificiais','51%','25%','87,24%','77,17%','93,28%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33079000','','51%','25%','87,24%','77,17%','93,28%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('34011190','Sabões de toucador em barras, pedaços ou figuras, moldados','20%','12%','20,00%','20,00%','23,87%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('34011900','Outros sabões, produtos e preparações, em barras, pedaços ou figuras, moldados, inclusive lenços umedecidos','28%','*12%','28,00%','28,00%','32,15%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('34012010','Sabões de toucador sob outras formas','51%','17%','69,19%','60,10%','74,65%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('34013000','Produtos e preparações orgânicos tensoativos para lavagem da pele, na forma de líquido ou de creme, acondicionados para venda a retalho, mesmo contendo sabão','42%','17%','59,11%','50,55%','64,24%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('39233000','Mamadeiras','41,34%','17%','58,37%','49,85%','63,48%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('39241000','Mamadeiras','41,34%','17%','58,37%','49,85%','63,48%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('39249000','Mamadeiras','41,34%','17%','58,37%','49,85%','63,48%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('40149090','Mamadeiras','41,34%','17%','58,37%','49,85%','63,48%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('70102000','Mamadeiras','41,34%','17%','58,37%','49,85%','63,48%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('40149010','Bolsa para gelo ou para água quente','51%','17%','69,19%','60,10%','74,65%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('40149090','Chupetas e bicos para mamadeiras','41,34%','17%','58,37%','49,85%','63,48%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('42021','Malas e maletas de toucador','51%','17%','69,19%','60,10%','74,65%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('48181000','Papel higiênico - folha simples','45%','*12%','45,00%','45,00%','49,68%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('48181000','Papel higiênico - folha dupla e triplaAlteração Decreto 5487 ̸ 2013','44%','*12%','44,00%','44,00%','48,65%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('48182000','Lenços, incluídos os de maquilagem, e toalhas de mão','79%','17%','100,57%','89,78%','107,04%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('48182000','papel toalha de uso institucional do tipo comercializado em rolos igual ou superior a 80 metros e do tipo comercializado em folhas intercaladas','49%','17%','66,95%','57,98%','72,34%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('48183000','Toalhas e guardanapos de mesa','56%','17%','74,80%','65,40%','80,43%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('56011000','Absorventes e tampões higiênicos e fraldas de fibras têxteis','41,34%','17%','58,37%','49,85%','63,48%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('56012190','Hastes flexíveis (uso não-medicinal)','41,34%','17%','58,37%','49,85%','63,48%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('56039290','Sutiã descartável, assemelhados e papel para depilação','51%','17%','69,19%','60,10%','74,65%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('82032090','Pinças para sobrancelhas','51%','17%','69,19%','60,10%','74,65%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('82141000','Espátulas (artigos de cutelaria)','51%','17%','69,19%','60,10%','74,65%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('82142000','Utensílios e sortidos de utensílios de manicuros ou de pedicuros, incluídas as limas para unhas','51%','17%','69,19%','60,10%','75,65%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('90251110','Termômetros, inclusive o digital','51%','17%','69,19%','60,10%','74,65%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('90251110','Termômetros, inclusive o digital','51%','17%','69,19%','60,10%','74,65%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('96032','Escovas e pincéis de barba, escovas para cabelos, para cílios ou para unhas e outras escovas de toucador de pessoas, incluídas as que sejam partes de aparelhos, exceto escovas de dentes','51%','17%','69,19%','60,10%','74,65%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('96032100','Escovas de dentes, incluidas as escovas para dentaduras','33,35%','*12%','33,35%','33,35%','37,65%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('96033000','Pincéis para aplicação de produtos cosméticos','51%','17%','69,19%','60,10%','74,65%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('96050000','Sortidos de viagem, para toucador de pessoas, para costura ou para limpeza de calçado ou de roupas','51%','17%','69,19%','60,10%','74,65%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('96162000','Borlas ou esponjas para pós ou para aplicação de outros cosméticos ou de produtos de toucador','51%','17%','69,19%','60,10%','74,65%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('96190000','Fraldas, Tampões higiênicos, Absorventes higiênicos externos','41,34%','17%','58,37%','49,85%','63,48%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('96190000','','41,34%','17%','58,37%','49,85%','63,48%');
-INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('96190000','','41,34%','17%','58,37%','49,85%','63,48%');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('3301','Óleos essenciais (embalagens de conteúdo igual ou inferior a 500 ml)Alteração Decreto 5487 ̸ 2013','51','25','87,24','77,17','93,28');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('9615','Pentes, travessas para cabelo e artigos semelhantes; grampos (alfinetes) para cabelo; pinças (pinceguiches), onduladores, bobes (rolos) e artefatos semelhantes para penteados e suas partes, exceto os da posição 8516 da NBM/SH e suas partes','51','17','69,19','60,10','74,65');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('12119090','Henna (envelope em pó até 200 g)Alteração Decreto 5487 ̸ 2013','51','17','69,19','60,10','74,65');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('27121000','Vaselina','51','17','69,19','60,10','74,65');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('28142000','Amoníaco em solução aquosa (amônia)','51','17','69,19','60,10','74,65');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('28470000','Peróxido de Hidrogênio (água oxigenada - frasco de até 500 ml)Alteração Decreto 5487 ̸ 2013','51','17','69,19','60,10','74,65');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('29141100','Acetona (frasco em até 30 ml)','51','17','69,19','60,10','74,65');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('30067000','Lubrificação íntima','51','17','69,19','60,10','74,65');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33030010','Perfumes (extratos)','51','25','87,24','77,17','93,28');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33030020','Águas-de-colônia','74','25','115,76','104,16','122,72');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33041000','Produtos de maquilagem para os lábios','51','25','87,24','77,17','93,28');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33042010','Sombra, delineador, lápis para sobrancelhas e rímel','51','25','87,24','77,17','93,28');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33042090','Outros produtos de maquilagem para os olhos','51','25','87,24','77,17','93,28');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33043000','Preparações para manicuros e pedicuros incluindo removedores de esmalte À base de acetonaAlteração Decreto 5487 ̸ 2013','64','25','103,36','92,43','109,92');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33049100','Pós, incluídos os compactos, para maquilagem','51','25','87,24','77,17','93,28');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33049910','Cremes de beleza, cremes nutritivos e loções tônicas','70','25','110,80','99,47','117,60');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33049990','Outros produtos de beleza ou de maquilagem preparados e preparações para conservação ou cuidados da pele.','28','25','58,72','50,19','63,84');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33051000','Xampus para o cabelo','31','*12','31,00','31,00','35,23');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33052000','Preparações para ondulação, alisamento ou permanentes dos cabelos','51','25','87,24','77,17','93,28');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33053000','Laquês para o cabelo','51','25','87,24','77,17','93,28');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33059000','Outras preparações capilares','40','*12','40,00','40,00','44,52');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33059000','Tintura para o cabelo','35','*12','35,00','35,00','47,27');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33061000','Dentifrícios','33,35','*12','33,35','33,35','37,65');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33062000','Fios utilizados para limpar os espaços interdentais (fio dental)','41,34','17','58,37','49,85','63,48');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33069000','Outras preparações para higiene bucal ou dentária','41,34','17','58,37','49,85','63,48');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33071000','Preparações para barbear, antes, durante ou após','76','25','118,24','106,51','125,88');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33072010','Desodorantes corporais e antiperspirantes, líquidos','47','*12','47,00','47,00','51,74');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33072090','Outros desodorantes corporais e antiperspirantes','47','*12','47,00','47,00','51,74');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33073000','Sais perfumados e outras preparações para banhos','51','25','87,24','77,17','93,28');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33079000','Outros produtos de perfumaria ou de toucador preparados, Soluções para lentes de contatos ou olhos artificiais','51','25','87,24','77,17','93,28');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('33079000','','51','25','87,24','77,17','93,28');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('34011190','Sabões de toucador em barras, pedaços ou figuras, moldados','20','12','20,00','20,00','23,87');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('34011900','Outros sabões, produtos e preparações, em barras, pedaços ou figuras, moldados, inclusive lenços umedecidos','28','*12','28,00','28,00','32,15');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('34012010','Sabões de toucador sob outras formas','51','17','69,19','60,10','74,65');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('34013000','Produtos e preparações orgânicos tensoativos para lavagem da pele, na forma de líquido ou de creme, acondicionados para venda a retalho, mesmo contendo sabão','42','17','59,11','50,55','64,24');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('39233000','Mamadeiras','41,34','17','58,37','49,85','63,48');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('39241000','Mamadeiras','41,34','17','58,37','49,85','63,48');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('39249000','Mamadeiras','41,34','17','58,37','49,85','63,48');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('40149090','Mamadeiras','41,34','17','58,37','49,85','63,48');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('70102000','Mamadeiras','41,34','17','58,37','49,85','63,48');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('40149010','Bolsa para gelo ou para água quente','51','17','69,19','60,10','74,65');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('40149090','Chupetas e bicos para mamadeiras','41,34','17','58,37','49,85','63,48');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('42021','Malas e maletas de toucador','51','17','69,19','60,10','74,65');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('48181000','Papel higiênico - folha simples','45','*12','45,00','45,00','49,68');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('48181000','Papel higiênico - folha dupla e triplaAlteração Decreto 5487 ̸ 2013','44','*12','44,00','44,00','48,65');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('48182000','Lenços, incluídos os de maquilagem, e toalhas de mão','79','17','100,57','89,78','107,04');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('48182000','papel toalha de uso institucional do tipo comercializado em rolos igual ou superior a 80 metros e do tipo comercializado em folhas intercaladas','49','17','66,95','57,98','72,34');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('48183000','Toalhas e guardanapos de mesa','56','17','74,80','65,40','80,43');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('56011000','Absorventes e tampões higiênicos e fraldas de fibras têxteis','41,34','17','58,37','49,85','63,48');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('56012190','Hastes flexíveis (uso não-medicinal)','41,34','17','58,37','49,85','63,48');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('56039290','Sutiã descartável, assemelhados e papel para depilação','51','17','69,19','60,10','74,65');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('82032090','Pinças para sobrancelhas','51','17','69,19','60,10','74,65');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('82141000','Espátulas (artigos de cutelaria)','51','17','69,19','60,10','74,65');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('82142000','Utensílios e sortidos de utensílios de manicuros ou de pedicuros, incluídas as limas para unhas','51','17','69,19','60,10','75,65');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('90251110','Termômetros, inclusive o digital','51','17','69,19','60,10','74,65');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('90251110','Termômetros, inclusive o digital','51','17','69,19','60,10','74,65');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('96032','Escovas e pincéis de barba, escovas para cabelos, para cílios ou para unhas e outras escovas de toucador de pessoas, incluídas as que sejam partes de aparelhos, exceto escovas de dentes','51','17','69,19','60,10','74,65');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('96032100','Escovas de dentes, incluidas as escovas para dentaduras','33,35','*12','33,35','33,35','37,65');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('96033000','Pincéis para aplicação de produtos cosméticos','51','17','69,19','60,10','74,65');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('96050000','Sortidos de viagem, para toucador de pessoas, para costura ou para limpeza de calçado ou de roupas','51','17','69,19','60,10','74,65');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('96162000','Borlas ou esponjas para pós ou para aplicação de outros cosméticos ou de produtos de toucador','51','17','69,19','60,10','74,65');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('96190000','Fraldas, Tampões higiênicos, Absorventes higiênicos externos','41,34','17','58,37','49,85','63,48');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('96190000','','41,34','17','58,37','49,85','63,48');
+INSERT INTO mvas ( NCM, DESCRICAO, MVA_OI, AL_INTERNA, AL_7, AL_12, AL_4) VALUES ('96190000','','41,34','17','58,37','49,85','63,48');

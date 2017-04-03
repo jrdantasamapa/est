@@ -7,13 +7,17 @@ use App\Http\Requests;
 use DOMDocument;
 use DomXPath;
 
+
 class StController extends Controller
 {
     public function calculaST(){
 
     }
-    public function achaProduto(){
-    	$document = new DOMDocument();
+    public function achaProduto($produtos, $versao){
+        echo $produtos;
+
+
+    /*	$document = new DOMDocument();
         $document->loadHTMLFile('produtos.html');
         $procura = new DomXPath($document); // instancia o DomXPath
         $item = $procura->query("//*[contains(@class, 'fixo-prod-serv-numero')]");
@@ -28,7 +32,7 @@ class StController extends Controller
 			}
 			
 		}
-        	
+	
         $nitens = $item->length - 1;
        foreach($document->getElementsByTagName('label') as $node)
                     {
@@ -39,22 +43,18 @@ class StController extends Controller
                         $span[] = $document->saveHTML($node);
                     }
            for ($a=0; $a < $nitens; $a++) {
-         //  echo 'Item: '. $a .'<br>'; 
-           	    for ($i=6; $i < $vezes ; $i++)
+           echo 'Item: '. $a .'<br>'; 
+           	    for ($i=5; $i < $vezes ; $i++)
            		{	
            			$numero = $label[$i];
            			$spans = $span[$i];
-           			$array[] = [$numero=>$spans];
+                $array[$a][$i] = [$label[$i] => $span[$i]];
+
            			echo $numero . ' = ' . $spans .'<br>';
- 			    }
- 			    $array[] = [$numero=>$spans];
+ 			        }
+ 			    
 			    echo "======================================".'<br>';
 			}   
-			dd($array);		
 
-      
-        
-    }
-
-
+    } */
 }
