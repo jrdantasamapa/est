@@ -1,4 +1,4 @@
-<div align="right">
+<div align="right" id='menu'>
 <div class="btn-group">
 	@can('menu_cadastros')
 		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-clipboard" aria-hidden="true"></i>&nbsp; Cadastros
@@ -100,6 +100,6 @@
 	@endcan
 </div>
 </div>
-<div class="col-md-12"> <hr style="color: #228B22; background-color: #228B22; height: 2px;"></div>
+<div class="col-md-12" id='menu'> <hr style="color: #228B22; background-color: #228B22; height: 2px;"></div>
 
 

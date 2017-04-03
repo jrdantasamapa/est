@@ -68,6 +68,7 @@ Route::group(array('before' => 'auth'), function(){
 		Route::post('xmlchave', 'CaptchaController@downloadXml');
 
 		Route::get('xmlarray', 'XmlController@XmltoArray');
+		Route::get('prod', 'StController@achaProduto');
 
 		Route::get('noticia', 'NoticiaController@noticias');
 

@@ -633,6 +633,10 @@ $inicio = 0;
 		$newvliquido = number_format(floatval($vliquido), 3, ',', '.');
 		$mva = Ncm::where('NCM', $ncm)->get();
 		$dados = $mva;
+		$subtrib = 0;
+		$cmva = 0;
+		$vmva = 0;
+		$aliint = 0;
 		if ($dados > '0') {
 			foreach ($dados as $dado) {
 				$vmva = $dado->MVA;

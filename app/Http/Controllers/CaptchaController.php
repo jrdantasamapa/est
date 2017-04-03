@@ -78,177 +78,30 @@ public function downloadXml(Request $request){
             libxml_use_internal_errors(true);
             $document->loadHTML($html);
             curl_close($ch);
-            /*  $a = $document->getElementsByTagName("div");
-                foreach($a as $element)
-                {
-                   if($element->getAttribute('id') == 'Emitente')
-                    { 
-                      $resultado = $element->node;
-                      echo $resultado . "<br>";
-                    };
-                } */
 
-  
-                  $searchNode = $document->getElementsByTagName( "div" ); 
-                  foreach( $searchNode as $searchNode ) 
-                  { 
-                      $valueID = $searchNode->getAttribute('id'); 
-                      $xmlDate = $searchNode->getElementsByTagName("label"); 
-                      $valueDate = $xmlDate->item(0)->nodeValue; 
-                      $xmlAuthorID = $searchNode->getElementsByTagName("span"); 
-                      $valueAuthorID = $xmlAuthorID->item(0)->nodeValue; 
-                      echo $valueDate - $valueAuthorID; 
-                  } 
-
-
-          /*  $divs = $document->getElementsByTagName('div');
-            $emitentes = $document->getElementById('Emitente');
-            
-            foreach($emitentes->find('Emitente') as $element){
-                  echo $element;
-            } */
-           /* $i = 0;
-             while($div = $divs->item($i++)){
-
-                for ($i = 0; $i < $divs->length; $i++) {
-                       $row_label[] = $divs->item($i)->nodeValue;
-                   }
-                   
-                 }
-                 var_dump($row_label);*/
-                    
-
-          //  Pegando todos os label (titulos)
-         //   $label = $document->getElementsByTagName('label');
-         //   $span = $document->getElementsByTagName('span');
-          //   for ($i = 0; $i < $label->length; $i++) {
-          //         $row_label[] = $label->item($i)->nodeValue;
-          //     }
-          //  for ($i = 0; $i < $span->length; $i++) {
-                  //$row[$row_label[$i]] = $span->item($i)->nodeValue;
-          //       $row_span[] = $span->item($i)->nodeValue;
-          //     }
-                   
-            //   var_dump($row_span);
-   
-          // Pegando todos os span (conteudo)
+                $class = 'indentacaoConteudo'; // guarda nome da classe numa variavel
+                $p = 'Prod';
+                $e = 'Emitente';
+                $v = "fixo-versao-xml";
+                $procura = new DomXPath($document); // instancia o DomXPath
+                $div = $procura->query("//*[contains(@class, '$class')]"); // Procura passando a variavel
+                $ver = $procura->query("//*[contains(@class, '$v')]"); // Procura passando a variavel
+                $prod = $procura->query("//*[contains(@id, '$p')]"); // Procura passando a variavel
+                $emit = $procura->query("//*[contains(@id, '$e')]"); // Procura passando a variavel
+                $resultado = $document->saveHTML($div->item(1));
+                $produtos = $document->saveHTML($prod->item(0));
+                $emitente = $document->saveHTML($emit->item(0));
+                $versao = $document->saveHTML($ver->item(0));
                 
-                /*Tag do emitente
-                      "CNPJ", ok
-                      "xNome", ok
-                      "xFant", ok
-                      "xLgr",ok
-                      "nro", ok
-                      "xBairro", ok
-                      "cMun", ok
-                      "xMun", ok
-                      "UF", ok
-                      "CEP",ok
-                      "cPais", ok
-                      "xPais", ok
-                      "fone" ok
-                      "IE", ok
-                      "IM", ok
-                      "CNAE", ok
-                      "CRT" ok
-                      */
-
-
-/*
-                $tabelas = $document->getElementsByTagName('div');
-                $div =  $document->getElementById('Emitente');
-                $numero = $div->length;
-                echo $numero;
-                $i = 0;
-                
-                while($tabela = $tabelas->item($i++)){
-                   $resultado = $document->saveHTML($tabela);
-                   $html = new \Htmldom($resultado);
-                   foreach($html->find('div') as $element){
-                        $id = $element->id;
-                        if ($id == 'Emitente') {
-                          echo $element .' Volta ';
-                        }
-                   }
-                   } */
-                  
-
-                   // echo $resultado. "<br>" . 'Termina';
-                 //  $html = new \Htmldom($resultado);
-                 //  $emitente = $html->getElementsByTagName('label');
-                  // $html = new \Htmldom($resultado);
-                 //  foreach($html->find('div') as $element){
-                  //   $classe = $element->id;
-                 //    if ($classe == 'Emitente') {
-                       // $emitente = $element->getElementsByTagName('label');
-                       // var_dump($emitente);
-                  //  }
-//                    }
-
-
-               /*     if ($classe == 'DestRem') {
-                        $destino = $element;
-                    }
-                    if ($classe == 'Totais') {
-                        $totais = $element;
-                    }
-                    if ($classe == 'Transporte') {
-                        $transporte = $element;
-                    }
-                    if ($classe == 'Cobranca') {
-                     $cobranca = $element;
-                    }
-                    if ($classe == 'Inf') {
-                     $inf = $element;
-                    }*/
-                    
-        
-                   
-                    
-
-                    
-                  // $element = $html->find('div');
-                  //  dd($element);
-                   // $classe = $element->id;
-                  //  if ($classe == 'Emitente') {
-                             // echo $element . '<br>';
-                   //    }
-                    
-                   // print_r($resultado);
-                   // $html = new \Htmldom($resultado);
-
-                  //  foreach($html->find('fieldset') as $label){
-                         //   echo $label . '<br>';
-
-                     //  }
-
-                
-
-             
-               //     foreach($html->find('td') as $element){
-                      //  echo strip_tags($element);
-                     //   echo '<br>';
-                      //  $classe = $element->class;
-                      // if ($element == 'Num.') {
-                       //    echo $element . '<br>';
-                      // }
-                     // if ($classe == 'fixo-prod-serv-descricao') {
-                             // echo $element . '<br>';
-                       // }
-                //     } 
-
-             /*   $numero = $tabelas->length;
-                $i = 0;
-                while($tabela = $tabelas->item($i++)){
-                    $resultado = $document->saveHTML($tabela);
-                    $html = new \Htmldom($resultado);
-                                        // Find all images 
-                    foreach($html->find('td') as $element){
-                        echo $element . '<br>';
-                    } */
-
-  
-
+               
+                unlink('produtos.html');
+                fopen('produtos.html','w+');
+                $name = 'produtos.html';
+                $file = fopen($name, 'r+');
+                fwrite($file, $versao);
+                fwrite($file, $produtos);
+                fclose($file); 
+              
                $url = 'resultado';
     	       return view('xml.index', compact('url', 'resultado'));
 }
