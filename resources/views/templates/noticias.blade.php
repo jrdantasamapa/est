@@ -122,12 +122,12 @@
             </div>
             <div class="col-md-3 col-sm-4 col-xs-12" style="background: #FFFFFF">
                 <div class="box-noticia-home noticia-home-noticias">
-                    <a href="/noticias/governo-nao-esta-discutindo-retomada-da-cpmf-diz-ministro" class="img-noticia">
+                    <a href="/noticias/governo-nao-esta-discutindo-retomada-da-cpmf-diz-ministro" target="_blanck" class="img-noticia">
                         <span class="data-tag">27/03</span>
                         <img src="http://www.classecontabil.com.br/images/ir.png" alt="Governo não está discutindo retomada da CPMF, diz ministro" width="220" height="200">
                     </a>
                     <h3>
-                        <a title="titulo" href="/noticias/governo-nao-esta-discutindo-retomada-da-cpmf-diz-ministro">Governo não está discutindo retomada da CPMF, diz ministro</a>
+                        <a title="titulo" href="/noticias/governo-nao-esta-discutindo-retomada-da-cpmf-diz-ministro" target="_blanck">Governo não está discutindo retomada da CPMF, diz ministro</a>
                     </h3>
                     <p>
                         "Ainda estamos estudando quais impostos podem ser elevados, mas a CPMF não é um deles",
