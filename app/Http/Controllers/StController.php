@@ -40,17 +40,20 @@ class StController extends Controller
                     }
            for ($a=0; $a < $nitens; $a++) {
          //  echo 'Item: '. $a .'<br>'; 
-           	    for ($i=6; $i < $vezes ; $i++)
+           	    for ($i=5; $i < $vezes ; $i++)
            		{	
            			$numero = $label[$i];
            			$spans = $span[$i];
-           			$array[] = [$numero=>$spans];
+                $VTP = $span[5];
+           			$array[$i] = [$numero=>$spans];
+                
            			echo $numero . ' = ' . $spans .'<br>';
  			    }
- 			    $array[] = [$numero=>$spans];
+          echo $VTP .'<br>';
 			    echo "======================================".'<br>';
+          dd($array); 
 			}   
-			dd($array);		
+				
 
       
         
