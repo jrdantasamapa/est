@@ -7,14 +7,15 @@ $(document).ready(function(){
 <div align="right">
 	<div class="btn-group">
 	<a href="/" class="btn btn-primary" role="button">Menu Principal</a>
-	<a href="#" class="btn btn-primary" role="button">Gera XML</a>
-	<a href="#" class="btn btn-primary" role="button">Gravar</a>
 	<a href="chave" class="btn btn-primary" role="button">Nova Consulta</a>
 	</div>
 	<div class="col-md-12"> <hr style="color: #228B22; background-color: #228B22; height: 2px;"></div>
 </div>
 <div class="panel panel-success col-md-12">
-	<div class="GeralXslt">
+      <?php
+      	echo($resultado);
+      ?>
+      	<div class="GeralXslt">
 		<h1></h1>
 		<fieldset>
 			<legend>RESULTADO DE CALCULO DE SUBSTITUIÇÃO TRIBUTÁRIA</legend>
@@ -59,6 +60,7 @@ $(document).ready(function(){
 			<td class="fixo-prod-serv-numero">
 				<span>Detalhamento </span>
 			</td>
+		
 		</tr>
 	</table>
 	<table class="toggable box" style="background-color:#ECECEC">
@@ -83,7 +85,5 @@ $(document).ready(function(){
 			</td>
 		</tr>
 	</table>
-      <?php
-      	echo($resultado);
-      ?>
+	<a href="#" class="btn btn-info" role="button">Imprimir</a>
  </div>
