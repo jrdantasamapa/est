@@ -8,6 +8,7 @@ use DomXPath;
 use Response;
 use Htmldom;
 use DownloadNFeSefaz\DownloadNFeSefaz;
+use App\Http\Controllers\StController;
 class CaptchaController extends Controller
 {
 
@@ -93,7 +94,8 @@ public function downloadXml(Request $request){
                 $emitente = $document->saveHTML($emit->item(0));
                 $versao = $document->saveHTML($ver->item(0));
                 
-               
+                $this->achaProduto($produtos, $versao);
+
                 unlink('produtos.html');
                 fopen('produtos.html','w+');
                 $name = 'produtos.html';
