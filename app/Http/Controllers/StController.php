@@ -15,7 +15,6 @@ class StController extends Controller
     }
     
     public function achaProduto($produtos, $item){
-          
           $document = new DOMDocument('1.0', 'utf-8');
           $document->formatOutput = true;
           $document->preserveWhiteSpace = FALSE;
@@ -23,14 +22,19 @@ class StController extends Controller
           $document->loadHTML($produtos);
        		$vezes = 52; //Loop no Html
           $nitens = $item->length - 1;
-   
+
+        
        foreach($document->getElementsByTagName('label') as $node)
                     {
                         $label[] = $document->saveHTML($node);
+                        echo $node->nodeValue;
+
+                        
                     }
   		foreach($document->getElementsByTagName('span') as $node)
                     {
                         $span[] = $document->saveHTML($node);
+                        echo $node->nodeValue; 
                     }
            for ($a=0; $a < $nitens; $a++) {
        //    echo 'Item: '. $a .'<br>'; 
@@ -44,7 +48,7 @@ class StController extends Controller
  			        }
  			  
 			   // echo "======================================".'<br>';
-			}   
+			}  
 
       }
 

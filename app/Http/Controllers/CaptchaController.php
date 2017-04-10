@@ -97,8 +97,8 @@ public function downloadXml(Request $request){
                 $versao = $document->saveHTML($ver->item(0));
                 
                 
-         //       $teste = new StController();
-            //    $teste->achaProduto($produtos, $item);
+                $teste = new StController();
+                $teste->achaProduto($produtos, $item);
 
                 unlink('produtos.html');
                 fopen('produtos.html','w+');
