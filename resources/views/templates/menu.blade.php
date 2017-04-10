@@ -21,7 +21,7 @@
 			<li role="separator" class="divider"></li>
 			@endcan
 			@can('submenu_certificado')
-			<li><a href="certificado"><i class="fa fa-exchange" aria-hidden="true"></i>&nbsp; Instalar Certificado A1</a></li>
+			<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i>&nbsp; Instalar Certificado A1</a></li>
 			<li role="separator" class="divider"></li>
 			@endcan
 		<!--	@can('submenu_import_xml')

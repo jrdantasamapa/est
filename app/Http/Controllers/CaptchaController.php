@@ -8,7 +8,7 @@ use DomXPath;
 use Response;
 use Htmldom;
 use DownloadNFeSefaz\DownloadNFeSefaz;
-use App\Http\Controllers\StController;
+//use App\Http\Controllers\StController;
 class CaptchaController extends Controller
 {
 
@@ -84,17 +84,21 @@ public function downloadXml(Request $request){
                 $p = 'Prod';
                 $e = 'Emitente';
                 $v = "fixo-versao-xml";
+
                 $procura = new DomXPath($document); // instancia o DomXPath
                 $div = $procura->query("//*[contains(@class, '$class')]"); // Procura passando a variavel
                 $ver = $procura->query("//*[contains(@class, '$v')]"); // Procura passando a variavel
                 $prod = $procura->query("//*[contains(@id, '$p')]"); // Procura passando a variavel
                 $emit = $procura->query("//*[contains(@id, '$e')]"); // Procura passando a variavel
+                $item = $procura->query("//*[contains(@class, 'fixo-prod-serv-numero')]");
                 $resultado = $document->saveHTML($div->item(1));
                 $produtos = $document->saveHTML($prod->item(0));
                 $emitente = $document->saveHTML($emit->item(0));
                 $versao = $document->saveHTML($ver->item(0));
                 
-                $this->achaProduto($produtos, $versao);
+                
+         //       $teste = new StController();
+            //    $teste->achaProduto($produtos, $item);
 
                 unlink('produtos.html');
                 fopen('produtos.html','w+');

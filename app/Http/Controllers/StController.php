@@ -13,27 +13,17 @@ class StController extends Controller
     public function calculaST(){
 
     }
-    public function achaProduto($produtos, $versao){
-        echo $produtos;
-
-
-    /*	$document = new DOMDocument();
-        $document->loadHTMLFile('produtos.html');
-        $procura = new DomXPath($document); // instancia o DomXPath
-        $item = $procura->query("//*[contains(@class, 'fixo-prod-serv-numero')]");
-        $v = $procura->query("//*[contains(@class, 'fixo-versao-xml')]");
-        if ($v->length > 0) {
-    		$vs = $v->item(0)->nodeValue;
-    		$pieces = explode("L", $vs);
-    		if ($pieces[1] == 3.10) {
-				$vezes = 46;
-			}elseif($pieces[1] == 2.00){
-				$vezes = 53;
-			}
-			
-		}
-	
-        $nitens = $item->length - 1;
+    
+    public function achaProduto($produtos, $item){
+          
+          $document = new DOMDocument('1.0', 'utf-8');
+          $document->formatOutput = true;
+          $document->preserveWhiteSpace = FALSE;
+          libxml_use_internal_errors(true);
+          $document->loadHTML($produtos);
+       		$vezes = 52; //Loop no Html
+          $nitens = $item->length - 1;
+   
        foreach($document->getElementsByTagName('label') as $node)
                     {
                         $label[] = $document->saveHTML($node);
@@ -44,11 +34,16 @@ class StController extends Controller
                     }
            for ($a=0; $a < $nitens; $a++) {
 <<<<<<< HEAD
+<<<<<<< HEAD
          //  echo 'Item: '. $a .'<br>'; 
 =======
            echo 'Item: '. $a .'<br>'; 
 >>>>>>> 2749fba94ce9089c2b85f814c4dc406aad3cf71f
            	    for ($i=5; $i < $vezes ; $i++)
+=======
+       //    echo 'Item: '. $a .'<br>'; 
+           	    for ($i=4; $i < $vezes ; $i++)
+>>>>>>> 66fa4fa6194176124e4c40d4f5c9cee19fded3eb
            		{	
            			$numero = $label[$i];
            			$spans = $span[$i];
@@ -62,12 +57,17 @@ class StController extends Controller
 =======
                 $array[$a][$i] = [$label[$i] => $span[$i]];
 
-           			echo $numero . ' = ' . $spans .'<br>';
+           	//		echo $numero . ' = ' . $spans .'<br>';
  			        }
+<<<<<<< HEAD
  			    
 >>>>>>> 2749fba94ce9089c2b85f814c4dc406aad3cf71f
 			    echo "======================================".'<br>';
           dd($array); 
+=======
+ 			  
+			   // echo "======================================".'<br>';
+>>>>>>> 66fa4fa6194176124e4c40d4f5c9cee19fded3eb
 			}   
 <<<<<<< HEAD
 				
@@ -79,5 +79,6 @@ class StController extends Controller
 =======
 >>>>>>> 2749fba94ce9089c2b85f814c4dc406aad3cf71f
 
-    } */
+      }
+
 }
