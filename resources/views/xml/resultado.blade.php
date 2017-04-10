@@ -57,33 +57,41 @@ $(document).ready(function(){
 	</div>
 	<table class="toggle box">
 		<tr class="highlighted">
-			<td class="fixo-prod-serv-numero">
-				<span>Detalhamento </span>
-			</td>
-		
-		</tr>
-	</table>
-	<table class="toggable box" style="background-color:#ECECEC">
-		<tr>
-			<td> 
-				<span>Código</span> 
-			</td>
-			<td> 
-				<span>Descrição</span> 
-			</td>
-			<td> 
-				<span>Valor</span> 
-			</td>
-			<td> 
-				<span>MVA</span> 
-			</td>
-			<td> 
-				<span>Credito ICMS</span> 
-			</td>
-			<td> 
-				<span>Débito ICMS</span> 
+			<td>
+				<span>Detalhamento</span>
 			</td>
 		</tr>
 	</table>
+  <table class="toggable box" style="background-color:#ECECEC">
+    <thead>
+      <tr>
+        <th>Nº Item</th>
+        <th>Operação</th>
+        <th>Descrição</th>
+        <th>Valor</th>
+        <th>MVA</th>
+        <th>Cred. ICMS</th>
+        <th>Deb. ICMS</th>
+        <th>Vl. Sub. Trib</th>
+      </tr>
+    </thead>
+    <tbody>
+      @foreach($desc as $descricao)
+      <tr>
+			<td></td>
+			<td></td>
+			<td>
+				{{ $descricao->nodeValue }}
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td> 
+     </tr>
+ 		@endforeach	     
+    </tbody>
+  </table>
+
 	<a href="#" class="btn btn-info" role="button">Imprimir</a>
  </div>
