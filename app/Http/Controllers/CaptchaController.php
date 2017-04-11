@@ -8,23 +8,23 @@ use DomXPath;
 use Response;
 use Htmldom;
 use DownloadNFeSefaz\DownloadNFeSefaz;
-//use App\Http\Controllers\StController;
+
 class CaptchaController extends Controller
 {
 
-     public function __construct()
-    {
+     public function __construct(){
         $this->middleware('auth');
     }
   
-public function chave(){
-	$captcha = $this->captcha();
-	$url = 'chave';
-    return view('xml.index', compact('url', 'captcha'));
-}
-public function downloadXml(Request $request){
+    public function chave(){ //pega o captcha 
+	   $captcha = $this->captcha();
+	   $url = 'chave';
+        return view('xml.index', compact('url', 'captcha'));
+    }
+
+    public function downloadXml(Request $request){
 		$dados = $request->All(); //dados vindos do formulario
-    $txtCaptcha = $dados['captcha']; // input digita captcha
+        $txtCaptcha = $dados['captcha']; // input digita captcha
 		$chNFe = $dados['chave'];// Chave da NFe
         ini_set('display_errors', 1);
         ini_set('display_startup_errors', 1);
@@ -58,7 +58,7 @@ public function downloadXml(Request $request){
             $postfields['hiddenInputToUpdateATBuffer_CommonToolkitScripts'] = '1';
             curl_setopt($ch, CURLOPT_POST, 1);
             curl_setopt($ch, CURLOPT_POSTFIELDS, $postfields);
-            
+           
             // Result
             $html = curl_exec($ch);
             preg_match('~Dados da NF-e~', $html, $tagTeste); //Verifica se Há resultado
@@ -80,6 +80,8 @@ public function downloadXml(Request $request){
             $document->loadHTML($html);
             curl_close($ch);
 
+
+                
                 $procura = new DomXPath($document); // instancia o DomXPath
                 $div = $procura->query("//*[contains(@class, 'indentacaoConteudo')]"); //Div com Relação deProdutos
                 $ver = $procura->query("//*[contains(@class, 'fixo-versao-xml')]"); // Procurando Versão
@@ -90,33 +92,91 @@ public function downloadXml(Request $request){
                 $qtd = $procura->query("//*[contains(@class, 'fixo-prod-serv-qtd')]"); // Qtd Itens
                 $uc = $procura->query("//*[contains(@class, 'fixo-prod-serv-uc')]"); // Unidades do Itens
                 $vb = $procura->query("//*[contains(@class, 'fixo-prod-serv-vb')]");// Valor Bruto do Itens
-                
 
+                $nitem = $item->length;
+                $nitens = $item->length - 1;
+                $vezes = 52; //Loop no Html
+
+
+                foreach($document->getElementsByTagName('label') as $node){
+                    $label[] = $document->saveHTML($node);
+                }
+                foreach($document->getElementsByTagName('span') as $node){
+                    $span[] = $document->saveHTML($node);
+                }
+
+                foreach ($item as $itens) {
+                    $it[] = $itens->nodeValue;
+                }
+                foreach ($desc as $descricao) {
+                    $d[] = $descricao->nodeValue;
+                } 
+                foreach ($qtd as $quantidade) {
+                    $q[] = $quantidade->nodeValue;
+                }
+                foreach ($vb as $valor) {
+                    $v[] = $valor->nodeValue;
+                }
+                foreach ($uc as $unidade) {
+                    $u[] = $unidade->nodeValue;
+                }
+                
+                for ($a=0; $a < $nitem; $a++) {
+                   // echo 'Item: '. $a .'<br>';
+                    for ($i=4; $i < $vezes ; $i++){  
+                        $numero = $label[$a];
+                        $spans = $span[$a];
+                      /*  print_r($label[28].' = '. $span[28] . '<br>');
+                        print_r($label[68].' = '. $span[68] . '<br>');
+                        echo "======================================".'<br>'; 
+                        print_r ($label[0] .' = '. $span[0] . '<br>'); //Versão
+                        print_r ($label[1] .' = '. $span[1] . '<br>'); //Versão
+                        print_r ($label[4] .' = '. $span[4] . '<br>'); //Valor Total da NFe
+                        print_r ($label[28] .' = '. $span[28] . '<br>'); //Tributaçãod o ICMS
+                        print_r ($label[50] .' = '. $span[50] . '<br>'); //Tributaçãod o ICMS
+                        echo $numero . ' = ' . $spans .'<br>';*/
+                        $array[$a][$i] = [$label[$i] => $span[$i]];
+                    }
+                    echo "======================================".'<br>';
+                }
+                 print_r($array);
+                $dados = array('item'=> $it, 'descricao' => $d , 'quantidade'=>$q, 'valor'=>$v, 'unidade'=>$u);
+             
                 $resultado = $document->saveHTML($div->item(1));
-                $produtos = $document->saveHTML($prod->item(0));
-                $pr = simplexml_load_string($produtos);
-                dd($pr);
-         /*       $emitente = $document->saveHTML($emit->item(0));
-                $versao = $document->saveHTML($ver->item(0));
-                $descricao = $document->saveHTML($desc->item(1));
-                $quantidade = $document->saveHTML($qtd->item(1));
-                $unidade = $document->saveHTML($uc->item(1));
-                $valor = $document->saveHTML($vb->item(1));
-                
-                $teste = new StController();
-                $teste->achaProduto($produtos, $item, $desc);
+            //    $produtos = $document->saveHTML($prod->item(0));
+             //   $emitente = $document->saveHTML($emit->item(0));
+              //  $versao = $document->saveHTML($ver->item(0));
+               // $descricao = $document->saveHTML($desc->item(1));
 
-                unlink('produtos.html');
+              //  $quantidade = $document->saveHTML($qtd->item(1));
+              //  $unidade = $document->saveHTML($uc->item(1));
+             //   $valor = $document->saveHTML($vb->item(1));
+                
+            //    $teste = new StController();
+             //   $teste->achaProduto($produtos, $item, $desc);
+
+                
+           /*     unlink('produtos.html');
                 fopen('produtos.html','w+');
                 $name = 'produtos.html';
                 $file = fopen($name, 'r+');
                 fwrite($file, $versao);
                 fwrite($file, $produtos);
                 fclose($file); */
+
+              //  unlink('produtos.html');
+             //   fopen('produtos.html','w+');
+              //  $name = 'produtos.html';
+              //  $file = fopen($name, 'r+');
+               // fwrite($file, $versao);
+              //  fwrite($file, $produtos);
+              //  fclose($file); 
+
               
                $url = 'resultado';
-    	       return view('xml.index', compact('url', 'resultado', 'desc'));
-}
+
+    	       return view('xml.index', compact('url', 'resultado', 'dados', 'nitem'));
+   }
   
 
     public function table($document)

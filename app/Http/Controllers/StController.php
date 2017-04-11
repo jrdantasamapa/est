@@ -33,22 +33,22 @@ class StController extends Controller
 
 
          for ($a=0; $a < $nitens; $a++) {
-          //  echo 'Item: '. $a .'<br>';
-        	    //for ($i=4; $i < $vezes ; $i++){	
+            echo 'Item: '. $a .'<br>';
+        	    or ($i=4; $i < $vezes ; $i++){	
               $numero = $label[$a];
         			$spans = $span[$a];
-           //   print_r($label[28].' = '. $span[28] . '<br>');
-           //   print_r($label[68].' = '. $span[68] . '<br>');
-           //   echo "======================================".'<br>'; 
-           //   $array[$a][$i] = [$label[$i] => $span[$i]];
-           // print_r ($label[0] .' = '. $span[0] . '<br>'); //Versão
-           // print_r ($label[1] .' = '. $span[1] . '<br>'); //Versão
-          //  print_r ($label[4] .' = '. $span[4] . '<br>'); //Valor Total da NFe
-          //  print_r ($label[28] .' = '. $span[28] . '<br>'); //Tributaçãod o ICMS
-          //  print_r ($label[50] .' = '. $span[50] . '<br>'); //Tributaçãod o ICMS
-           		//	echo $numero . ' = ' . $spans .'<br>';
- 			     //  }
-           // echo "======================================".'<br>';
+              print_r($label[28].' = '. $span[28] . '<br>');
+              print_r($label[68].' = '. $span[68] . '<br>');
+              echo "======================================".'<br>'; 
+              $array[$a][$i] = [$label[$i] => $span[$i]];
+            print_r ($label[0] .' = '. $span[0] . '<br>'); //Versão
+            print_r ($label[1] .' = '. $span[1] . '<br>'); //Versão
+            print_r ($label[4] .' = '. $span[4] . '<br>'); //Valor Total da NFe
+            print_r ($label[28] .' = '. $span[28] . '<br>'); //Tributaçãod o ICMS
+            print_r ($label[50] .' = '. $span[50] . '<br>'); //Tributaçãod o ICMS
+           			echo $numero . ' = ' . $spans .'<br>';
+ 			       }
+            echo "======================================".'<br>';
 			    }
 
                
