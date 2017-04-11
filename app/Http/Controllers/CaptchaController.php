@@ -80,7 +80,6 @@ public function downloadXml(Request $request){
             $document->loadHTML($html);
             curl_close($ch);
 
-
                 $procura = new DomXPath($document); // instancia o DomXPath
                 $div = $procura->query("//*[contains(@class, 'indentacaoConteudo')]"); //Div com Relação deProdutos
                 $ver = $procura->query("//*[contains(@class, 'fixo-versao-xml')]"); // Procurando Versão
@@ -95,7 +94,9 @@ public function downloadXml(Request $request){
 
                 $resultado = $document->saveHTML($div->item(1));
                 $produtos = $document->saveHTML($prod->item(0));
-                $emitente = $document->saveHTML($emit->item(0));
+                $pr = simplexml_load_string($produtos);
+                dd($pr);
+         /*       $emitente = $document->saveHTML($emit->item(0));
                 $versao = $document->saveHTML($ver->item(0));
                 $descricao = $document->saveHTML($desc->item(1));
                 $quantidade = $document->saveHTML($qtd->item(1));
@@ -111,7 +112,7 @@ public function downloadXml(Request $request){
                 $file = fopen($name, 'r+');
                 fwrite($file, $versao);
                 fwrite($file, $produtos);
-                fclose($file); 
+                fclose($file); */
               
                $url = 'resultado';
     	       return view('xml.index', compact('url', 'resultado', 'desc'));
