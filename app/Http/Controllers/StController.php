@@ -14,71 +14,43 @@ class StController extends Controller
 
     }
     
-    public function achaProduto($produtos, $item){
-          
+    public function achaProduto($produtos, $item, $desc){
           $document = new DOMDocument('1.0', 'utf-8');
-          $document->formatOutput = true;
-          $document->preserveWhiteSpace = FALSE;
-          libxml_use_internal_errors(true);
+      //    $document->formatOutput = true;
+      //    $document->preserveWhiteSpace = FALSE;
+      //    libxml_use_internal_errors(true);
           $document->loadHTML($produtos);
        		$vezes = 52; //Loop no Html
           $nitens = $item->length - 1;
-   
-       foreach($document->getElementsByTagName('label') as $node)
-                    {
-                        $label[] = $document->saveHTML($node);
-                    }
-  		foreach($document->getElementsByTagName('span') as $node)
-                    {
-                        $span[] = $document->saveHTML($node);
-                    }
-           for ($a=0; $a < $nitens; $a++) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-         //  echo 'Item: '. $a .'<br>'; 
-=======
-           echo 'Item: '. $a .'<br>'; 
->>>>>>> 2749fba94ce9089c2b85f814c4dc406aad3cf71f
-           	    for ($i=5; $i < $vezes ; $i++)
-=======
-       //    echo 'Item: '. $a .'<br>'; 
-           	    for ($i=4; $i < $vezes ; $i++)
->>>>>>> 66fa4fa6194176124e4c40d4f5c9cee19fded3eb
-           		{	
-           			$numero = $label[$i];
-           			$spans = $span[$i];
-<<<<<<< HEAD
-                $VTP = $span[5];
-           			$array[$i] = [$numero=>$spans];
-                
-           			echo $numero . ' = ' . $spans .'<br>';
- 			    }
-          echo $VTP .'<br>';
-=======
-                $array[$a][$i] = [$label[$i] => $span[$i]];
+          foreach($document->getElementsByTagName('label') as $node){
+            $label[] = $document->saveHTML($node);
+                          
+          }
+     //     print_r($label);      
+    		  foreach($document->getElementsByTagName('span') as $node){
+            $span[] = $document->saveHTML($node);
+          }
 
-           	//		echo $numero . ' = ' . $spans .'<br>';
- 			        }
-<<<<<<< HEAD
- 			    
->>>>>>> 2749fba94ce9089c2b85f814c4dc406aad3cf71f
-			    echo "======================================".'<br>';
-          dd($array); 
-=======
- 			  
-			   // echo "======================================".'<br>';
->>>>>>> 66fa4fa6194176124e4c40d4f5c9cee19fded3eb
-			}   
-<<<<<<< HEAD
-				
 
-      
-        
+         for ($a=0; $a < $nitens; $a++) {
+          //  echo 'Item: '. $a .'<br>';
+        	    //for ($i=4; $i < $vezes ; $i++){	
+              $numero = $label[$a];
+        			$spans = $span[$a];
+           //   print_r($label[28].' = '. $span[28] . '<br>');
+           //   print_r($label[68].' = '. $span[68] . '<br>');
+           //   echo "======================================".'<br>'; 
+           //   $array[$a][$i] = [$label[$i] => $span[$i]];
+           // print_r ($label[0] .' = '. $span[0] . '<br>'); //Versão
+           // print_r ($label[1] .' = '. $span[1] . '<br>'); //Versão
+          //  print_r ($label[4] .' = '. $span[4] . '<br>'); //Valor Total da NFe
+          //  print_r ($label[28] .' = '. $span[28] . '<br>'); //Tributaçãod o ICMS
+          //  print_r ($label[50] .' = '. $span[50] . '<br>'); //Tributaçãod o ICMS
+           		//	echo $numero . ' = ' . $spans .'<br>';
+ 			     //  }
+           // echo "======================================".'<br>';
+			    }
+
+               
     }
-
-=======
->>>>>>> 2749fba94ce9089c2b85f814c4dc406aad3cf71f
-
-      }
-
 }

@@ -8,7 +8,7 @@ use DomXPath;
 use Response;
 use Htmldom;
 use DownloadNFeSefaz\DownloadNFeSefaz;
-//use App\Http\Controllers\StController;
+
 class CaptchaController extends Controller
 {
 
@@ -17,14 +17,14 @@ class CaptchaController extends Controller
         $this->middleware('auth');
     }
   
-public function chave(){
+public function chave(){ //pega o captcha 
 	$captcha = $this->captcha();
 	$url = 'chave';
     return view('xml.index', compact('url', 'captcha'));
 }
 public function downloadXml(Request $request){
 		$dados = $request->All(); //dados vindos do formulario
-    $txtCaptcha = $dados['captcha']; // input digita captcha
+        $txtCaptcha = $dados['captcha']; // input digita captcha
 		$chNFe = $dados['chave'];// Chave da NFe
         ini_set('display_errors', 1);
         ini_set('display_startup_errors', 1);
@@ -80,36 +80,73 @@ public function downloadXml(Request $request){
             $document->loadHTML($html);
             curl_close($ch);
 
-                $class = 'indentacaoConteudo'; // guarda nome da classe numa variavel
-                $p = 'Prod';
-                $e = 'Emitente';
-                $v = "fixo-versao-xml";
-
                 $procura = new DomXPath($document); // instancia o DomXPath
-                $div = $procura->query("//*[contains(@class, '$class')]"); // Procura passando a variavel
-                $ver = $procura->query("//*[contains(@class, '$v')]"); // Procura passando a variavel
-                $prod = $procura->query("//*[contains(@id, '$p')]"); // Procura passando a variavel
-                $emit = $procura->query("//*[contains(@id, '$e')]"); // Procura passando a variavel
-                $item = $procura->query("//*[contains(@class, 'fixo-prod-serv-numero')]");
-                $resultado = $document->saveHTML($div->item(1));
-                $produtos = $document->saveHTML($prod->item(0));
-                $emitente = $document->saveHTML($emit->item(0));
-                $versao = $document->saveHTML($ver->item(0));
-                
-                
-         //       $teste = new StController();
-            //    $teste->achaProduto($produtos, $item);
+                $div = $procura->query("//*[contains(@class, 'indentacaoConteudo')]"); //Div com Relação deProdutos
+                $ver = $procura->query("//*[contains(@class, 'fixo-versao-xml')]"); // Procurando Versão
+                $prod = $procura->query("//*[contains(@id, 'Prod')]"); // Procurando Dados por produto
+                $emit = $procura->query("//*[contains(@id, 'Emitente')]"); // Procura dados emitente
+                $item = $procura->query("//*[contains(@class, 'fixo-prod-serv-numero')]"); // Numero de itens
+                $desc = $procura->query("//*[contains(@class, 'fixo-prod-serv-descricao')]"); // Decricao Itens
+                $qtd = $procura->query("//*[contains(@class, 'fixo-prod-serv-qtd')]"); // Qtd Itens
+                $uc = $procura->query("//*[contains(@class, 'fixo-prod-serv-uc')]"); // Unidades do Itens
+                $vb = $procura->query("//*[contains(@class, 'fixo-prod-serv-vb')]");// Valor Bruto do Itens
+                $nitem = $item->length;
+                foreach ($item as $itens) {
+                    $it[] = $itens->nodeValue;
+                }
+                foreach ($desc as $descricao) {
+                    $d[] = $descricao->nodeValue;
+                }
+                foreach ($qtd as $quantidade) {
+                    $q[] = $quantidade->nodeValue;
+                }
+                foreach ($vb as $valor) {
+                    $v[] = $valor->nodeValue;
+                }
+                foreach ($uc as $unidade) {
+                    $u[] = $unidade->nodeValue;
+                }
+                foreach ($prod as $produtos) {
+                         $pd[] = $produtos->nodeValue;
+                         $i = 0;
+                         $n = 7;
+                    for ($a=0; $a < $nitem; $a++) {
+                        $vezes = $n + $i;
+                       for ($i=0; $i < $vezes ; $i++){
+                        $pr[$a] = $pd;
 
-                unlink('produtos.html');
-                fopen('produtos.html','w+');
-                $name = 'produtos.html';
-                $file = fopen($name, 'r+');
-                fwrite($file, $versao);
-                fwrite($file, $produtos);
-                fclose($file); 
+                    }
+                    
+                    }
+
+                }
+                dd($pr);
+        
+                $dados = array('item'=> $it, 'descricao' => $d , 'quantidade'=>$q, 'valor'=>$v, 'unidade'=>$u);
+             
+                $resultado = $document->saveHTML($div->item(1));
+            //    $produtos = $document->saveHTML($prod->item(0));
+             //   $emitente = $document->saveHTML($emit->item(0));
+              //  $versao = $document->saveHTML($ver->item(0));
+               // $descricao = $document->saveHTML($desc->item(1));
+
+              //  $quantidade = $document->saveHTML($qtd->item(1));
+              //  $unidade = $document->saveHTML($uc->item(1));
+             //   $valor = $document->saveHTML($vb->item(1));
+                
+            //    $teste = new StController();
+             //   $teste->achaProduto($produtos, $item, $desc);
+
+              //  unlink('produtos.html');
+             //   fopen('produtos.html','w+');
+              //  $name = 'produtos.html';
+              //  $file = fopen($name, 'r+');
+               // fwrite($file, $versao);
+              //  fwrite($file, $produtos);
+              //  fclose($file); 
               
                $url = 'resultado';
-    	       return view('xml.index', compact('url', 'resultado'));
+    	       return view('xml.index', compact('url', 'resultado', 'dados', 'nitem'));
 }
   
 
