@@ -80,6 +80,10 @@ public function downloadXml(Request $request){
             $document->loadHTML($html);
             curl_close($ch);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3ece211dfb086583ad12ded47d0028d0af9e3885
                 $procura = new DomXPath($document); // instancia o DomXPath
                 $div = $procura->query("//*[contains(@class, 'indentacaoConteudo')]"); //Div com Relação deProdutos
                 $ver = $procura->query("//*[contains(@class, 'fixo-versao-xml')]"); // Procurando Versão
@@ -90,6 +94,7 @@ public function downloadXml(Request $request){
                 $qtd = $procura->query("//*[contains(@class, 'fixo-prod-serv-qtd')]"); // Qtd Itens
                 $uc = $procura->query("//*[contains(@class, 'fixo-prod-serv-uc')]"); // Unidades do Itens
                 $vb = $procura->query("//*[contains(@class, 'fixo-prod-serv-vb')]");// Valor Bruto do Itens
+<<<<<<< HEAD
                 $nitem = $item->length;
                 foreach ($item as $itens) {
                     $it[] = $itens->nodeValue;
@@ -136,6 +141,21 @@ public function downloadXml(Request $request){
                 
             //    $teste = new StController();
              //   $teste->achaProduto($produtos, $item, $desc);
+=======
+                
+
+                $resultado = $document->saveHTML($div->item(1));
+                $produtos = $document->saveHTML($prod->item(0));
+                $emitente = $document->saveHTML($emit->item(0));
+                $versao = $document->saveHTML($ver->item(0));
+                $descricao = $document->saveHTML($desc->item(1));
+                $quantidade = $document->saveHTML($qtd->item(1));
+                $unidade = $document->saveHTML($uc->item(1));
+                $valor = $document->saveHTML($vb->item(1));
+                
+                $teste = new StController();
+                $teste->achaProduto($produtos, $item, $desc);
+>>>>>>> 3ece211dfb086583ad12ded47d0028d0af9e3885
 
               //  unlink('produtos.html');
              //   fopen('produtos.html','w+');
@@ -146,7 +166,11 @@ public function downloadXml(Request $request){
               //  fclose($file); 
               
                $url = 'resultado';
+<<<<<<< HEAD
     	       return view('xml.index', compact('url', 'resultado', 'dados', 'nitem'));
+=======
+    	       return view('xml.index', compact('url', 'resultado', 'desc'));
+>>>>>>> 3ece211dfb086583ad12ded47d0028d0af9e3885
 }
   
 

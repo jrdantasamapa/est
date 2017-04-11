@@ -33,8 +33,8 @@ class StController extends Controller
 
 
          for ($a=0; $a < $nitens; $a++) {
-          //  echo 'Item: '. $a .'<br>';
-        	    //for ($i=4; $i < $vezes ; $i++){	
+            echo 'Item: '. $a .'<br>';
+        	    or ($i=4; $i < $vezes ; $i++){	
               $numero = $label[$a];
         			$spans = $span[$a];
            //   print_r($label[28].' = '. $span[28] . '<br>');
