@@ -69,6 +69,9 @@ $(document).ready(function(){
 				<td>
 					{{ $dados['item'][$i] }}
 				</td>
+				<td>
+					NCM
+				</td>
 				<td align="left">
 					{{ $dados['descricao'][$i] }}
 				</td>
@@ -79,10 +82,16 @@ $(document).ready(function(){
 					{{ $dados['valor'][$i] }}
 				</td>
 				<td>
+					Descontos
+				</td>
+				<td>
 				 	PIS/Cofins
 				</td>
 				<td>
 				 	Tributação
+				</td>
+				<td>
+				 	MVC
 				</td>
 				<td>
 				 	C.ICMS

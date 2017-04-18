@@ -95,9 +95,8 @@ class CaptchaController extends Controller
 
                 $nitem = $item->length;
                 $nitens = $item->length - 1;
-                $vezes = 52; //Loop no Html
-
-
+                $vezes = 200; //Loop no Html
+     
                 foreach($document->getElementsByTagName('label') as $node){
                     $label[] = $document->saveHTML($node);
                 }
@@ -121,25 +120,26 @@ class CaptchaController extends Controller
                     $u[] = $unidade->nodeValue;
                 }
                 
-                for ($a=0; $a < $nitem; $a++) {
-                   // echo 'Item: '. $a .'<br>';
-                    for ($i=4; $i < $vezes ; $i++){  
+                for ($a=135; $a < $vezes; $a++) {
+                    
                         $numero = $label[$a];
                         $spans = $span[$a];
-                      /*  print_r($label[28].' = '. $span[28] . '<br>');
-                        print_r($label[68].' = '. $span[68] . '<br>');
-                        echo "======================================".'<br>'; 
+                        
+                      //  print_r($label[68].' = '. $span[68] . '<br>'); */
+                     /*   echo "======================================".'<br>'; 
                         print_r ($label[0] .' = '. $span[0] . '<br>'); //Versão
                         print_r ($label[1] .' = '. $span[1] . '<br>'); //Versão
                         print_r ($label[4] .' = '. $span[4] . '<br>'); //Valor Total da NFe
                         print_r ($label[28] .' = '. $span[28] . '<br>'); //Tributaçãod o ICMS
                         print_r ($label[50] .' = '. $span[50] . '<br>'); //Tributaçãod o ICMS
                         echo $numero . ' = ' . $spans .'<br>';*/
-                        $array[$a][$i] = [$label[$i] => $span[$i]];
-                    }
-                    echo "======================================".'<br>';
+                    //    $array[$a][$i] = [$label[$i] => $span[$i]];
+                        echo $numero .' = '. $spans . '<br>';
+
+                  //  print_r($label[$a].' = '. $span[$a] . '<br>');
+                   // echo "======================================".'<br>';
                 }
-                 print_r($array);
+               //  print_r($array);
                 $dados = array('item'=> $it, 'descricao' => $d , 'quantidade'=>$q, 'valor'=>$v, 'unidade'=>$u);
              
                 $resultado = $document->saveHTML($div->item(1));
