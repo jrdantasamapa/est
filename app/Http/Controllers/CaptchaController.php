@@ -134,7 +134,7 @@ class CaptchaController extends Controller
                         print_r ($label[50] .' = '. $span[50] . '<br>'); //Tributaçãod o ICMS
                         echo $numero . ' = ' . $spans .'<br>';*/
                     //    $array[$a][$i] = [$label[$i] => $span[$i]];
-                        echo $numero .' = '. $spans . '<br>';
+                      //  echo $numero .' = '. $spans . '<br>';
 
                   //  print_r($label[$a].' = '. $span[$a] . '<br>');
                    // echo "======================================".'<br>';
