@@ -96,10 +96,11 @@ class CaptchaController extends Controller
                 $nitem = $item->length;
                 $nitens = $item->length - 1;
                 $vezes = 200; //Loop no Html
-     
+             
                 foreach($document->getElementsByTagName('label') as $node){
                     $label[] = $document->saveHTML($node);
                 }
+               
                 foreach($document->getElementsByTagName('span') as $node){
                     $span[] = $document->saveHTML($node);
                 }
@@ -119,13 +120,22 @@ class CaptchaController extends Controller
                 foreach ($uc as $unidade) {
                     $u[] = $unidade->nodeValue;
                 }
+
+                foreach ($prod as $produto) {
+                    $p[] = $produto->nodeValue;
+                }
+                dd($span);
+            //    $inicio = 100;
+              //  $loop = 40;
+             //   $inicio = $inicio + $loop;
                 
-                for ($a=135; $a < $vezes; $a++) {
-                    
-                        $numero = $label[$a];
-                        $spans = $span[$a];
+                
+              //  for ($a=0; $a < $vezes; $a++) {
+                  
+                     //   $numero = $label[$a];
+                       // $spans = $span[$a];
                         
-                      //  print_r($label[68].' = '. $span[68] . '<br>'); */
+                       
                      /*   echo "======================================".'<br>'; 
                         print_r ($label[0] .' = '. $span[0] . '<br>'); //Versão
                         print_r ($label[1] .' = '. $span[1] . '<br>'); //Versão
@@ -138,10 +148,15 @@ class CaptchaController extends Controller
 
                   //  print_r($label[$a].' = '. $span[$a] . '<br>');
                    // echo "======================================".'<br>';
-                }
+              //  }
                //  print_r($array);
-                $dados = array('item'=> $it, 'descricao' => $d , 'quantidade'=>$q, 'valor'=>$v, 'unidade'=>$u);
-             
+                $dados = array(
+                                'item'=> $it,
+                                'descricao' => $d,
+                                'quantidade'=>$q,
+                                'valor'=>$v,
+                                'unidade'=>$u
+                                );
                 $resultado = $document->saveHTML($div->item(1));
             //    $produtos = $document->saveHTML($prod->item(0));
              //   $emitente = $document->saveHTML($emit->item(0));
@@ -174,7 +189,6 @@ class CaptchaController extends Controller
 
               
                $url = 'resultado';
-
     	       return view('xml.index', compact('url', 'resultado', 'dados', 'nitem'));
    }
   
