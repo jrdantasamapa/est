@@ -99,7 +99,10 @@ class CaptchaController extends Controller
              
                 foreach($document->getElementsByTagName('label') as $node){
                     $label[] = $document->saveHTML($node);
+                    $pp[] = explode('</label>', $document->saveHTML($node));
                 }
+
+                dd($pp);
                
                 foreach($document->getElementsByTagName('span') as $node){
                     $span[] = $document->saveHTML($node);
@@ -124,7 +127,8 @@ class CaptchaController extends Controller
                 foreach ($prod as $produto) {
                     $p[] = $produto->nodeValue;
                 }
-                dd($span);
+               // print_r($produto->nodeValue);
+            //    dd($span);
             //    $inicio = 100;
               //  $loop = 40;
              //   $inicio = $inicio + $loop;
@@ -178,14 +182,14 @@ class CaptchaController extends Controller
                 fwrite($file, $versao);
                 fwrite($file, $produtos);
                 fclose($file); */
-
-              //  unlink('produtos.html');
-             //   fopen('produtos.html','w+');
-              //  $name = 'produtos.html';
-              //  $file = fopen($name, 'r+');
-               // fwrite($file, $versao);
+                
+                unlink('produtos.html');
+                fopen('produtos.html','w+');
+                $name = 'produtos.html';
+                $file = fopen($name, 'r+');
+                fwrite($file, $prod);
               //  fwrite($file, $produtos);
-              //  fclose($file); 
+                fclose($file); 
 
               
                $url = 'resultado';
