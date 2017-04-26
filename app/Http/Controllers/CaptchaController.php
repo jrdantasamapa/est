@@ -82,6 +82,23 @@ class CaptchaController extends Controller
 
 
                 
+            // String a ser tratada
+             $string = $html; 
+
+            // Expressão regular 
+             $regex  = "#\<table\>\|\<tr\>\[\<td\>(.*)\<\/td\>\]\<\/tr\>\|\<\/table\>#"; 
+
+              // Extrai o conteudo
+              preg_match_all($regex,$string,$retorno,PREG_PATTERN_ORDER);
+
+              // Valor #VALOR#
+              $valor = $retorno[1];
+
+              // Exibi o valor
+              echo $valor;
+
+
+
                 $procura = new DomXPath($document); // instancia o DomXPath
                 $div = $procura->query("//*[contains(@class, 'indentacaoConteudo')]"); //Div com Relação deProdutos
                 $ver = $procura->query("//*[contains(@class, 'fixo-versao-xml')]"); // Procurando Versão
@@ -102,7 +119,7 @@ class CaptchaController extends Controller
                     $pp[] = explode('</label>', $document->saveHTML($node));
                 }
 
-                dd($pp);
+              
                
                 foreach($document->getElementsByTagName('span') as $node){
                     $span[] = $document->saveHTML($node);
@@ -162,7 +179,8 @@ class CaptchaController extends Controller
                                 'unidade'=>$u
                                 );
                 $resultado = $document->saveHTML($div->item(1));
-            //    $produtos = $document->saveHTML($prod->item(0));
+                $produtos = $document->saveHTML($prod->item(0));
+
              //   $emitente = $document->saveHTML($emit->item(0));
               //  $versao = $document->saveHTML($ver->item(0));
                // $descricao = $document->saveHTML($desc->item(1));
@@ -187,8 +205,8 @@ class CaptchaController extends Controller
                 fopen('produtos.html','w+');
                 $name = 'produtos.html';
                 $file = fopen($name, 'r+');
-                fwrite($file, $prod);
-              //  fwrite($file, $produtos);
+            //    fwrite($file, $prod);
+                fwrite($file, $produtos);
                 fclose($file); 
 
               
