@@ -95,7 +95,7 @@ class CaptchaController extends Controller
               $valor = $retorno[1];
 
               // Exibi o valor
-              echo $valor;
+            print_r($valor);
 
 
 
