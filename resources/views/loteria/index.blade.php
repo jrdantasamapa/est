@@ -12,6 +12,8 @@
 	@include('ncm.edit')
 @elseif($url == 'create')
 	@include('ncm.inserir')
+@elseif($url == 'quina')
+    @include('loteria.resultado')    
 @endif
 @endsection
 

@@ -16,12 +16,20 @@ class LoteriaController extends Controller
 
     public function index(){
     	$url = 'quina';
-    	for ($i=1; $i < 71; $i++) { 
-    		$n = $i;
-    		$r = $this->conta($n);
-    		echo $i.'<=>'.$r."<br>";
-     	}
-    	return view('loteria.index', compact('url', 'resultado'));
+    	$n = 1;
+    	$l = 11;
+    	$t = 9;
+    	$res = [];
+    	for ($a=1; $a < $t; $a++) { 
+    		for ($i=$n; $i < $l; $i++) { 
+    			$r = $this->conta($i);
+     			$resultado[$i]=$r;
+     		}
+			$n=$i+1;
+			$l+=10;
+    		var_dump($resultado);
+     }
+       	return view('loteria.index', compact('url', 'resultado'));
     }
 
 
