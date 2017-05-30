@@ -160,9 +160,7 @@ return [
         Anouar\Fpdf\FpdfServiceProvider::class,
         Barryvdh\Snappy\ServiceProvider::class,
         Yangqi\Htmldom\HtmldomServiceProvider::class,
-        Lucasvdh\LaravelWhatsapp\WhatsappServiceProvider::class,
-
-
+       // Lucasvdh\LaravelWhatsapp\WhatsappServiceProvider::class,
     ],
 
     /*
@@ -216,7 +214,7 @@ return [
          'PDF' => Barryvdh\Snappy\Facades\SnappyPdf::class,
         'Image' => Barryvdh\Snappy\Facades\SnappyImage::class,
         'Htmldom' => Yangqi\Htmldom\Htmldom::class,
-        'Whatsapp' => Lucasvdh\LaravelWhatsapp\Facades\Whatsapp::class,
+       // 'Whatsapp' => Lucasvdh\LaravelWhatsapp\Facades\Whatsapp::class,
     ],
 
 ];

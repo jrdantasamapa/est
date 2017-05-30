@@ -16,9 +16,9 @@
         "barryvdh/laravel-snappy": "0.2.x",
         "edigomes/download-nfe-sefaz": "^1.0",
         "yangqi/htmldom": "1.0.*",
-        "lucasvdh/laravelmacros": "dev-master"
-       
+        "nfephp-org/nfephp": "dev-develop"
     },
+
     "require-dev": {
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",

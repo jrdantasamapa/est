@@ -71,6 +71,7 @@ Route::group(array('before' => 'auth'), function(){
 		Route::get('prod', 'StController@achaProduto');
 
 		Route::get('noticia', 'NoticiaController@noticias');
+		Route::get('quina', 'LoteriaController@index');
 
 		
 });
