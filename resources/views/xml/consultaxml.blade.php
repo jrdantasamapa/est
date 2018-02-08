@@ -1,6 +1,6 @@
 <div class="panel panel-success">
     <div class="panel-body">
-          {!! Form::open(['url'=>'calcularxml', 'method'=>'Post', 'files'=>true]) !!}
+          {!! Form::open(['url'=>'pegaVlitem', 'method'=>'Post', 'files'=>true]) !!}
             <h3>Consulta XML - Calculo de ST</h3>
             <div class="form-group col-md-12">
                 <label class="col-md-6 control-label">Selecione o Arquivo Calcular</label>

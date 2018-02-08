@@ -72,6 +72,7 @@ Route::group(array('before' => 'auth'), function(){
 
 		Route::get('noticia', 'NoticiaController@noticias');
 		Route::get('quina', 'LoteriaController@index');
+		Route::post('pegaVlitem', 'XmlController@pegaVlitem');
 
 		
 });

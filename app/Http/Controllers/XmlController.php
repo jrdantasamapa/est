@@ -3,15 +3,22 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Validator;
 use App\Http\Requests;
 use App\Xml;
 use App\Iten;
 use App\Destinatario;
 use App\Emitente;
+use App\PisCofins;
 use Input;
 use Fpdf;
 use App\Ncm;
+use App\TbPisCofins;
+use App\TbIpi;
+use App\TbMva;
+use App\TbIcms;
+
 
 
 class XmlController extends Controller
@@ -393,6 +400,7 @@ Fpdf::SetFont('times', 'B', 8);
 		$vliquido = $vproduto;
 		$newvliquido = number_format(floatval($vliquido), 3, ',', '.');
 		$mva = Ncm::where('NCM', $ncm)->get();
+
 		$dados = $mva;
 		foreach ($mva as $mvas) {
 			$oppis = $mvas->piscofins;
@@ -629,10 +637,14 @@ $inicio = 0;
 		$qtrib = $xml -> NFe -> infNFe -> det[$i] -> prod -> qTrib;
 		$nnfe = $xml -> NFe -> infNFe -> ide -> nNF;
 		$vdesconto = $suframa;
-		$vliquido = $vproduto - $suframa;
-		$newvliquido = number_format(floatval($vliquido), 3, ',', '.');
+		$vliquido = $vproduto;
+		//$vliquido = str_replace (".", "", $vliquido);
+    	//$vdesconto = str_replace (".", "", $vdesconto);
+		$newvliquido = $this->formataReais($vliquido, $vdesconto, "-");
+	//dd($newvliquido);
 		$mva = Ncm::where('NCM', $ncm)->get();
 		$dados = $mva;
+		
 		$subtrib = 0;
 		$cmva = 0;
 		$vmva = 0;
@@ -688,7 +700,7 @@ $inicio = 0;
 		$newvproduto = number_format(floatval($vproduto), 3, ',', '.');
 		$newdebICMA = number_format($debICMA, 3, ',', '.');
 		$newtnfe = number_format(floatval($tnfe), 2, ',', '.');
-		$newbasered = number_format($basered, 3, ',', '.');
+		$newbasered = $basered;
 		$newcreICMS = number_format($creditoICMS, 3, ',', '.');
 		$newbasajst = number_format($basajst, 3, ',', '.');
 		$newst = number_format($st, 3, ',', '.');
@@ -696,7 +708,8 @@ $inicio = 0;
 		$newaliint = number_format($aliint, 2, ',', '.');
 		$newvmva = number_format($vmva, 2, ',', '.');
 			
-
+	if ($newvmva != 0) {
+	
 			//Layuot dos Regsitor
 		Fpdf::SetFont('times', 'B', 8);
 		Fpdf::Cell(190, 6, 'NCM: ' . $ncm . '  -  item n.: ' . $itens . '  -  Produto: ' . $nnfe . ' - ' . $nome, 0, 0, 'L');
@@ -705,7 +718,7 @@ $inicio = 0;
 		Fpdf::Cell(40, 6, 'Valor dos Produtos:', 0, 0, 'L');
 		Fpdf::Cell(20, 6, $newvproduto, 0, 0, 'R');
 		Fpdf::Cell(40, 6, 'Aliquota de Reducao da Base:', 0, 0, 'L');
-		Fpdf::Cell(20, 6, $newsubtrib, 0, 0, 'R');
+		Fpdf::Cell(20, 6, $newsubtrib.'%', 0, 0, 'R');
 		Fpdf::Cell(40, 6, 'Valor do Debito de ICMS:', 0, 0, 'L');
 		Fpdf::Cell(20, 6, $newdebICMA, 0, 0, 'R');
 		Fpdf::Ln(3);
@@ -719,17 +732,17 @@ $inicio = 0;
 		Fpdf::Cell(40, 6, 'Valor Liquido:', 0, 0, 'L');
 		Fpdf::Cell(20, 6, $newvliquido, 0, 0, 'R');
 		Fpdf::Cell(40, 6, 'Aliquota de MVA:', 0, 0, 'L');
-		Fpdf::Cell(20, 6, $newvmva, 0, 0, 'R');
+		Fpdf::Cell(20, 6, $newvmva.'%', 0, 0, 'R');
 		Fpdf::Ln(3);
 		Fpdf::Cell(40, 6, 'Aliquota Interestadual:', 0, 0, 'L');
-		Fpdf::Cell(20, 6, $aliext, 0, 0, 'R');
+		Fpdf::Cell(20, 6, $aliext.'%', 0, 0, 'R');
 		Fpdf::Cell(40, 6, 'Base de Cal. Ajust. MVA:', 0, 0, 'L');
 		Fpdf::Cell(20, 6, $newbasajst, 0, 0, 'R');
 		Fpdf::Ln(3);
 		Fpdf::Cell(40, 6, 'Beneficios de ICMS:', 0, 0, 'L');
 		Fpdf::Cell(20, 6, $vdesconto, 0, 0, 'R');
 		Fpdf::Cell(40, 6, 'Aliquota Interna:', 0, 0, 'L');
-		Fpdf::Cell(20, 6, $newaliint, 0, 0, 'R');
+		Fpdf::Cell(20, 6, $newaliint.'%', 0, 0, 'R');
 		Fpdf::SetFont('times', 'B', 10);
 		Fpdf::Cell(40, 6, 'Valor ICMS de ST :', 0, 0, 'L');
 		Fpdf::Cell(20, 6, $newst, 0, 0, 'R');
@@ -738,6 +751,23 @@ $inicio = 0;
 		Fpdf::Ln(1);
 		Fpdf::SetFont('times', '', 8);
 		$linha_atual++;
+			} elseif($newvmva == 0){
+						//Layuot dos Regsitor
+		Fpdf::SetFont('times', 'B', 8);
+		Fpdf::Cell(190, 6, 'NCM: ' . $ncm . '  -  item n.: ' . $itens . '  -  Produto: ' . $nnfe . ' - ' . $nome, 0, 0, 'L');
+		Fpdf::Ln(3);
+		Fpdf::SetFont('times', 'B', 14);
+		Fpdf::Ln(5);
+		Fpdf::Cell(40, 6, 'NCM NÃO CADASTRADO ou MVA COM VALOR ZERO', 0, 0, 'L');
+		Fpdf::Ln(5);
+		Fpdf::Cell(190, 0.2, '', 1, 1, 'C');
+		Fpdf::Ln(1);
+		Fpdf::SetFont('times', '', 8);
+		$linha_atual++;
+
+
+
+			}
 			
 	//Imprime o N de paginas
 	//Fpdf::SetFont('times', '', 6);
@@ -773,7 +803,300 @@ $inicio = 0;
 
 }
 
+public function formataReais($valor1, $valor2, $operacao)
+{
+    /*     function formataReais ($valor1, $valor2, $operacao)
+     *
+     *     $valor1 = Primeiro valor da operação
+     *     $valor2 = Segundo valor da operação
+     *     $operacao = Tipo de operações possíveis . Pode ser :
+     *     "+" = adição,
+     *     "-" = subtração,
+     *     "*" = multiplicação
+     *
+     */
 
+
+    // Antes de tudo , arrancamos os "," e os "." dos dois valores passados a função . Para isso , podemos usar str_replace :
+    $valor1 = str_replace (",", "", $valor1);
+    $valor1 = str_replace (".", "", $valor1);
+
+    $valor2 = str_replace (",", "", $valor2);
+    $valor2 = str_replace (".", "", $valor2);
+
+
+    // Agora vamos usar um switch para determinar qual o tipo de operação que foi definida :
+    switch ($operacao) {
+        // Adição :
+        case "+":
+            $resultado = $valor1 + $valor2;
+            break;
+
+        // Subtração :
+        case "-":
+            $resultado = $valor1 - $valor2;
+            break;
+
+        // Multiplicação :
+        case "*":
+            $resultado = $valor1 * $valor2;
+            break;
+
+    } // Fim Switch
+
+
+    // Calcula o tamanho do resultado com strlen
+    $len = strlen ($resultado);
+
+
+    // Novamente um switch , dessa vez de acordo com o tamanho do resultado da operação ($len) :
+    // De acordo com o tamanho de $len , realizamos uma ação para dividir o resultado e colocar
+    // as vírgulas e os pontos
+    switch ($len) {
+        // 2 : 0,99 centavos
+        case "2":
+            $retorna = "0,$resultado";
+            break;
+
+        // 3 : 9,99 reais
+        case "3":
+            $d1 = substr("$resultado",0,1);
+            $d2 = substr("$resultado",-2,2);
+            $retorna = "$d1,$d2";
+            break;
+
+        // 4 : 99,99 reais
+        case "4":
+            $d1 = substr("$resultado",0,2);
+            $d2 = substr("$resultado",-2,2);
+            $retorna = "$d1,$d2";
+            break;
+
+        // 5 : 999,99 reais
+        case "5":
+            $d1 = substr("$resultado",0,3);
+            $d2 = substr("$resultado",-2,2);
+            $retorna = "$d1,$d2";
+            break;
+
+        // 6 : 9.999,99 reais
+        case "6":
+            $d1 = substr("$resultado",1,3);
+            $d2 = substr("$resultado",-2,2);
+            $d3 = substr("$resultado",0,1);
+            $retorna = "$d3.$d1,$d2";
+            break;
+
+        // 7 : 99.999,99 reais
+        case "7":
+            $d1 = substr("$resultado",2,3);
+            $d2 = substr("$resultado",-2,2);
+            $d3 = substr("$resultado",0,2);
+            $retorna = "$d3.$d1,$d2";
+            break;
+
+        // 8 : 999.999,99 reais
+        case "8":
+            $d1 = substr("$resultado",3,3);
+            $d2 = substr("$resultado",-2,2);
+            $d3 = substr("$resultado",0,3);
+            $retorna = "$d3.$d1,$d2";
+            break;
+
+    } // Fim Switch
+
+    // Por fim , retorna o resultado já formatado
+    return $retorna;
+} // Fim da function
+
+public function pegaXml(Request $request){
+	$input = Input::file('xml'); // pega o xml do input
+	$nome = "calculoxml.xml"; // nome o xml
+	$this->upload($input, $nome); // faz upload do xml com novo nome
+	$xml = simplexml_load_file(public_path($nome)); // le o xlm
+	return $xml; // retorna o xml
+	echo $xml;
+}
+
+
+
+public function pegaVlitem(Request $request){
+	
+	$input = Input::file('xml'); // pega o xml do input
+	$nome = "calculoxml.xml"; // nome o xml
+	$this->upload($input, $nome); // faz upload do xml com novo nome
+	$xml = simplexml_load_file(public_path($nome)); // le o xlm
+	$itens = count($xml->NFe->infNFe->det); // Conta a quantidade de Itens da NFe
+	$destino = $xml->NFe->infNFe->dest->enderDest->UF;
+	$origem = $xml->NFe->infNFe->emit->enderEmit->UF;
+	for ($i = 0; $i < $itens; $i++) {
+		
+		$det = $xml->NFe->infNFe->det[$i]; //Simplifica as tag's do Xml
+		$valorProduto = $det->prod->vProd; //Valor do Total do Item
+		$cstPis = $det->imposto->PIS->PISNT->CST; //pega o valor do cst do pis
+		$cstCofins = $det->imposto->COFINS->COFINSNT->CST; //pega o valor do cst do cofins
+		$cstIpi = $det->imposto->IPI->IPINT->CST; //pega o valor do cst do ipi
+		$valorSuframa = $det->imposto->ICMS->ICMS40->vICMSDeson; //pega o valor da suframa
+		$ncm = $det->prod->NCM;
+		$cest = $det->prod->CEST;
+		$valorFrete = 0;
+		$valorOutras = 0;
+		$valorDescIncod = 0;
+		$valorPis = $this->calculaPis($cstPis, $valorProduto);
+		$valorCofins = $this->calculaCofins($cstCofins, $valorProduto);
+		$valorIpi = $this->calculaCofins($cstIpi, $valorProduto);
+		$valorMva = $this->calculaMva($ncm, $cest, $origem, $destino);
+		$valorPisCofins = $valorPis + $valorCofins;
+		$valorIFOD = $valorFrete + $valorOutras + $valorIpi + $valorDescIncod;
+		$bc1 = $this->formataReais($valorProduto, $valorPisCofins, "-");
+		$bc2 = $this->formataReais($bc1, $valorSuframa, "-");
+		$bc3 = $this->formataReais($bc2, $valorIFOD, "-");
+		$alicotaInterna = $this->pegaAlicotaInterna($ncm, $cest);
+		$baseCalc = $valorMva * (float)$bc3;
+		$valorSub = $alicotaInterna * $baseCalc;
+		$valorIcms = $this->pegaOrigem($origem, $destino);
+		$valorIcms = ($valorIcms / 100) * $valorProduto;
+		$valorST = $valorSub - $valorIcms;
+		echo "Item" . $i. "<br>";	
+		echo "Total do Produtos: ". $valorProduto . "<br>";
+		echo "Valor PIS:". $valorPis ."<br>";
+		echo "Valor COFINS:". $valorCofins ."<br>";
+		echo "BC1: Total dos Produtos - PIS e Cofins:". $bc1. "<br>";
+		echo "Desconto Area de Liver Comercio:" . $valorSuframa . "<br>";
+		echo "BC2: BC1 - Desconto Area de Livre comercio:". $bc2. "<br>";
+		echo "Valor IPI:". $valorIpi. "<br>";
+		echo "Outra Despesa:" . $valorOutras . "<br>";
+		echo "Outra Frete:" . $valorFrete . "<br>";
+		echo "Desconto Incondicional:" . $valorDescIncod . "<br>";
+		echo "BC3: BC1 + IPI + Outras Despesas + Frete + Desconto Incondicional:". $bc3. "<br>";
+		echo "MVA ajustado:" . $valorMva. " - ". $baseCalc . "<br>";
+		echo "Alicota Interna" . $alicotaInterna. "<br>";
+		echo "Valor Debito ICMS" . $valorSub. "----  Alicota:" . $alicotaInterna . "<br>";
+		echo "Alicota Intereestadula ICMS" . (float)$valorIcms . "<br>";
+		echo "Valro da Substituicao a recolher" . (float)$valorST . "<br>";
+		echo "---------------------------------------------------------". "<br>";
+	}
+
+}
+
+public function calculaPis($cstPis, $valorProduto){
+
+	$consultas = TbPisCofins::where('cst', $cstPis)->get();
+	foreach ($consultas as $consulta) {
+		$pis = $consulta->descricao;
+		$alicota = $consulta->alicota_pis;
+		$valorPis = $this->porcento($alicota, $valorProduto);
+	
+	}
+		return $valorPis;
+	
+	
+}
+public function calculaCofins($cstCofins, $valorProduto){
+
+	$consultas = TbPisCofins::where('cst', $cstCofins)->get();
+	foreach ($consultas as $consulta) {
+		$cofins = $consulta->descricao;
+		$alicota = $consulta->alicota_cofins;
+		$valorCofins = $this->porcento($alicota, $valorProduto);
+	
+	}
+		return $valorCofins;
+	
+	
+}
+
+public function calculaIpi($cstIpi, $valorProduto){
+
+	$consultas = TbIpi::where('cst', $cstIpi)->get();
+	foreach ($consultas as $consulta) {
+		$ipi = $consulta->descricao;
+		$alicota = $consulta->alicota;
+		$valorIpi = $this->porcento($alicota, $valorProduto);
+	
+	}
+		return $valorIpi;
+	
+	
+}
+
+public function calculaMva($ncm, $cest, $origem, $destino){
+
+	$consultas = TbMva::where([['cest', $cest], ['ncm', $ncm]])->get();
+	$origemDestino = $this->pegaOrigem($origem, $destino);
+	foreach ($consultas as $consulta) {
+		$mvaInterno = $consulta->mva_op_interna; 
+		$alicota7 = $consulta->alicota_7;
+		$alicota12 = $consulta->alicota_12;
+		$alicota4 = $consulta->alicota_4;
+		if ($origemDestino == 12) {
+			$valorMva = $alicota12;
+		} elseif($origemDestino == 7){
+			$valorMva = $alicota7;
+		}elseif($origemDestino == 4){
+			$valorMva = $alicota4;
+		}else{
+			$valorMva = $mvaInterno;
+		}
+
+		$valorMva = ((float)$valorMva/100)+1;
+		return (float)$valorMva;
+	
+	}
+
+
+	
+	
+}
+
+public function pegaOrigem($origem, $destino){
+
+	$consultas = DB::table('tb_icms')
+                    ->where('origem', '=', $origem)
+                    ->where('destino', '=', $destino)
+                    ->get();
+
+
+	foreach ($consultas as $consulta) {
+		$alicotaicms = $consulta->icms;
+
+	}
+		return $alicotaicms;
+	
+	
+}
+
+public function pegaAlicotaInterna($ncm, $cest){
+
+	$consultas = DB::table('tb_mvas')
+                    ->where('ncm', '=', $ncm)
+                    ->where('cest', '=', $cest)
+                    ->get();
+    if ($consultas == true) {
+                  foreach ($consultas as $consulta) {
+		$alicotaInterna = $consulta->alicota_interna;
+	}
+
+	}else{
+		$alicotaInterna = 0;	
+
+	}
+                                  
+	
+		return (float)$alicotaInterna / 100;
+	
+	
+}
+
+
+public function calculaFrete($cstIpi, $valorProduto){
+
+}
+
+
+public function porcento ( $porcentagem, $total ) {
+ return ( $porcentagem / 100 ) * $total;
+}
 
 	
 }
