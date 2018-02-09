@@ -8,7 +8,6 @@
   <link rel="shortcut icon" type="image/x-icon" href="{{asset('/logo.ico')}}">
   <!-- Fonts -->
   <link rel="stylesheet" type="text/css" media="all" href="{{asset('/css/font-awesome.min.css')}}">
-  <!-- Styles -->
   <link rel="stylesheet" type="text/css" media="all" href="{{asset('/css/bootstrap.min.css')}}">
   <link rel="stylesheet" type="text/css" media="all" href="{{asset('/css/sweetalert.css')}}">
   <link rel="stylesheet" type="text/css" media="all" href="{{asset('/css/jquery-ui.min.css')}}">
@@ -16,8 +15,11 @@
   <link rel="stylesheet" type="text/css" media="all" href="{{asset('/css/jquery-ui.structure.min.css')}}">
   <link rel="stylesheet" type="text/css" media="all" href="{{asset('/css/fullcalendar.css')}}">
   <link rel="stylesheet" type="text/css" media="all" href="{{asset('/css/fullcalendar.print.css')}}">
+  <link rel="stylesheet" type="text/css" media="all" href="{{asset('/css/data-grid.css')}}">
+
    
-  <script src="{{asset('/js/jquery.min.js')}}"></script>
+  
+
 
    
 
@@ -45,12 +47,15 @@
   </div>
     
   @section('scripts')
+  <script type="text/javascript" src="{{asset('/js/jquery.min.js')}}"></script>
+  <script type="text/javascript" src="{{asset('/js/moment.js')}}"></script>
+  <script type="text/javascript" src="{{asset('/js/data-grid.js')}}"></script>
   <script type="text/javascript" src="{{asset('/js/sweetalert.min.js')}}"></script>
   <script type="text/javascript" src="{{asset('/js/bootstrap.min.js')}}"></script>
   <script type="text/javascript" src="{{asset('/js/bootstrap-datetimepicker.min.js')}}"></script>
   <script type="text/javascript" src="{{asset('/js/moment.min.js')}}"></script>
   <script type="text/javascript" src="{{asset('/js/fullcalendar.min.js')}}"></script>
-  <script type="text/javascript" src="{{asset('/js/jquery-1.10.2.js')}}"></script>
+  <script type="text/javascript" src="{{asset('/js/jquery-2.2.2.js')}}"></script>
   <script type="text/javascript" src="{{asset('/js/jquery-ui.js')}}"></script>
   <script type="text/javascript" src="{{asset('/js/datepicker-pt-BR.js')}}"></script>
   <script type="text/javascript" src="{{asset('/js/jquery.maskedinput.min.js')}}"></script>

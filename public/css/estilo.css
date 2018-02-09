@@ -1,0 +1,238 @@
+body{width: 100%; margin:0; padding: 0; background: url(imagens/background.jpg) fixed; background-size: cover; font-family: 'Arial';}
+*{box-sizing: border-box; outline: none; resize: none;}
+a{color: inherit; text-decoration: none; -webkit-transition: allease-out 300ms; transition: all ease-out 300ms;}
+p, ul{font-size: 15px; text-align: justify;}
+
+@font-face {
+    font-family: 'futura_bk_btbook';
+    src: url('fontes/tt0140m_-webfont.woff2') format('woff2'),
+         url('fontes/tt0140m_-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+::-webkit-scrollbar {width:5px;}
+::-webkit-scrollbar-thumb {background:rgb(194, 51, 54);}
+::-webkit-scrollbar-track {background:rgb(221, 221, 221);}
+
+h1, h2, h3, h4, h5, h6{font-family: 'futura_bk_btbook'; font-weight: normal;}
+
+.container{width: 95%; max-width: 1000px; margin: 0 auto; display: flex; flex-wrap: wrap;}
+.between{justify-content: space-between;}
+.around{justify-content: space-around;}
+.center{justify-content: center;}
+
+/*==================================TOPO==================================*/
+.topo{padding: 30px 0; align-items: center;}
+.logo{max-width: 300px;}
+
+.redes{display: flex; height: 50px;}
+.sociais{width: 50px; line-height: 50px !important; font-size: 25px !important; text-align: center; color: rgb(255, 255, 255);}
+
+.fixos{position: fixed; top: 190px; right: 0; width: 50px; z-index: 999999; display: none;}
+.fixos2{width: 50px; height: 50px; line-height: 50px !important; text-align: center; color: rgb(255, 255, 255); font-size: 25px !important;}
+.fa-facebook{background: rgb(72, 103, 170);}
+.fa-instagram{background: linear-gradient( #400080, transparent), linear-gradient(200deg, #d047d1, #ff0000,    #ffff00);}
+.envelope{background: rgb(104, 135, 201)}
+
+
+.small{position: fixed !important; top: 0 !important;}
+.small img{max-width:180px; transition:all ease-out 200ms; padding:3px 0 !important;}
+.small .topo{padding: 5px 0;}
+.small .mainmenu li a{line-height: 50px;}
+.large img{max-width:300px; transition:all ease-out 200ms;}
+
+/*==================================MENU==================================*/
+#menu{width: 100%; background: rgb(204, 50, 54); box-shadow: 0 10px 5px rgba(0, 0, 0, .3); position: relative; z-index: 9999;}
+#menu select{width: 90%; font-size: 16px; color: rgb(255, 255, 255); display: none; border: 0; padding: 20px 5px; margin: 0 auto; background: rgb(204, 50, 54);}
+.mainmenu{width: 98%; max-width: 1000px; margin: 0 auto; display: flex; padding: 0;}
+.mainmenu li{flex: 1; list-style: none; text-align: center; position: relative;}
+.mainmenu li a{color: rgb(255, 255, 255); font: 20px/70px 'Open Sans Condensed', sans-serif; display: block; text-transform: uppercase; cursor: pointer; font-weight: bold;}
+.mainmenu li:hover .submenu{display: block;}
+
+.submenu{width: 120%; position: absolute; background: rgb(255, 255, 255); top: 50px; display: none; margin: 0; padding: 0;}
+.submenu li a{color: rgb(51, 51, 51); font-size: 16px; line-height: 40px; text-transform: capitalize; text-align: left; border-bottom: 1px solid rgba(51, 51, 51, .2); padding: 0 5px;}
+.submenu li a i{color: rgb(204, 50, 54);}
+.submenu li a:hover{background: rgb(240, 240, 240);}
+
+/*==================================BANNER==================================*/
+#banner{width: 100%; overflow: hidden; position: relative;}
+#fotos{width: 100%; height: 100%; overflow: hidden; position: absolute;}
+#bottons{width: 98%; position: relative; z-index: 99999; display: flex; justify-content: space-between; margin: 15% auto;}
+.arrow{width: 50px; height: 50px; line-height: 50px !important; background: rgb(194, 51, 54); color: rgb(255, 255, 255); text-align: center; cursor: pointer;}
+
+.slogan{background: rgb(209, 209, 209); border-top: 3px solid rgb(255, 255, 255);}
+.slogan h2{text-align: center; color: rgb(255, 255, 255); margin: 0; padding: 30px; font-size: 42px; line-height: 40px;}
+.slogan h2 small{font-size: 30px;}
+
+/*==================================TEXTOS HOME==================================*/
+.home{width: 100%; background: rgb(255, 255, 255); padding: 50px 0;}
+.textos:first-child{width: 65%;}
+.textos:last-child{width: 30%; display: flex; align-items: center; padding-top:25px;}
+.textos h2{font-size: 42px; color: rgb(204, 50, 54); margin: 0;}
+.textos big{color: rgb(204, 50, 54); }
+
+
+/*==================================SERVIÇOS==================================*/
+.servicoHome{background: url(imagens/fundo-inicial.jpg) fixed no-repeat; background-size: cover;padding: 50px 0;}
+.servicoHome h2{width: 100%; color: rgb(255, 255, 255); font-size: 42px; text-align: center;}
+.servicoHome h2 span{font-size: 22px; display: block;}
+.servicosBlocos{width: 33%; background: rgb(255, 255, 255); display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: flex-end; margin-bottom: 50px;}
+.servicosBlocos h2{font-size: 22px; color: rgb(204, 50, 54); font-weight: bold;}
+.servicosBlocos p{padding: 0 15px;}
+.servicosBlocos>a{ background: rgb(204, 50, 54); color: rgb(255, 255, 255); padding-left: 10px; align-self: flex-end;}
+.servicosBlocos>a:hover{ background: rgb(178, 44, 46);}
+.servicosBlocos>a i{background: rgb(178, 44, 46); padding: 10px; margin-left: 10px;}
+.servicoHome .container>a{width: 33%; background: rgb(204, 50, 54); color: rgb(255, 255, 255); display: flex; align-items: center; justify-content: space-between; padding-left: 20px;}
+.servicoHome .container>a:hover{background: rgb(178, 44, 46);}
+.servicoHome .container>a i{background: rgb(178, 44, 46); padding: 20px;}
+
+.informativo{width: 100%; display: block; font: 44px/100px 'futura_bk_btbook'; color: rgb(51, 51, 51); text-align: center; background: rgb(255, 255, 255); margin-bottom: 25px; box-shadow: 0 0 15px rgb(100, 100, 100);}
+.informativo:hover{background: rgb(204, 50, 54); color: rgb(255, 255, 255);}
+
+/*==================================MATÉRIAS==================================*/
+.dicas{width: 100%; background: rgb(255, 255, 255); margin: 50px 0; padding: 30px 0;}
+.box{width: 30%; text-align: center;}
+.box h2{color: rgb(204, 50, 54);}
+.box a{padding: 10px 0 10px 10px; color: rgb(255, 255, 255); background: rgb(206, 147, 92);}
+.box a i{color: rgb(255, 255, 255); background: rgb(167, 111, 58); padding: 10px; margin-left: 10px;} 
+
+.atualizacoes{color: rgb(255, 255, 255); background: rgb(206, 147, 92); padding-left: 20px; margin-bottom: 50px;}
+.atualizacoes i{color: rgb(255, 255, 255); background: rgb(167, 111, 58); padding: 20px; margin-left: 20px}
+
+/*==================================RODAPÉ==================================*/
+.rodape{width: 100%; margin-top: 50px; display: flex; flex-wrap: wrap;}
+.logo2{width: 40%; background: url(imagens/fundoRodape.png) no-repeat right; padding: 50px 0; display: flex; justify-content: left;}
+.logo2 img{max-width: 300px !important; align-self: center; margin-left: 50px;}
+
+.restrito{width: 60%; background: rgb(82, 82, 82); padding: 30px 0 10px 0;}
+.restritoContainer{width: 90%; padding-left: 180px;}
+.restritoContainer h2{color: rgb(255, 255, 255); margin: 0;}
+
+.restritoContainer form {display: flex; flex-wrap: wrap;}
+.restritoContainer form input{padding: 10px; border: 0; margin-right: 5px;}
+.restritoContainer form button{padding: 5px 15px; cursor: pointer; background: rgb(204, 50, 54); color: rgb(255, 255, 255); border: 0;}
+.restritoContainer form label{background: rgb(245, 245, 245); color: rgb(155, 155, 155); padding: 10px;}
+
+.blocosContainer{width: 90%; display: flex; flex-wrap: wrap;}
+.blocos{width: 100%; margin-top: 50px;margin-left: 25%;}
+.blocos h2{color: rgb(255, 255, 255); margin: 0;}
+.blocos p{color: rgb(255, 255, 255);  margin: 0;}
+.blocos .newsletter{padding: 8px 65px; line-height: 50px; background: rgb(204, 50, 54); color: rgb(255, 255, 255);}
+
+/*==================================ESTILOS PÁGINAS==================================*/
+.fundoConteudo{width: 100%; background: rgb(255, 255, 255); padding: 50px 0;}
+.titulo01{width: 100%; line-height: 50px; text-transform: uppercase; color: rgb(255, 255, 255); background: rgb(178, 178, 178); text-align: center;}
+.titulo02{width: 100%; color: rgb(204, 50, 54); font-weight: bold;}
+
+/*==================================PÀGINA INSTITUCIONAL==================================*/
+.institucional{width: 70%;}
+.institucional a{color: rgb(0,0,0); text-decoration: none;}
+.institucional a:hover{color: rgb(204, 50, 54);}
+.business{width: 21%;}
+.business2{width: 25%;}
+.icone{width: 260px; text-align: center;}
+.videos{width: 100%; text-align: center; color: rgb(255, 255, 255); display: block; background: rgb(178, 178, 178); margin-top: 50px; padding: 20px 0;}
+
+/*==================================PÀGINA MISSÃO/VISÃO/VALORES==================================*/
+.missao{justify-content: center;}
+.missao h1 span{color: rgb(51, 51, 51); font-weight: normal; font-size: 16px; display: block;}
+.missao P{text-align: center;}
+.missao h2{color: rgb(204, 50, 54);}
+.missao .conteudo{width: 50%; text-align: center;}
+
+/*==================================PÀGINA ESTRUTURA==================================*/
+.galeria{width: 30%;}
+.galeria img{border-radius: 5px;}
+.galeria p{font-weight: bold;}
+
+/*==================================PÀGINA EQUIPE==================================*/
+.equipeContainer p{width: 100%;}
+.equipe{width: 28%; text-align: center; margin-top: 20px;}
+.equipe p span{display: block; color: rgb(204, 50, 54);}
+
+/*==================================PÀGINA SERVICOS==================================*/
+.servicos{width: 33%; text-align: center; margin-bottom: 20px; padding: 5px;}
+.servicos img{border-radius: 50%; max-width: 180px; margin: 0 auto; display: block;}
+.servicos h2{font-size: 19px; font-weight: bolder}
+.servicos:hover{background: rgb(240, 240, 240);}
+
+/*==================================PÀGINA PÚBLICO ALVO==================================*/
+.publico h2{color: rgb(204, 50, 54); width: 100%; text-align: center; text-transform: uppercase;}
+.publico p{text-align: center; width: 100%;}
+.publico ul{margin: 0; padding: 0; list-style: none;}
+.quadros{width: 49%; margin-bottom: 20px;}
+
+/*==================================PÀGINA CONSULTAS==================================*/
+.consultas{width: 30%; display: flex; flex-wrap: wrap; align-content: flex-start;}
+.consultas h2{font-size: 20px; color: rgb(204, 50, 54); width: 100%; text-align: center; text-transform: uppercase;}
+.consultas .icones{width: 49%; text-align: center; margin-bottom: 20px;}
+.consultas .icones p{margin: 0;}
+.consultas .icones div{border:1px solid rgb(200, 200, 200);}
+.consultas .icones i{width: 70px; line-height: 70px !important; border-radius: 50%; margin: 10px 0;}
+.consultas:nth-child(3) .icones i, .consultas:nth-child(4) .icones i{color: rgb(204, 50, 54);}
+.consultas .icones .federal{background: rgb(19, 58, 96);  color: rgb(255, 255, 255);}
+.consultas .icones .tributaria{background: rgb(3, 35, 108);  color: rgb(255, 255, 255);}
+.consultas .icones .trabalhista{background: rgb(42, 96, 163);  color: rgb(255, 255, 255);}
+.consultas .icones .estadual{background: rgb(254, 212, 0);  color: rgb(255, 255, 255);}
+
+.consultas .icones img{width: 100%; border:1px solid rgb(200, 200, 200);}
+
+.consultas2{width: 80%;}
+.consultas2>.icones{max-width: 190px;}
+
+/*==================================PÀGINA CONTATO==================================*/
+.contato{width: 50%; margin-bottom: 20px;}
+.contato i{color: rgb(204, 50, 54);}
+
+@media screen and (max-width: 1024px){
+    #banner{min-height: 352px;}
+    .logo2{background: none; width: 100%;}
+    .restrito{width: 100%; padding: 30px;}
+    .blocosContainer{width: 100%;}
+    .restritoContainer{width: 100%; padding-left: 0;}
+}
+
+@media screen and (max-width: 768px){
+    .topo.between.container{justify-content: center !important;}
+    .logo{width: 100%;}
+    .redes{margin-top:50px;}
+    #banner{min-height: 264px;}
+    .mainmenu{display:none;}
+	#menu select{display:block;}
+    .textos:first-child{width: 100%;}
+    .textos:last-child{width: 100%;}
+    .servicoHome .container>a{width: 100%; margin-bottom: 10px;}
+    .institucional{width: 100%;}
+    .business, .business2{display: none}
+    .servicos{width: 50%;}
+    .consultas{width: 49%;}
+    .consultas2{width: 100%;}
+    .contato{width: 100%;}
+}
+
+@media screen and (max-width:700px){
+    #banner{min-height: 240px}
+}
+
+@media screen and (max-width: 600px){
+    #banner{display: none;}
+    .servicosBlocos{width: 100%; margin-bottom: 10px;}
+    .servicos{width: 100%;}
+    .box{width: 100%; margin-bottom: 10px;}
+    .paisagem{display: none;}
+    .restritoContainer form input{width: 90%; margin-bottom: 5px; margin-right: 0;}
+    .restritoContainer form label{width: 10%; margin-bottom: 5px; text-align: center;}
+    .restritoContainer form button{padding: 15px 35px;}
+    .blocos:last-child{text-align: left;}
+    .blocos{width: 100%;}
+    .blocos br{display: none;}
+}
+
+@media screen and (max-width: 425px){
+    .topo.between.container{justify-content: center !important;}
+    .logo{width: 100%;}
+    .redes{margin-top:50px;}
+    .consultas{width: 100%;}
+}
+

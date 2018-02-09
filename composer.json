@@ -16,7 +16,10 @@
         "barryvdh/laravel-snappy": "0.2.x",
         "edigomes/download-nfe-sefaz": "^1.0",
         "yangqi/htmldom": "1.0.*",
-        "nfephp-org/nfephp": "dev-develop"
+        "nfephp-org/nfephp": "dev-develop",
+        "aginev/datagrid": "1.0.*",
+        "rafwell/laravel-grid": "^1.1",
+        "zofe/rapyd": "2.2.*"
     },
 
     "require-dev": {

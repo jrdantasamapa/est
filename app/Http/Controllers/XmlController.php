@@ -18,6 +18,7 @@ use App\TbPisCofins;
 use App\TbIpi;
 use App\TbMva;
 use App\TbIcms;
+use Rafwell\Grid\Grid;
 
 
 
@@ -918,7 +919,75 @@ public function pegaXml(Request $request){
 	echo $xml;
 }
 
+public function geraPdf(){
+	$xml = simplexml_load_file(public_path($nome));
+		//Variaveis do XML
+		$item = count($xml->NFe->infNFe->det);
+		//Conta o numero de Ites do XML
+		$tproduto = $xml -> NFe -> infNFe -> total -> ICMSTot -> vProd;
+		//Valor total dos Prodtos do XML
+		$tnfe = $xml -> NFe -> infNFe -> total -> ICMSTot -> vNF;
+		// Valor Total da NFe
+		$tICMS = $xml -> NFe -> infNFe -> total -> ICMSTot -> vICMS;
+		// Valor total do ICMS da NFe
+		$emitente = $xml -> NFe -> infNFe -> emit -> xNome;
+		//Razão social do Emitente
+		$fantasia = $xml -> NFe -> infNFe -> emit -> xFant;
+		// Nome de Fantasia do Emitente
+		$endereco = $xml -> NFe -> infNFe -> emit -> enderEmit -> xMun;
+		// Minicipio do Enitente
+		$destino = $xml -> NFe -> infNFe -> dest -> xNome;
+		// Rasão social do Destino
+		$bairrodestino = $xml -> NFe -> infNFe -> dest -> enderDest -> xBairro;
+		$logdestino = $xml -> NFe -> infNFe -> dest -> enderDest -> xLgr;
+		$enddest = $xml -> NFe -> infNFe -> dest -> enderDest -> xMun;
+		// Municipio do Destino
+		$chave = $xml -> protNFe -> infProt -> chNFe;
+		// Chave de acesso do XML
+		$nnfe = $xml -> NFe -> infNFe -> ide -> nNF;
+		// Numero da NFe do XML
 
+	$this->cabecalho($titulo, $chave, $nnfe, $demit, $endereco, $fantasia, $emitente, $destino, $logdestino, $bairrodestino, $enddest); // Imprime cabeçalho
+	$this->corpo();
+	$this->rodape();
+
+}
+public function corpo(){
+	$this->pegaVlitem();
+	echo "Total do Produtos: ". $valorProduto . "<br>";
+}
+
+public function rodape(){
+	// Totalizadores
+		Fpdf::SetFont('times', 'B', 12);
+		Fpdf::Cell(190, 6, 'RESUMO TOTAIS', 0, 0, 'C');
+		Fpdf::Ln(5);
+		Fpdf::Cell(190, 0.2, '', 1, 1, 'C');
+		Fpdf::SetFont('times', '', 8);
+		Fpdf::Cell(20, 6, 'NFe', 0, 0, 'C');
+		Fpdf::Cell(30, 6, 'Valor NFe', 0, 0, 'C');
+		Fpdf::Cell(30, 6, 'Valor Produtos', 0, 0, 'C');
+		Fpdf::Cell(30, 6, 'CREDITOS DE ICMS', 0, 0, 'C');
+		Fpdf::Cell(30, 6, 'DEBITOS DE ICMS', 0, 0, 'C');
+		Fpdf::Cell(30, 6, 'VALOR DO ST', 0, 0, 'C');
+		Fpdf::Ln(5);
+		Fpdf::Cell(190, 0.2, '', 1, 1, 'C');
+		//Fpdf::Ln(1);
+		Fpdf::SetFont('times', 'B', 12);
+		Fpdf::Cell(20, 6, $nnfe, 0, 0, 'C');
+		Fpdf::Cell(30, 6, (number_format(floatval($tnfe), 2, ',', '.')), 0, 0, 'C');
+		Fpdf::Cell(30, 6, (number_format(floatval($tproduto), 2, ',', '.')), 0, 0, 'C');
+		Fpdf::Cell(30, 6, (number_format($tcreICMS, 2, ',', '.')), 0, 0, 'C');
+		Fpdf::Cell(30, 6, (number_format($tdebICMS, 2, ',', '.')), 0, 0, 'C');
+		Fpdf::Cell(30, 6, (number_format(($tdebICMS - $tcreICMS), 2, ',', '.')), 0, 0, 'C');
+		Fpdf::Output('CalculoST.NFe'.$nnfe.'.pdf', 'D');
+		exit;
+		return Redirect('consultaxml');
+}
+
+public function ValorTatol(){
+
+}
 
 public function pegaVlitem(Request $request){
 	
@@ -927,8 +996,34 @@ public function pegaVlitem(Request $request){
 	$this->upload($input, $nome); // faz upload do xml com novo nome
 	$xml = simplexml_load_file(public_path($nome)); // le o xlm
 	$itens = count($xml->NFe->infNFe->det); // Conta a quantidade de Itens da NFe
-	$destino = $xml->NFe->infNFe->dest->enderDest->UF;
+	$emit = $xml -> NFe -> infNFe -> emit -> xNome;
+	//Razão social do Emitente
+	$fantasia = $xml -> NFe -> infNFe -> emit -> xFant;
+	// Nome de Fantasia do Emitente
+	$endereco = $xml -> NFe -> infNFe -> emit -> enderEmit -> xMun;
+	// Minicipio do Enitente
+	$destinonota = $xml -> NFe -> infNFe -> dest -> xNome;
+	// Rasão social do Destino
+	$bairrodestino = $xml -> NFe -> infNFe -> dest -> enderDest -> xBairro;
+	$logdestino = $xml -> NFe -> infNFe -> dest -> enderDest -> xLgr;
+	$enddest = $xml -> NFe -> infNFe -> dest -> enderDest -> xMun;
+	// Municipio do Destino
+	$chave = $xml -> protNFe -> infProt -> chNFe;
+	// Chave de acesso do XML
+	$nnfe = $xml -> NFe -> infNFe -> ide -> nNF;
+	// Numero da NFe do XML
+	
+
 	$origem = $xml->NFe->infNFe->emit->enderEmit->UF;
+	$destino = $xml->NFe->infNFe->dest->enderDest->UF;
+	$emitente = "Razão Social do Emitente: ".$emit." - Fantasia: ".$fantasia." - Endereço: ".$endereco." - UF: ".$origem;
+	
+	$destinatario = "Razão Social do Emitente: ".$destinonota." - Endereço: ".$enddest." - Bairro:".$bairrodestino." - UF.:".$destino;
+//	$dadosnfe = "Chave NFe: ".$chave - "Numero NFe: ". $nnfe;
+	
+	$cabecalhos[] = array('emitente'=>$emitente, 'destinatario'=>$destinatario);
+
+	
 	for ($i = 0; $i < $itens; $i++) {
 		
 		$det = $xml->NFe->infNFe->det[$i]; //Simplifica as tag's do Xml
@@ -957,25 +1052,12 @@ public function pegaVlitem(Request $request){
 		$valorIcms = $this->pegaOrigem($origem, $destino);
 		$valorIcms = ($valorIcms / 100) * $valorProduto;
 		$valorST = $valorSub - $valorIcms;
-		echo "Item" . $i. "<br>";	
-		echo "Total do Produtos: ". $valorProduto . "<br>";
-		echo "Valor PIS:". $valorPis ."<br>";
-		echo "Valor COFINS:". $valorCofins ."<br>";
-		echo "BC1: Total dos Produtos - PIS e Cofins:". $bc1. "<br>";
-		echo "Desconto Area de Liver Comercio:" . $valorSuframa . "<br>";
-		echo "BC2: BC1 - Desconto Area de Livre comercio:". $bc2. "<br>";
-		echo "Valor IPI:". $valorIpi. "<br>";
-		echo "Outra Despesa:" . $valorOutras . "<br>";
-		echo "Outra Frete:" . $valorFrete . "<br>";
-		echo "Desconto Incondicional:" . $valorDescIncod . "<br>";
-		echo "BC3: BC1 + IPI + Outras Despesas + Frete + Desconto Incondicional:". $bc3. "<br>";
-		echo "MVA ajustado:" . $valorMva. " - ". $baseCalc . "<br>";
-		echo "Alicota Interna" . $alicotaInterna. "<br>";
-		echo "Valor Debito ICMS" . $valorSub. "----  Alicota:" . $alicotaInterna . "<br>";
-		echo "Alicota Intereestadula ICMS" . (float)$valorIcms . "<br>";
-		echo "Valro da Substituicao a recolher" . (float)$valorST . "<br>";
-		echo "---------------------------------------------------------". "<br>";
+
+		$resultadoItens =  array('Item'=>$i, 'produto'=>$valorProduto, 'pis'=>$valorPis, 'cofins'=>$valorCofins, 'bc1'=>$bc1, 'suframa'=>$valorSuframa, 'bc2'=>$bc2, 'ipi'=>$valorIpi, 'outros'=>$valorOutras, 'frete'=>$valorFrete, 'desconto'=>$valorDescIncod, 'bc3'=>$bc3, 'mva'=>$valorMva, 'base'=>$baseCalc, 'interna'=>$alicotaInterna, 'sub'=>$valorSub, 'alicota'=>$alicotaInterna, 'icms'=>$valorIcms, 'st'=>$valorST);         
 	}
+
+		dd($resultadoItens);
+	return view('xml.resultado', compact('cabecalhos', $cabecalhos, 'resultadoItens', $resultadoItens));
 
 }
 
@@ -1096,6 +1178,41 @@ public function calculaFrete($cstIpi, $valorProduto){
 
 public function porcento ( $porcentagem, $total ) {
  return ( $porcentagem / 100 ) * $total;
+}
+
+public function resultado(){
+
+
+}
+
+public function cabecalho($titulo, $chave, $nnfe, $demit, $endereco, $fantasia, $emitente, $destino, $logdestino, $bairrodestino, $enddest){
+	Fpdf::Open();
+	Fpdf::AddPage();
+	Fpdf::SetFont("times", "B", 10);
+	//logomarca do Relatorio
+	Fpdf::SetFillColor(232, 232, 232);
+	Fpdf::SetTextColor(0, 0, 0);
+	Fpdf::Image('logost.png', 10, 10, -300);
+	Fpdf::Ln(5);
+	// Move para a direita
+	Fpdf::Cell(50);
+	// Titulo dentro de uma caixa
+	Fpdf::Cell(85, 10, $titulo, 0, 0, 'C');
+	// Quebra de linha
+	Fpdf::Ln(10);
+	//Cabeçalho do relatorio
+	Fpdf::SetFont('times', '', 8);
+	Fpdf::Line(10, 25, 200, 25);
+	Fpdf::Cell(100, 6, 'Cheve de Acesso: ' . $chave, 0, 0, 'L');
+	Fpdf::Cell(30, 6, 'N. NFe: ' . $nnfe, 0, 0, 'L');
+	Fpdf::Cell(60, 6, 'Data de Emissão: '.$demit, 0, 0, 'L');
+	Fpdf::Ln(4);
+	Fpdf::Cell(190, 6, 'Fornecedor: ' . $emitente . '   -   Fantasia.:' . $fantasia . '   -   End.:' . $endereco, 0, 0, 'L');
+	Fpdf::Ln(4);
+	Fpdf::Cell(190, 6, 'Destinatario: ' . $destino . '  -   End.:'.$logdestino.' - ' . $bairrodestino . '-' . $enddest, 0, 0, 'L');
+	Fpdf::Line(10, 38, 200, 38);
+	Fpdf::Ln(4);
+
 }
 
 	

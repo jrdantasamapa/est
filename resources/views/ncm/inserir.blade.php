@@ -1,4 +1,7 @@
-  <div class="col-md-2">
+@section('header')
+@extends('layouts.diasegomes')
+@endsection
+ <div class="col-md-2">
   </div>
   <div class="col-md-8">
     <div class="panel panel-success">

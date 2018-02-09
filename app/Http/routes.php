@@ -73,7 +73,16 @@ Route::group(array('before' => 'auth'), function(){
 		Route::get('noticia', 'NoticiaController@noticias');
 		Route::get('quina', 'LoteriaController@index');
 		Route::post('pegaVlitem', 'XmlController@pegaVlitem');
+		Route::post('resultado', 'XmlController@pegaVlitem');
+		Route::post('corpo', 'XmlController@corpo');
 
+		Route::get('listamva', 'MvaController@index');
+		Route::get('/mva', 'MvaController@create');
+		Route::post('/inserirmva', 'MvaController@inserte');
+		Route::get('/deletarmva{id}', 'MvaController@delete');
+		Route::get('/editemva{id}', 'MvaController@show');
+		Route::post('/updatemva', 'MvaController@update');
+		Route::get('/viewmva{id}', 'MvaController@view');
 		
 });
 

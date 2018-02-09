@@ -1,6 +1,6 @@
-@extends('layouts.app')
+
 @section('header')
-@include('templates.nav')
+@extends('layouts.diasegomes')
 @endsection
 @section('content')
 

@@ -1,7 +1,23 @@
-<div align="right" id='menu'>
-<div class="btn-group">
+
+
+<nav class="navbar navbar-center navbar-fixed"">
+  <!--  <div class="navbar-header" style="background-color: #FFFFFF;">
+
+         Collapsed Hamburger 
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>-->
+        <!-- Branding Image 
+        <a class="navbar-brand" href="{{ url('/') }}">
+            <img src="{{asset('/logost.png')}}">
+        </a>
+    </div>-->
+    <div class="btn-group">
 	@can('menu_cadastros')
-		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-clipboard" aria-hidden="true"></i>&nbsp; Cadastros
+		<button class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-clipboard" aria-hidden="true"></i>&nbsp; Cadastros
 		<span class="caret"></span></button>
   		<ul class="dropdown-menu">
 			@can('submenu_Usuarios')
@@ -24,6 +40,10 @@
 			<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i>&nbsp; Instalar Certificado A1</a></li>
 			<li role="separator" class="divider"></li>
 			@endcan
+			@can('submenu_mva')
+			<li><a href="mva"><i class="fa fa-industry" aria-hidden="true"></i>&nbsp; Memoria de Calculo - MVA</a></li>
+			<li role="separator" class="divider"></li>
+			@endcan
 		<!--	@can('submenu_import_xml')
 			<li><a href="xml"><i class="fa fa-exchange" aria-hidden="true"></i>&nbsp; Importar XML</a></li>
 			<li role="separator" class="divider"></li>
@@ -33,7 +53,7 @@
 </div>
 <div class="btn-group">
 	@can('menu_impostos')
-		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;Impostos
+		<button class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;Impostos
 		<span class="caret"></span></button>
   		<ul class="dropdown-menu">
 		<!--	@can('submenu_st')
@@ -53,7 +73,7 @@
 </div>
 <div class="btn-group">
 	@can('menu_listagem')
-		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-file-text-o" aria-hidden="true"></i>&nbsp;Listagem
+		<button class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-file-text-o" aria-hidden="true"></i>&nbsp;Listagem
 		<span class="caret"></span></button>
   		<ul class="dropdown-menu">
 			@can('submenu_lista_usuarios')
@@ -72,12 +92,16 @@
 			<li><a href="listancm"><i class="fa fa-area-chart" aria-hidden="true"></i>&nbsp; Listar NCM</a></li>
 			<li role="separator" class="divider"></li>
 			@endcan
+			@can('submenu_lista_nmva')
+			<li><a href="listamva"><i class="fa fa-area-chart" aria-hidden="true"></i>&nbsp; Listar MVA</a></li>
+			<li role="separator" class="divider"></li>
+			@endcan
 		</ul>
 	@endcan
 </div>
 <div class="btn-group">
 	@can('menu_consultaxml')
-		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-qrcode" aria-hidden="true"></i>&nbsp;Consultar XML
+		<button class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-qrcode" aria-hidden="true"></i>&nbsp;Consultar XML
 		<span class="caret"></span></button>
   		<ul class="dropdown-menu">
 		<!--	@can('submenu_consultaxml_barras')
@@ -99,7 +123,33 @@
 		</ul>
 	@endcan
 </div>
-</div>
-<div class="col-md-12" id='menu'> <hr style="color: #228B22; background-color: #228B22; height: 2px;"></div>
+    <div class="collapse navbar-collapse" id="app-navbar-collapse">
+        <!-- Left Side Of Navbar -->
+
+        <!-- Right Side Of Navbar-->
+        <ul class="nav navbar-nav navbar-right">
+            <!-- Authentication Links -->
+            @if (Auth::guest())
+            @else
+            	<a href="/">
+                    <i class=" fa fa-btn fa-home fa-2x" ata-toggle="tooltip" data-placement="top" title="Home" aria-hidden="true"></i>
+                </a>
+               <a href="#">
+                    <i class=" fa fa-btn fa-user fa-2x" ata-toggle="tooltip" data-placement="top" title="{{ Auth::user()->name }}" aria-hidden="true"></i>
+                </a>
+                 <a href="alterar">
+                    <i class="fa fa-key fa-2x" ata-toggle="tooltip" data-placement="top" title="Alterar Senhas" aria-hidden="true"></i>
+                </a>
+                <a href="{{ url('/logout') }}">
+                    <i class="fa fa-sign-out fa-2x" ata-toggle="tooltip" data-placement="top" title="Sair do Sistema" aria-hidden="true"></i>
+                </a>
+               
+            @endif
+        </ul>
+    </div>
+  </nav>
+
+
+
 
 

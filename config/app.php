@@ -160,6 +160,10 @@ return [
         Anouar\Fpdf\FpdfServiceProvider::class,
         Barryvdh\Snappy\ServiceProvider::class,
         Yangqi\Htmldom\HtmldomServiceProvider::class,
+        Aginev\Datagrid\DatagridServiceProvider::class,
+        //Sygmaa\Grids\GridsServiceProvider::class,
+        Rafwell\Grid\GridServiceProvider::class,
+        Zofe\Rapyd\RapydServiceProvider::class,
        // Lucasvdh\LaravelWhatsapp\WhatsappServiceProvider::class,
     ],
 
@@ -214,6 +218,8 @@ return [
          'PDF' => Barryvdh\Snappy\Facades\SnappyPdf::class,
         'Image' => Barryvdh\Snappy\Facades\SnappyImage::class,
         'Htmldom' => Yangqi\Htmldom\Htmldom::class,
+        'Datagrid' => Aginev\Datagrid\Datagrid::class,
+       // 'Grids' => Sygmaa\Grids\GridsFacade::class,
        // 'Whatsapp' => Lucasvdh\LaravelWhatsapp\Facades\Whatsapp::class,
     ],
 
